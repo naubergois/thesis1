@@ -2,18 +2,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Number of papers by type of Stress Testing\relax }}{20}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Performance antipatterns\relax }}{35}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Number of papers by type of Stress Testing\relax }}{23}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Performance antipatterns\relax }}{38}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{44}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{47}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Hypothetical MDP Q-values \relax }}{55}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Hypothetical MDP Q-values \relax }}{58}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{63}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Results obtained from the second experiment\relax }}{64}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{64}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{65}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Q values for response times bellow than service level\relax }}{67}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Pareto Frontier workload results\relax }}{72}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{66}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Results obtained from the second experiment\relax }}{67}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{67}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{68}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Q values for response times bellow than service level\relax }}{70}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Pareto Frontier workload results\relax }}{75}
 \addvspace {10\p@ }

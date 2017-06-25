@@ -3,6 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: ../mybib.bib
+Repeated entry---line 426 of file ../mybib.bib
+ : @inproceedings{Aleti2016
+ :                         ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 448 of file ../mybib.bib
  : @inproceedings{Blum2003
  :                        ,
@@ -82,6 +86,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 2578 of file ../mybib.bib
  : @book{Halili2008
  :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2593 of file ../mybib.bib
+ : @article{Aleti2016
+ :                   ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 2606 of file ../mybib.bib
  : @book{Jaziri2008
@@ -227,6 +235,10 @@ Repeated entry---line 3356 of file ../mybib.bib
  : @book{MohammadS.Obaidat
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 3383 of file ../mybib.bib
+ : @book{Talbi2013
+ :                ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 3403 of file ../mybib.bib
  : @article{Greenwald2003
  :                       ,
@@ -242,6 +254,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 3445 of file ../mybib.bib
  : @phdthesis{shousha2003performance
  :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3452 of file ../mybib.bib
+ : @article{hong2000simultaneously
+ :                                ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 3463 of file ../mybib.bib
  : @article{Vogele2016
@@ -351,6 +367,8 @@ Warning--empty booktitle in Harman2010
 Warning--can't use both volume and number fields in Harman2010
 Warning--empty booktitle in Hierons2009
 Warning--can't use both volume and number fields in Hierons2009
+Warning--empty booktitle in hong2000simultaneously
+Warning--can't use both volume and number fields in hong2000simultaneously
 Warning--empty booktitle in J.WegenerK.GrimmM.GrochtmannH.Sthamer1996
 Warning--empty publisher in Jaziri2008
 Warning--empty school in Jiang2010
@@ -376,6 +394,8 @@ Warning--empty booktitle in Smith2002
 Warning--empty booktitle in Sullivan
 Warning--empty booktitle in Sutton2012
 Warning--can't use both volume and number fields in Sutton2012
+Warning--can't use both volume and number fields in Talbi2013
+Warning--empty publisher in Talbi2013
 Warning--empty booktitle in Tracey1998
 Warning--empty booktitle in Trent1995
 Warning--empty booktitle in Vetoio2011
@@ -391,45 +411,45 @@ Warning--empty booktitle in Stations
 Warning--empty booktitle in Wert2013a
 Warning--there's a number but no series in Wert2013a
 Warning--empty booktitle in Wert2014
-You've used 69 entries,
+You've used 72 entries,
             2118 wiz_defined-function locations,
-            914 strings with 16735 characters,
-and the built_in function-call counts, 25091 in all, are:
-= -- 2398
-> -- 1034
-< -- 59
-+ -- 410
-- -- 340
-* -- 1514
-:= -- 3790
-add.period$ -- 208
-call.type$ -- 69
-change.case$ -- 364
+            931 strings with 17209 characters,
+and the built_in function-call counts, 26215 in all, are:
+= -- 2511
+> -- 1077
+< -- 63
++ -- 427
+- -- 354
+* -- 1590
+:= -- 3960
+add.period$ -- 218
+call.type$ -- 72
+change.case$ -- 379
 chr.to.int$ -- 0
-cite$ -- 144
-duplicate$ -- 1160
-empty$ -- 2121
-format.name$ -- 340
-if$ -- 5511
+cite$ -- 151
+duplicate$ -- 1210
+empty$ -- 2209
+format.name$ -- 354
+if$ -- 5757
 int.to.chr$ -- 0
-int.to.str$ -- 69
-missing$ -- 75
-newline$ -- 345
-num.names$ -- 136
-pop$ -- 610
+int.to.str$ -- 72
+missing$ -- 79
+newline$ -- 360
+num.names$ -- 142
+pop$ -- 630
 preamble$ -- 2
-purify$ -- 308
+purify$ -- 321
 quote$ -- 0
-skip$ -- 915
+skip$ -- 955
 stack$ -- 0
-substring$ -- 1363
-swap$ -- 401
-text.length$ -- 59
+substring$ -- 1429
+swap$ -- 422
+text.length$ -- 63
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 254
-warning$ -- 75
-while$ -- 246
-width$ -- 71
-write$ -- 700
-(There were 77 error messages)
+type$ -- 264
+warning$ -- 79
+while$ -- 258
+width$ -- 74
+write$ -- 733
+(There were 81 error messages)

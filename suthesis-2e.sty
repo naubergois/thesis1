@@ -464,9 +464,9 @@ AND THE COMMITTEE ON GRADUATE STUDIES}
 \begin{flushright}
 \begin{minipage}{5in}
 \parindent=0pt
-I certify that I have read this dissertation and that, in my opinion,
+I certify that I have read this thesis and that, in my opinion,
 it is fully adequate in scope and quality as a dissertation for the degree
-of Doctor of Philosophy.
+of Doctor of Science.
 \par
 \vspace{\signaturespace}
 %\hbox to 4in{\hfil\shortstack{\vrule width 3in height 0.4pt\\ #1}}
@@ -494,28 +494,28 @@ of Doctor of Philosophy.
 \def\thepage{}
 \thispagestyle{myheadings}
 \markboth{\rm \@author}{\rm \@author}\fi
-\signature{(\@principaladviser)\quad Principal \advis@r}
+\signature{\@principaladviser\quad Principal \advis@r}
   \vfill
 % if second principal advisor
         \if*\@coprincipaladviser \else
         \signature{(\@coprincipaladviser)\quad Principal \advis@r}
         \vfill\fi
         \if*\@firstreader \else 
-        \signature{(\@firstreader)\quad Co-Adviser}
+        \signature{\@firstreader\quad Co-Adviser}
         \vfill\fi
         \if*\@secondreader \else 
-        \signature{(\@secondreader)}
+        \signature{\@secondreader}
         \vfill\fi
 % if thirdreader then do \signature\@thirdreader \vfill
         \if*\@thirdreader \else 
-        \signature{(\@thirdreader)}
+        \signature{\@thirdreader}
         \vfill\fi
 % if fourthreader then do \signature\@fourthreader \vfill
         \if*\@fourthreader \else 
-        \signature{(\@fourthreader)}
+        \signature{\@fourthreader}
         \vfill\fi
          \if*\@fifthreader \else 
-        \signature{(\@fifthreader)}
+        \signature{\@fifthreader}
         \vfill\fi
 \ucgssignature
 }

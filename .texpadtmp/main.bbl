@@ -22,6 +22,12 @@ Stefano D~I Alesio, Lionel~C Briand, Shiva Nejati, and Arnaud Gotlieb.
 \newblock {Combining Genetic Algorithms and Constraint Programming}.
 \newblock volume~25, 2015.
 
+\bibitem{Aleti2016}
+Aldeida Aleti, I.~Moser, and Lars Grunske.
+\newblock {Analysing the fitness landscape of search-based software testing
+  problems}.
+\newblock {\em Automated Software Engineering}, pages 1--19, 2016.
+
 \bibitem{Arcelli2012}
 Davide Arcelli, Vittorio Cortellessa, and Catia Trubiani.
 \newblock {Antipattern-Based Model Refactoring for Software Performance
@@ -188,6 +194,12 @@ Robert~M Hierons, Kirill Bogdanov, Jonathan~P Bowen, Rance Cleaveland, John
 \newblock {Using formal specifications to support testing}.
 \newblock volume~41, pages 1--76, 2009.
 
+\bibitem{hong2000simultaneously}
+Tzung-Pei Hong, Hong-Shung Wang, and Wei-Chou Chen.
+\newblock Simultaneously applying multiple mutation operators in genetic
+  algorithms.
+\newblock volume~6, pages 439--455. Springer, 2000.
+
 \bibitem{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996}
 B.~Jones {J. Wegener, K. Grimm, M. Grochtmann, H. Sthamer}.
 \newblock {Systematic testing of real-time systems}.
@@ -331,6 +343,11 @@ Richard~S. Sutton and Andrew~G. Barto.
 El-Ghazali Talbi.
 \newblock {\em Metaheuristics: from design to implementation}, volume~74.
 \newblock John Wiley \& Sons, 2009.
+
+\bibitem{Talbi2013}
+El-Ghazali Talbi.
+\newblock {\em {Metaheuristics: From Design to Implementation}}, volume~53.
+\newblock 2013.
 
 \bibitem{Tracey1998}
 N~J Tracey, J~a Clark, and K~C Mander.
