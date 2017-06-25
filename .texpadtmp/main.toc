@@ -1,0 +1,68 @@
+\select@language {english}
+\contentsline {chapter}{Preface}{v}
+\contentsline {chapter}{Acknowledgments}{vi}
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {1.1}Motivation}{3}
+\contentsline {subsection}{\numberline {1.1.1}State of Research on the Search-Based Stress Testing}{4}
+\contentsline {subsection}{\numberline {1.1.2}State of Industrial Practices on Stress Tests}{4}
+\contentsline {section}{\numberline {1.2}Research Hypothesis}{4}
+\contentsline {chapter}{\numberline {2}Background}{5}
+\contentsline {section}{\numberline {2.1}Load, Performance and Stress Testing}{5}
+\contentsline {section}{\numberline {2.2}Stress Test Process}{6}
+\contentsline {section}{\numberline {2.3}Metaheuristics}{7}
+\contentsline {section}{\numberline {2.4}Hybrid Metaheuristics}{9}
+\contentsline {section}{\numberline {2.5}Reinforcement Learning}{11}
+\contentsline {chapter}{\numberline {3}A Survey on Stress Testing Software Systems}{13}
+\contentsline {section}{\numberline {3.1}Method}{14}
+\contentsline {subsection}{\numberline {3.1.1}Planning a Systematic Review}{14}
+\contentsline {subsection}{\numberline {3.1.2}Research Questions}{15}
+\contentsline {subsection}{\numberline {3.1.3}Generation of search strategy}{15}
+\contentsline {subsection}{\numberline {3.1.4}Study selection criteria and procedures for including and excluding primary studies}{17}
+\contentsline {subsection}{\numberline {3.1.5}Data Synthesis}{17}
+\contentsline {section}{\numberline {3.2}Research Question 1:How is a proper stress designed?}{18}
+\contentsline {subsection}{\numberline {3.2.1}Model-based Stress Testing}{21}
+\contentsline {subsection}{\numberline {3.2.2}Feedback-ORiEnted PerfOrmance Software Testing}{25}
+\contentsline {section}{\numberline {3.3}Research Question 2: How is a stress test executed and automated?}{27}
+\contentsline {subsection}{\numberline {3.3.1}Load Test Tools}{28}
+\contentsline {section}{\numberline {3.4}Research Question 3: What are the main problems found by stress tests?}{32}
+\contentsline {chapter}{\numberline {4}Search-Based Stress Testing}{43}
+\contentsline {section}{\numberline {4.1}Search-Based Stress Testing on Safety-critical systems}{44}
+\contentsline {section}{\numberline {4.2}Search-Based Stress Testing on Industrial systems}{46}
+\contentsline {section}{\numberline {4.3}NSGA-II Multi-objective heuristics}{46}
+\contentsline {chapter}{\numberline {5}Search-based Stress Test: an approach appling evolutionary algorithms and trajectory methods}{49}
+\contentsline {section}{\numberline {5.1}Improving Stress Search Based Testing using Hybrid Metaheuristic Approach}{49}
+\contentsline {subsection}{\numberline {5.1.1}Representation}{50}
+\contentsline {subsection}{\numberline {5.1.2}Initial population}{50}
+\contentsline {subsection}{\numberline {5.1.3}Objective (fitness) function}{51}
+\contentsline {section}{\numberline {5.2}Improving Stress Search Based Testing using Q-Learning and Hybrid Metaheuristic Approach}{52}
+\contentsline {subsection}{\numberline {5.2.1}Exploration phase}{53}
+\contentsline {subsection}{\numberline {5.2.2}Exploitation phase}{55}
+\contentsline {subsection}{\numberline {5.2.3}Integration between metaheuristics and the Q-Learning algorithm }{56}
+\contentsline {section}{\numberline {5.3}Search-based stress testing applications using NSGA-II }{56}
+\contentsline {subsection}{\numberline {5.3.1}Solution life cycle}{57}
+\contentsline {chapter}{\numberline {6}IAdapter}{58}
+\contentsline {subsection}{\numberline {6.0.1}IAdapter Components}{59}
+\contentsline {chapter}{\numberline {7}Experiments}{60}
+\contentsline {section}{\numberline {7.1}Experiments with Hybrid Algorithm}{60}
+\contentsline {subsection}{\numberline {7.1.1}First Experiment: Emulated Class Test}{61}
+\contentsline {subsection}{\numberline {7.1.2}Second Experiment: Moodle Application Test}{62}
+\contentsline {section}{\numberline {7.2}Experiment with HybridQ Algorithm}{64}
+\contentsline {subsection}{\numberline {7.2.1}Experiment Research Questions}{65}
+\contentsline {subsection}{\numberline {7.2.2}Variables}{65}
+\contentsline {subsection}{\numberline {7.2.3}Hypotheses}{66}
+\contentsline {subsection}{\numberline {7.2.4}Experiment phases}{66}
+\contentsline {subsection}{\numberline {7.2.5}OpenCart Experiment}{66}
+\contentsline {subsubsection}{Q-Learning Training Phase}{67}
+\contentsline {subsubsection}{Results}{67}
+\contentsline {subsection}{\numberline {7.2.6}Threats to validity}{69}
+\contentsline {section}{\numberline {7.3}Experiment with multi-object NSGA-II algorithm}{69}
+\contentsline {subsection}{\numberline {7.3.1}Experiment Research Questions}{70}
+\contentsline {subsection}{\numberline {7.3.2}Variables}{70}
+\contentsline {subsection}{\numberline {7.3.3}Hypotheses}{70}
+\contentsline {subsection}{\numberline {7.3.4}Results}{70}
+\contentsline {subsection}{\numberline {7.3.5}Threats to validity}{70}
+\contentsline {subsection}{\numberline {7.3.6}Conclusion}{71}
+\contentsline {chapter}{\numberline {8}Conclusion}{73}
+\contentsline {section}{\numberline {8.1}Achievements}{73}
+\contentsline {section}{\numberline {8.2}Open Issues and future works}{74}
+\contentsline {chapter}{Bibliography}{75}
