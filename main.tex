@@ -8,8 +8,11 @@
 %
 \documentclass{report}
 \usepackage{graphicx}
+
+\usepackage[labelfont=bf]{caption}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} 
+\usepackage{subcaption}
 %\usepackage[latin1]{inputenc}
 \usepackage{pifont} 
 \usepackage{import}
@@ -24,6 +27,7 @@
 \usepackage{textcomp}
 \usepackage{listings}
 \usepackage[svgnames]{xcolor} 
+\usepackage[framemethod=TikZ]{mdframed}
 \usepackage{caption}
 \usepackage{amsmath}
 \usepackage{calc} 
@@ -159,9 +163,9 @@ Typically, performance testing is accomplished using test scripts, which are pro
 
 Our underlying research hypothesis is as follows:
 
-
+\begin{mdframed}[roundcorner=10pt]
 The use of metaheuristics and hybrid metaheuristics in combination with Q-learning can make it possible to automate the stress test execution process, improving the choice of new test cases for each interaction and finding scenarios that maximize the number of users of the application under test and minimize response time or find scenarios with a expected response time.
-
+\end{mdframed}
 
 The purpose of this thesis is to show the validity of this hypothesis through the development of a testbed tool, algorithms that use hybrid metaheuristics and the Q-learning technique and application of validation experiments. This thesis will be useful for load test practitioners and software engineering researchers interested in large-scale testing software systems.
 
@@ -467,7 +471,7 @@ action which is sent back to the system.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{./images/agentenv.png}
+\includegraphics[width=0.5\textwidth]{./images/agentenv.png}
 \caption{Example of interation between some agent and the environment}
 \label{fig:agentenv}
 \end{figure}
@@ -504,16 +508,17 @@ This chapter surveys the state of the art literature in stress testing research.
 
 
 
-The aim of a systematic review is to find as many primary studies relating to the research question as possible using an unbiased search strategy. The rigour of the search process is one factor that distinguishes systematic reviews from traditional reviews \cite{Kitchenham2007b}.
+The aim of a systematic review is to find as many primary studies relating to the research question as possible using an unbiased search strategy. The rigour of the search process is one factor that distinguishes systematic reviews from traditional reviews \cite{Kitchenham2007b}. The systematic review is based on a comprehensive set of 97 articles obtained after a multi-stage selection process and have been published in the time span 1994–2016.
 
-Figure \ref{fig:RESUME} presents the summary result of systematic review process. The systematic review is based on a comprehensive set of 97 articles obtained after a multi-stage selection process and have been published in the time span 1994–2016.
+%Figure \ref{fig:RESUME} presents the summary result of systematic review process. 
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\textwidth]{./images/systematic.png}
-\caption{Year of paper by Keyword}
-\label{fig:RESUME}
-\end{figure}
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=1\textwidth]{./images/systematic.png}
+%\caption{Year of paper by Keyword}
+%\label{fig:RESUME}
+%\end{figure}
 
 \subsection{Planning a Systematic Review}
 
@@ -590,7 +595,6 @@ We used the following search terms:
 \item Test tools: jmeter, load runner, performance tester
 \end{itemize}
 
-All papers found are listed in \url{https://www.mendeley.com/community/pesquisatesteperformance}. Figures \ref{fig:bubbleload} and \ref{fig:bubblestress} show the bubble chart for 'Load Testing'  and 'Stress Testing' keywords. Figures \ref{fig:wordcloudloadtesting} and \ref{fig:wordcloudloadtesting} present the word cloud extracted for title and abstract of the papers found with keywords 'Load testing' and'Stress testing'.
 
 \subsection{Study selection criteria and procedures for including and excluding
 primary studies}
@@ -703,49 +707,56 @@ Prominent examples are Lustre, and the block diagrams of Matlab Simulink, which 
 to model continuous systems \cite{MarkUtting2012}.
 \end{itemize}
 
+
+Table presents the papers found by the survey. All results was classified by model and paradigm of the model-based test.
+
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[h]
+\begin{table}[!h]
 \centering
 \caption{My caption}
 \label{my-label}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|l|l|l|l|}
 \hline
-\rowcolor[HTML]{EFEFEF} 
-\textbf{Model}                          & \textbf{Paper}          & \textbf{Paradigm} \\ \hline
-BeliefDesire-Intention                  & \cite{Araiza-Illan2016} & Operational       \\ \hline
-                                        & \cite{Avritzer1995b}    & Transition-based  \\ \cline{2-3} 
-                                        & \cite{Barros2007}       & Transition-based  \\ \cline{2-3} 
-                                        & \cite{Avritzer1994}     & Transition-based  \\ \cline{2-3} 
-\multirow{-4}{*}{Markov-Chains}         & \cite{Avritzer1993}     & Transition-based  \\ \hline
-MCM Model                               & \cite{Wieczorek2010}    & State-based       \\ \hline
-Petri Nets                              & \cite{Buchs2009}        & Operational       \\ \hline
-                                        & \cite{Cai2007}          & Transition-based  \\ \cline{2-3} 
-\multirow{-2}{*}{Stochastic Form Model} & \cite{Draheim2006b}     & Transition-based  \\ \hline
-                                        & \cite{Fang2012}         & State-based       \\ \cline{2-3} 
-                                        & \cite{Sridhar2013}      & State-based       \\ \cline{2-3} 
-                                        & \cite{Ganesan2016}      & Transition-based  \\ \cline{2-3} 
-                                        & \cite{SanMiguel2016}    & -                 \\ \cline{2-3} 
-                                        & \cite{Arantes2014}      & Transition-based  \\ \cline{2-3} 
-                                        & \cite{Gay2016}          & Transition-based  \\ \cline{2-3} 
-                                        & \cite{Hessel2007}       & Transition-based  \\ \cline{2-3} 
-\multirow{-8}{*}{State-Machine Models}  & \cite{Hierons2009}      & Transition-based  \\ \hline
-Symbolic Transition System              & \cite{Anisetti2013}     & Transition-based  \\ \hline
-Timed Automata                          & \cite{Anand2013}        & Transition-based  \\ \hline
-UCML                                    & \cite{Barber1999}       & Transition-based  \\ \hline
-                                        & \cite{XinyingCai2007}   & Functional        \\ \cline{2-3} 
-                                        & \cite{Shirole2013}      & Functional        \\ \cline{2-3} 
-                                        & \cite{Rauf2009}         & Functional        \\ \cline{2-3} 
-                                        & \cite{Schaefer2013}     & Functional        \\ \cline{2-3} 
-                                        & \cite{Paper2014}        & Functional        \\ \cline{2-3} 
-                                        & \cite{Kim2005}          & Functional        \\ \cline{2-3} 
-                                        & \cite{Rodrigues2014}    & Functional        \\ \cline{2-3} 
-                                        & \cite{Silveira2011}     & Functional        \\ \cline{2-3} 
-\multirow{-9}{*}{UML}                   & \cite{Lenz2007}         & Functional        \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Model}                          & \textbf{Paper}          & \textbf{Paradigm}    & \textbf{Year} \\ \hline
+BeliefDesire-Intention                  & \cite{Araiza-Illan2016} & Operational          & 2016          \\ \hline
+                                        & \cite{Avritzer1995b}    & Transition-based     & 1995          \\ \cline{2-4} 
+                                        & \cite{Barros2007}       & Transition-based     & 2007          \\ \cline{2-4} 
+                                        & \cite{Avritzer1994}     & Transition-based     & 1994          \\ \cline{2-4} 
+\multirow{-4}{*}{Markov-Chains}         & \cite{Avritzer1993}     & Transition-based     & 1993          \\ \hline
+MCM Model                               & \cite{Wieczorek2010}    & State-based          & 2010          \\ \hline
+                                        & \cite{Enoiu2013}        & UPPAAL model checker & 2013          \\ \cline{2-4} 
+\multirow{-2}{*}{Other Aproaches}       & \cite{Arcaini2015}      & Model Decomposition  & 2015          \\ \hline
+Petri Nets                              & \cite{Buchs2009}        & Operational          & 2009          \\ \hline
+                                        & \cite{Cai2007}          & Transition-based     & 2007          \\ \cline{2-4} 
+\multirow{-2}{*}{Stochastic Form Model} & \cite{Draheim2006b}     & Transition-based     & 2006          \\ \hline
+                                        & \cite{Fang2012}         & State-based          & 2012          \\ \cline{2-4} 
+                                        & \cite{Sridhar2013}      & State-based          & 2013          \\ \cline{2-4} 
+                                        & \cite{Ganesan2016}      & Transition-based     & 2016          \\ \cline{2-4} 
+                                        & \cite{SanMiguel2016}    & -                    & 2016          \\ \cline{2-4} 
+                                        & \cite{Arantes2014}      & Transition-based     & 2014          \\ \cline{2-4} 
+                                        & \cite{Gay2016}          & Transition-based     & 2016          \\ \cline{2-4} 
+                                        & \cite{Hessel2007}       & Transition-based     & 2007          \\ \cline{2-4} 
+                                        & \cite{Hierons2009}      & Transition-based     & 2009          \\ \cline{2-4} 
+\multirow{-9}{*}{State-Machine Models}  & \cite{Jeong2016}        & State-based          & 2016          \\ \hline
+Symbolic Transition System              & \cite{Anisetti2013}     & Transition-based     & 2013          \\ \hline
+Timed Automata                          & \cite{Anand2013}        & Transition-based     & 2013          \\ \hline
+UCML                                    & \cite{Barber1999}       & Transition-based     & 1999          \\ \hline
+                                        & \cite{XinyingCai2007}   & Functional           & 2007          \\ \cline{2-4} 
+                                        & \cite{Shirole2013}      & Functional           & 2013          \\ \cline{2-4} 
+                                        & \cite{Rauf2009}         & Functional           & 2009          \\ \cline{2-4} 
+                                        & \cite{Schaefer2013}     & Functional           & 2013          \\ \cline{2-4} 
+                                        & \cite{Paper2014}        & Functional           & 2014          \\ \cline{2-4} 
+                                        & \cite{Kim2005}          & Functional           & 2005          \\ \cline{2-4} 
+                                        & \cite{Rodrigues2014}    & Functional           & 2014          \\ \cline{2-4} 
+                                        & \cite{Silveira2011}     & Functional           & 2011          \\ \cline{2-4} 
+\multirow{-9}{*}{UML}                   & \cite{Lenz2007}         & Functional           & 2007          \\ \hline
 \end{tabular}
 \end{table}
+
 
 A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions.
 
@@ -763,29 +774,50 @@ Another technique to create workload models it is Stochastic Formcharts. The wor
 
 
 \begin{figure}[!ht]
+\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.8\textwidth]{./images/stochastic.png}
+\includegraphics[width=1\textwidth]{./images/stochastic.png}
 \caption{Stochastic Formcharts Example \cite{Draheim2006b} \cite{Wang2013}}
 \label{fig:stform}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/cbmg.png}
+\caption{Example of a Customer Behavior Model Graph (CBMG)  \cite{Menasce2002a} \cite{Jiang2010} \cite{MohammadS.Obaidat}}
+\label{fig:cbmg}
+\end{minipage}
 \end{figure}
 
 One way to capture the navigational pattern within a session is through the Customer Behavior Model Graph (CBMG). Figure \ref{fig:cbmg} depicts an example of a CBMG showing that customers may be in several different states—Home, Browse, Search, Select, Add, and Pay—and they may transition between these states as indicated by the arcs connecting them. The numbers on the arcs represent transition probabilities. A state not explicitly represented in the figure is the Exit state \cite{Menasce2002a} \cite{Jiang2010} \cite{MohammadS.Obaidat}. 
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.6\textwidth]{./images/cbmg.png}
-\caption{Example of a Customer Behavior Model Graph (CBMG)  \cite{Menasce2002a} \cite{Jiang2010} \cite{MohammadS.Obaidat}}
-\label{fig:cbmg}
-\end{figure}
 
 Garousi et al. proposes derivate Stress Test Requirements from an UML model. The input model consists of a number of UML diagrams. Some of
 them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}).
 
 \begin{figure}[!ht]
+\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.8\textwidth]{./images/modelmethodology.png}
+\includegraphics[width=1\textwidth]{./images/modelmethodology.png}
 \caption{Model-based stress test methodology}
 \label{fig:modelbased}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\centering
+\includegraphics[width=1\textwidth]{./images/vogel.png}
+\caption{Exemplary workload model}
+\label{fig:vogel}
+
+
+\end{minipage}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/FOREPOST.png}
+\caption{The architecture and workflow of FOREPOST}
+\label{fig:forepost}
+
 \end{figure}
 
 Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
@@ -793,13 +825,8 @@ Vogele et al. presents an approach that aims to automate the extraction and tran
 \end{itemize}
 
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.4\textwidth]{./images/vogel.png}
-\caption{Exemplary workload model}
-\label{fig:vogel}
-\end{figure}
 
+\FloatBarrier
 
 \subsection{Feedback-ORiEnted PerfOrmance Software Testing}
 
@@ -810,14 +837,6 @@ FOREPOST uses runtime monitoring for a short duration of testing together with m
 The Fig. \ref{fig:forepost} presents the main workflow of FOREPOST solution. The first step,  The Test Script is written  by the test engineer(1). Once the test script starts, its execution traces are collected (2) by the Profiler, and these traces are forwarded to the Execution Trace Analyzer, which produces (3) the Trace Statistics. The trace statistics is supplied (4) to Trace Clustering, which uses an ML algorithm, JRip to perform unsupervised clustering of these traces into two groups that correspond to (6) Good and (5) Bad test traces. 
 
 The user can review the results of clustering (7). These clustered traces are supplied (8) to the Learner that uses them to learn the classification model and (9) output rules. The user can review (10) these rules and mark some of them as erroneous if the user has sufficient evidence to do so. Then the rules are supplied (11) to the Test Script. Finally, the input space is partitioned into clusters that lead to good and bad test cases, to find methods that are specific to good performance test cases. This task is accomplished in parallel to computing rules, and it starts when the Trace Analyzer produces (12) the method and data statistics that is used to construct (13) two matrices (14). Once these matrices are constructed, ICA decomposes them (15) into the matrices for bad and good test cases correspondingly. Finally, the Advisor (16) determines top methods that performance testers should look at (17) to debug possible performance problems.
-
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.7\textwidth]{./images/FOREPOST.png}
-\caption{The architecture and workflow of FOREPOST}
-\label{fig:forepost}
-\end{figure}
 
 
 \section{Research Question 2: How is a stress test executed and automated?}
@@ -868,7 +887,7 @@ TPC Benchmarkt (TPC-W) is a transactional Web benchmark defined by the Transacti
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{./images/tpcw.png}
+\includegraphics[width=0.6\textwidth]{./images/tpcw.png}
 \caption{TPC-W architecture \cite{MohammadS.Obaidat} \cite{Menasce2002a}}
 \label{fig:tpcw}
 \end{figure}
@@ -882,7 +901,7 @@ LoadRunner is one of the most popular industry-standard software products for fu
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\textwidth]{./images/loadrunner.png}
+\includegraphics[width=0.6\textwidth]{./images/loadrunner.png}
 \caption{Load Runner Scripting}
 \label{fig:loadrunner}
 \end{figure}
@@ -958,7 +977,7 @@ Figures \ref{fig:group1},\ref{fig:group2} and \ref{fig:group3} summarizes the st
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{./images/symptoms.png}
+\includegraphics[width=0.6\textwidth]{./images/symptoms.png}
 \caption{Symptoms of know performance problems \cite{Wert2013a}. }
 \label{fig:symptoms}
 \end{figure}
@@ -1009,30 +1028,24 @@ The Fig. \ref{fig:godclass} presents a sample where the Blob class uses the feat
 
 
 \begin{figure}[h]
+\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.6\textwidth]{./images/BLOB.png}
-\caption{The God class\cite{Wert2013a}. }
+\includegraphics[width=1\textwidth]{./images/BLOB.png}
+\captionof{figure}{The God class\cite{Wert2013a}. }
 \label{fig:godclass}
-\end{figure}
-\begin{figure}[h]
+\end{minipage}
+\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.6\textwidth]{./images/blob2.png}
-\caption{The God class\cite{Vetoio2011}. }
+\includegraphics[width=1\textwidth]{./images/blob2.png}
+\captionof{figure}{The God class\cite{Vetoio2011}. }
 \label{fig:godclass2}
+\end{minipage}
 \end{figure}
 
 Unbalanced Processing it's characterises for one scenario where a specific class of requests generates a pattern of execution within the system that tends to overload a particular resource. In other words the overloaded resource will be executing a certain type of job very often, thus in practice damaging other classes
 of jobs that will experience very long waiting times. Unbalanced Processing occurs in three different situations. The first case that cause unbalanced processing it is when processes cannot make effective use of available processors either because processors are dedicated to other tasks or because of single-threaded code. This manifestation has available processors and we need to ensure that the software is able to use them. Fig. \ref{fig:unbalanced}  shows a sample of the Unbalanced Processing. In The Fig. \ref{fig:unbalanced}, four tasks are performed. The task D it is waiting for the task C conclusion that are submmited to a heavy processing situation. 
 
-The pipe and filter architectures  and extensive processing antipattern represents a manifestation of the unbalanced processing antipattern. The pipe and filter architectures occurs when the throughput of the overall system is determined by the slowest filter. The  Fig. \ref{fig:pipefilter} describes a software S with a Pipe and Filter Architectures problem: (a) Static View, there is a software entity instance, e.g. Sa, offering an operation (operation x) whose resource demand (computation = \$compOpx, storage = \$storOpx, bandwidth = \$bandOpx) is quite high; (b) Dynamic View, the operation opx is invoked in a service  and the throughput of the service (\$Th(S)) is lower than the required one. The extensive processing occurs when a process monopolizes a processor and prevents a set of other jobs to be executed until it finishes its computation. The Fig. \ref{fig:extpro} describes a software S with a Extensive Processing problem: (a) Static View, there is a software entity instance, e.g. Sa, offering two operations (operation x, operation y) whose resource demand is quite unbalanced, since opx has a high demand (computation = \$compOpx, storage = \$storOpx, bandwidth = \$bandOpx), whereas opy has a low demand (computation = \$compOpy, storage = \$storOpy, bandwidth = \$bandOpy); (b) Dynamic View, the operations opx and opy are alternatively invoked in a service and the response time of the service (\$RT(S)) is larger than the required one \cite{Vetoio2011}.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{./images/unbalanced.png}
-\caption{Unbalanced Processing sample \cite{Wert2013a}. }
-\label{fig:unbalanced}
-\end{figure}
-
+The pipe and filter architectures  and extensive processing antipattern represents a manifestation of the unbalanced processing antipattern. The pipe and filter architectures occurs when the throughput of the overall system is determined by the slowest filter. The  Fig. \ref{fig:pipefilter} describes a software S with a Pipe and Filter Architectures problem:  the operation opx is invoked in a service  and the throughput of the service (\$Th(S)) is lower than the required one. The extensive processing occurs when a process monopolizes a processor and prevents a set of other jobs to be executed until it finishes its computation. The Fig. \ref{fig:extpro} describes a software S with a Extensive Processing problem: the operations opx and opy are alternatively invoked in a service and the response time of the service (\$RT(S)) is larger than the required one \cite{Vetoio2011}.
 
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
@@ -1054,49 +1067,49 @@ Circuitous Treasure Hunt antipattern occurs when software retrieves data from a 
 are typical performance antipatterns that causes unnecessarily frequent database requests. The Circuitous Treasure Hunt antipattern is a result from a bad database schema or query design. A common Circuitous Treasure Hunt design creates a data dependency between single queries. For instance, a query requires the
 result of a previous query as input. The longer the chain of
 dependencies between individual queries the more the Circuitous
-Treasure Hunt antipattern hurts performance \cite{Wert2014}. The Fig. \ref{fig:circuit}  shows a software S with a Circuitous Treasure Hunt problem: (a) Static View, there is a software entity instance e.g. Sa, retrieving information from the database; (b) Dynamic View, the software  S generates a large number of database calls by performing several queries up to the final operation \cite{Vetoio2011}.
+Treasure Hunt antipattern hurts performance \cite{Wert2014}. The Fig. \ref{fig:circuit}  shows a software S with a Circuitous Treasure Hunt problem: the software  S generates a large number of database calls by performing several queries up to the final operation \cite{Vetoio2011}.
 
 
 \begin{figure}[h]
+\begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/circuit.png}
 \caption{Circuitous
 Treasure Hunt sample \cite{Vetoio2011}}
 \label{fig:circuit}
-\end{figure}
-
-
-\begin{figure}[h]
+\end{minipage}
+\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.6\textwidth]{./images/trucks.png}
+\includegraphics[width=1\textwidth]{./images/trucks2.png}
 \caption{Empty Semi Trucks sample \cite{Vetoio2011}.}
 \label{fig:trucks}
+\end{minipage}
 \end{figure}
 
 Empty Semi Trucks occurs when an excessive number of requests is required to perform a task. It may be due to inefficient use of available bandwidth, an inefficient interface, or both \cite{Arcelli2012}. There are a special case of Empty Semi Trucks that occurs  when many fields in a user interface must be retrieved from a
-remote system. Fig. shows a software S with a Empty Semi Trucks problem: (a) Static View, there is a software entity instance, e.g. Sa, retrieving some information from several instances (Remote Software 1, . . . , Remote Software n); (b) Dynamic View, the software instance Sa generates an excessive message traffic by sending a big amount of messages with low sizes, much lower than the network bandwidth, hence the network link might have a low utilization value \cite{Vetoio2011}.
+remote system. Fig. shows a software S with a Empty Semi Trucks problem: the software instance Sa generates an excessive message traffic by sending a big amount of messages with low sizes, much lower than the network bandwidth, hence the network link might have a low utilization value \cite{Vetoio2011}.
 
 The Tower of Babel antipattern most often occurs when information is translated into an exchange format, such as XML, by the sending process then parsed and translated into an
 internal format by the receiving process. When the translation and parsing is excessive, the system spends most
-of its time doing this and relatively little doing real work \cite{Smith2003}. Fig. shows a system with a Tower of Babel problem: (a) Static View, there are some software entity instances, e.g. Sa, Sb, . . . , Sn; (b) Dynamic View, the software instances Sd performs many times the translation of format for communicating with other instances \cite{Vetoio2011}.
+of its time doing this and relatively little doing real work \cite{Smith2003}. Fig. shows a system with a Tower of Babel problem: the software instances Sd performs many times the translation of format for communicating with other instances \cite{Vetoio2011}.
 
 \begin{figure}[H]
+\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.6\textwidth]{./images/babel2.png}
+\includegraphics[width=1\textwidth]{./images/babel2.png}
 \caption{Tower of Babel sample \cite{Vetoio2011}}
 \label{fig:babel}
-\end{figure}
-
-\begin{figure}[H]
+\end{minipage}
+\begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/onelane.png}
 \caption{One-Lane Bridge sample \cite{Vetoio2011}.}
 \label{fig:onelane}
-
+\end{minipage}
 \end{figure}
 
 
-One-Lane Bridge is a antipattern that occurs when one or a few processes execute concurrently using a shared resource and other processes are waiting for use the shared resource. It frequently occurs in applications that access a database. Here, a lock ensures that only one process may update the associated portion of the database at a time. This antipatterns is common when many concurrent threads or processes are waiting for the same shared resources. These can either be passive resources (like semaphores or mutexes) or active resources (like CPU or hard disk). In the first case, we have a typical One Lane Bridge whose critical resource needs to be identified. Figure 3.10 shows a system with a One-Lane Bridge problem: (a) Static View, there is a software entity instance with a capacity of managing \$poolSize threads; (b) Dynamic View, the software instance Sc receives an excessive number of synchronous calls in a service S and the predicted response time is higher than the required \cite{Vetoio2011}.
+One-Lane Bridge is a antipattern that occurs when one or a few processes execute concurrently using a shared resource and other processes are waiting for use the shared resource. It frequently occurs in applications that access a database. Here, a lock ensures that only one process may update the associated portion of the database at a time. This antipatterns is common when many concurrent threads or processes are waiting for the same shared resources. These can either be passive resources (like semaphores or mutexes) or active resources (like CPU or hard disk). In the first case, we have a typical One Lane Bridge whose critical resource needs to be identified. Figure 3.10 shows a system with a One-Lane Bridge problem:  the software instance Sc receives an excessive number of synchronous calls in a service S and the predicted response time is higher than the required \cite{Vetoio2011}.
 
 
 Using dynamic allocation, objects are created when they are first accessed and then destroyed when they are no longer needed. Excessive Dynamic Allocation, however, addresses frequent, unnecessary creation and destruction of objects of the same class. Dynamic allocation is expensive , an object created in memory must be allocated from the heap, and any initialization code for the object and the contained objects must be executed. When the object is no longer needed, necessary clean-up must be performed, and the reclaimed memory must be returned to the heap to avoid memory leaks \cite{Smith2002} \cite{Smith2003}.
@@ -1124,12 +1137,15 @@ The Traffic Jam antipattern occurs if many concurrent threads or processes are w
 \begin{figure}[H]
 \begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.5\textwidth]{./images/ramp.png}
+\includegraphics[width=1\textwidth]{./images/ramp.png}
 \caption{The Ramp sample \cite{Vetoio2011}.}
 \label{fig:ramp}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \centering
+\includegraphics[width=1\textwidth]{./images/unbalanced.png}
+\caption{Unbalanced Processing sample \cite{Wert2013a}. }
+\label{fig:unbalanced}
 \includegraphics[width=1\textwidth]{./images/moreisless.png}
 \caption{More is Less sample \cite{Vetoio2011}.}
 \label{fig:moreisless}
@@ -1217,7 +1233,7 @@ Gois et al. proposes a hybrid metaheuristic approach using genetic algorithms, s
 
 
 
-\chapter{Search-based Stress Test: an approach appling evolutionary algorithms and trajectory methods}
+\chapter{Improving Stress Search-Based Tests with evolutionary algorithms and trajectory methods}
 
 \section{Improving Stress Search Based Testing using Hybrid Metaheuristic Approach}
 
@@ -1485,6 +1501,65 @@ WorkLoadThreadGroup is a component that creates an initial population and config
 \caption{WorkLoadThreadGroup component}
 \label{fig:tela1iadapter}
 \end{figure}
+
+\vspace*{-.075in}
+\section{The IAdapter Testbed system}\label{sec:technique}
+\vspace*{-.075in}
+
+
+In this section, We devise a new testbed that has the ability to reproduce different types of web workloads.  The proposed solution extends a tool named IAdapter to create a testbed tool to validade load, performance and stress search based test approaches \cite{Gois2016}. This new testbed must accomplish three main goals. First, it must reproduce a workload by using an antipattern implementation. Second, it must be able to provide metrics with the aim of being used for research evaluation studies. Finally, it should be extensible, allowing the creation of new metaheuristic approaches.
+
+The testbed tool proposed consists of four main modules.  Figure \ref{fig:testbedarch} presents the main architecture of the Testbed solution proposed. The emulator module provides workloads to the Test module. The Test module uses a class loader to find all classes that extends AbstractAlgorithm in the classpath and run all workloads with each metaheuristic found. The Test Scenario library provides the scenario representation used by the metaheuristics and store the testbed results in a database. The Operation services are responsible for finding neighbors of some workload provided as a parameter and perform crossover operations.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{./images/testbedarch.png}
+\caption{Testbed main architecture.}
+\label{fig:testbedarch}
+\end{figure} 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{./images/myheuristic.png}
+\caption{Test Module class diagram.}
+\label{fig:heuristicclassdiagram}
+\end{figure} 
+
+
+
+\subsection{Test Module}
+
+The Test Module (Figure \ref{fig:testbedarch}  -\ding{202}) is responsible for for the loading of all classes that extend AbstractAlgorithm in the classpath and perform the tests under the application. Figure \ref{fig:heuristicclassdiagram} shows the  class diagram for custom and provided heuristics. All heuristic classes extends the class AbstractAlgorithm. The heuristics receives  as input a  list of workloads (Figure \ref{fig:heuristicclassdiagram}  -\ding{203}) and must return a list of output workloads (the individuals selected for the next generation)  (Figure \ref{fig:heuristicclassdiagram}  -\ding{204}). Each workload represent an individual in the search space. Figure. \ref{fig:step2} presents the Test Module life cycle. Given an initial population (Figure \ref{fig:step2}  -\ding{202}),  a metaheurist select a new set of workloads based on an objective function (Figure \ref{fig:step2}  -\ding{203}). The choosen metaheurist generate a new set of individuals based on crossover or neighborhood operators (Figure \ref{fig:step2}  -\ding{204}).  JMeterEngine run each workload (Figure \ref{fig:step2}  -\ding{206}) and the choosen metaheuristic obtain a fitness value for each workload based on some objective function  (Figure \ref{fig:step2}  -\ding{207}). Each Metaheuristic could define your own objective function. After all these steps the cycle begins until the maximum number of generations it is reached (Figure \ref{fig:step2}  -\ding{208}). 
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/step2.png}
+\caption{Test module life cycle.}
+\label{fig:step2}
+\end{minipage}
+\end{figure} 
+
+
+
+\subsection{Emulator Module}
+
+The Emulator Module is responsible for implementing and providing successful scenarios and the most common performance antipatterns (Figure \ref{fig:testbedarch}  -\ding{203}). All classes must extend the AbstractJavaSamplerClient class or use JUnit 4. The AbstractJavaSamplerClient class allows the creation of a JMeter Java Request. Figure \ref{fig:emulator} presents the main features of the emulator module. The module implements 2 happy scenarios (Figure \ref{fig:emulator}  -\ding{203}) and  4 antipatterns test scenarios (Figure \ref{fig:emulator}  -\ding{202}), in its first version. The Mock Layer provides emulated databases and components for the test scenarios. The Mock Layer use the Mockito and PowerMocks frameworks (Figure \ref{fig:emulator}  -\ding{204}). 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{./images/emulator.png}
+\caption{Emulator module}
+\label{fig:emulator}
+\end{figure}  
+
+\subsection{Test Scenario Library}
+
+This modules provides a common representation for all workloads. 
+
+\subsection{Operation services}
+
+The services are responsible for performing some operations performed by metaheuristics.
 
 
 \chapter{Experiments}
@@ -1947,7 +2022,7 @@ Fig. \ref{fig:paretofrontier1} and Table \ref{tab:results} present the results o
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[]
+\begin{table}[!h]
 \centering
 \caption{Pareto Frontier workload results}
 \label{tab:results}

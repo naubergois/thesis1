@@ -1,6 +1,6 @@
 \newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Bertolino2008}
 {Model-based generation of testbeds for web services}.
@@ -52,6 +52,12 @@ Alessandro~Oliveira Arantes.
   Alexandre de Santiago J{\'{u}}nior , Nandamudi Lankalapalli Vijaykumar and
   Erica Ferreira de Souza}.
 \newblock 9(1):62--96, 2014.
+
+\bibitem{Arcaini2015}
+Paolo Arcaini, Angelo Gargantini, and Elvinia Riccobene.
+\newblock {Improving Model-based Test Generation by Model Decomposition}.
+\newblock {\em Proceedings of the 2015 10th Joint Meeting on Foundations of
+  Software Engineering}, pages 119--130, 2015.
 
 \bibitem{Arcelli2012}
 Davide Arcelli, Vittorio Cortellessa, and Catia Trubiani.
@@ -174,6 +180,14 @@ Elfriede Dustin, Jeff Rashka, and John Paul.
 \newblock {\em {Automated Software Testing: Introduction, Management, and
   Performance}}.
 \newblock 1999.
+
+\bibitem{Enoiu2013}
+Eduard~Paul Enoiu, Daniel Sundmark, and Paul Pettersson.
+\newblock {Model-based test suite generation for function block diagrams using
+  the UPPAAL model checker}.
+\newblock {\em Proceedings - IEEE 6th International Conference on Software
+  Testing, Verification and Validation Workshops, ICSTW 2013}, pages 158--167,
+  2013.
 
 \bibitem{Erinle2013}
 Bayo Erinle.
@@ -335,6 +349,14 @@ Qi~Luo, Aswathy Nair, Mark Grechanik, and Denys Poshyvanyk.
 \newblock {FOREPOST: finding performance problems automatically with
   feedback-directed learning software testing}.
 \newblock pages 1--51, 2015.
+
+\bibitem{Mamrot2016}
+Michel Mamrot, Stefan Marchlewitz, Jan~Peter Nicklas, Petra Winzer, Thomas
+  Tetzlaff, Philipp Kemper, and Ulf Witkowski.
+\newblock {Model-Based Test and Validation Support for Autonomous Mechatronic
+  Systems}.
+\newblock {\em Proceedings - 2015 IEEE International Conference on Systems,
+  Man, and Cybernetics, SMC 2015}, pages 701--706, 2016.
 
 \bibitem{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}
 Thomas~St{\"{u}}tzle {Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez,

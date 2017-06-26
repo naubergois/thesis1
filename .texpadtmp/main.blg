@@ -396,6 +396,7 @@ Warning--I didn't find a database entry for "Deb2000"
 Warning--I didn't find a database entry for "Harman2007"
 Warning--I didn't find a database entry for "Kitchenham2007b"
 Warning--I didn't find a database entry for "Marinho2014"
+Warning--I didn't find a database entry for "Jeong2016"
 Warning--to sort, need author or key in Bertolino2008
 Warning--empty author in Bertolino2008
 Warning--empty booktitle in Bertolino2008
@@ -487,45 +488,45 @@ Warning--empty booktitle in Wert2013a
 Warning--there's a number but no series in Wert2013a
 Warning--empty booktitle in Wert2014
 Warning--empty journal in XinyingCai2007
-You've used 99 entries,
+You've used 102 entries,
             2118 wiz_defined-function locations,
-            1088 strings with 22649 characters,
-and the built_in function-call counts, 36187 in all, are:
-= -- 3516
-> -- 1537
-< -- 78
-+ -- 608
-- -- 508
-* -- 2232
-:= -- 5550
-add.period$ -- 301
-call.type$ -- 99
-change.case$ -- 536
+            1107 strings with 23524 characters,
+and the built_in function-call counts, 37678 in all, are:
+= -- 3671
+> -- 1611
+< -- 81
++ -- 637
+- -- 534
+* -- 2332
+:= -- 5777
+add.period$ -- 310
+call.type$ -- 102
+change.case$ -- 558
 chr.to.int$ -- 0
-cite$ -- 190
-duplicate$ -- 1627
-empty$ -- 2939
-format.name$ -- 508
-if$ -- 7891
+cite$ -- 193
+duplicate$ -- 1687
+empty$ -- 3035
+format.name$ -- 534
+if$ -- 8217
 int.to.chr$ -- 0
-int.to.str$ -- 99
-missing$ -- 107
-newline$ -- 495
-num.names$ -- 196
-pop$ -- 810
+int.to.str$ -- 102
+missing$ -- 110
+newline$ -- 510
+num.names$ -- 202
+pop$ -- 832
 preamble$ -- 2
-purify$ -- 452
+purify$ -- 471
 quote$ -- 0
-skip$ -- 1297
+skip$ -- 1353
 stack$ -- 0
-substring$ -- 2033
-swap$ -- 556
-text.length$ -- 78
+substring$ -- 2144
+swap$ -- 586
+text.length$ -- 81
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 370
+type$ -- 382
 warning$ -- 91
-while$ -- 361
-width$ -- 101
-write$ -- 1019
+while$ -- 376
+width$ -- 105
+write$ -- 1052
 (There were 97 error messages)
