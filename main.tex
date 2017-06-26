@@ -68,7 +68,7 @@ framexleftmargin=20pt
 \secondreader{D. Sc. João Paulo Pordeus Gomes (UFC)}
 \thirdreader{D. Sc. Pedro de Alcantara dos Santos Neto
 (UFPI) } %if needed
-\fourthreader{PH.D. Americo Tadeu Falcone Sampaio (UNIFOR)}
+\fourthreader{Ph.D. Americo Tadeu Falcone Sampaio (UNIFOR)}
 \fifthreader{Docteur Napoleão Vieira Nepomuceno (UNIFOR)} %if needed
  
 \beforepreface
@@ -202,20 +202,33 @@ In Q-Learning, the system's objective is to learn a control policy $\pi = \sum_{
 
 \section{Load, Performance and Stress Testing}
 
-Load, performance, and stress testing are typically done to locate bottlenecks in a system, to support a performance-tuning effort, and to collect other performance-related indicators to help stakeholders become informed about the quality of the application being tested \cite{Sandler2004}. 
+Load, performance, and stress testing are typically done to locate bottlenecks in a system, to support a performance-tuning effort, and to collect other performance-related indicators to help stakeholders get informed about the quality of the application being tested \cite{Sandler2004} \cite{Corporation2007}. 
+
+Typically, the most common kind of performance testing for Internet applications is load testing. Application load can be assessed in a variety of ways \cite{Perry2004}:
+
+\begin{itemize}
+\item Concurrency. Concurrency testing seeks to validate the performance of an application with a given number of concurrent interactive users \cite{Perry2004}.
+\item Stress. Stress testing seeks to validate the performance of an application when certain aspects of the application are stretched to their maximum limits. This can include maximum number of users, and can also include maximizing table values and data values \cite{Perry2004}.
+\item Throughput. Throughput testing seeks to validate the number of transactions to be processed by an application during a given period of time. For example, one type of throughput test might be to attempt to process 100,000 transactions in one hour \cite{Perry2004}.
+\end{itemize}
 
 
-
-The performance testing aims at verifying a specified system performance. This kind of test is executed by simulating hundreds of simultaneous users or more over a defined time interval. The purpose of this assessment is to demonstrate that the system reaches its performance objectives \cite{Sandler2004}. 
-
-
-In a load testing, the system is evaluated at predefined load levels \cite{DiLucca2006}. The aim of this test is to determine whether the system can reach its performance targets for availability, concurrency, throughput, and response time. Load testing is the closest to real application use \cite{Molyneaux2009}. A typical load test can last from several hours to a few days, during which system behavior data  such as execution logs and various metrics are collected \cite{Afzal2009a}. 
-
-Stress testing verifies the system behavior against heavy workloads \cite{Sandler2004}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed at or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
+The performance testing aims at verifying a specified system performance. This kind of test is executed by simulating hundreds of simultaneous users or more over a defined time interval \cite{DiLucca2006}. The purpose of this assessment is to demonstrate that the system reaches its performance objectives \cite{Sandler2004}.  Term often used interchangeably with “stress” and “load” testing. Ideally “performance” testing is defined in requirements documentation or QA or Test Plans \cite{Lewis2005}.
 
 
-While load testing is the process of assessing non-functional quality related problems under a load; performance testing is used to measure and/or evaluate performance
-related aspects (e.g., response time, throughput and resource utilizations) of algorithms, designs/architectures, modules, configurations, or the overall systems; and stress tests puts a system under extreme conditions to verify the robustness of the system and/or detect various functional bugs (e.g., memory leaks and deadlocks) \cite{Afzal2009a}.
+In a load testing, the system is evaluated at predefined load levels \cite{DiLucca2006}. The aim of this test is to determine whether the system can reach its performance targets for availability, concurrency, throughput, and response time. Load testing is the closest to real application use \cite{Molyneaux2009}. A typical load test can last from several hours to a few days, during which system behavior data like execution logs and various metrics are collected \cite{Afzal2009a}. 
+
+Stress testing investigates the behavior of the system under conditions
+that overload its resources. The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004} \cite{Lewis2005}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
+
+The main difference between load tests, performance tests and stress tests are:
+
+\begin{itemize}
+
+\item Performance tests demonstrate that the system reaches its performance objectives.
+\item Load tests necessary use a load (concurrent or simultaneous users).
+\item Stress tests differs from other kinds of testing in that the system is executed on or beyond its break-points, forcing the application or the supporting infrastructure to fail.
+\end{itemize}
 
 
 \section{Stress Test Process}
@@ -340,6 +353,8 @@ Tabu Search uses a  tabu list to keep track of the last  moves, and don’t allo
   \end{algorithmic}
 \end{algorithm}
 
+\subsection{Population-based metaheuristics}
+
 Population-based metaheuristics (P-metaheuristics) could be viewed as an iterative improvement in a population of solutions. First, the population is initialized. Then, a new population of solutions is generated. Finally, this new population is integrated into the current one using some selection procedures. The search process is stopped when a stopping criterion is satisfied. Algorithms such as Genetic algorithms (GA), scatter search (SS), estimation of distribution algorithms (EDAs), particle swarm optimization (PSO), bee colony (BC), and artificial immune systems (AISs) belong to this class of metaheuristics \cite{talbi2009metaheuristics}. 
 
 Population-based metaheuristics are comprised of several components \cite{hong2000simultaneously} \cite{shousha2003performance} :
@@ -388,6 +403,58 @@ Collaborative combinations use an approach where the algorithms exchange informa
 
 One of the most popular ways of metaheuristic hybridization consists in the use of trajectory methods inside population-based methods. Population-based methods are better in identifying promising areas in the search space from which trajectory methods can quickly reach good local optima. Therefore, metaheuristic hybrids that can effectively combine the strengths of both population-based methods and trajectory methods are often very successful \cite{raidl2010metaheuristic}.
 
+
+\section{Multi-objective heuristics}
+
+
+\subsection{NSGA-II Multi-objective heuristics}
+
+Many real optimization problems require optimizing multiple conflicting objectives with each other. There is no single optimal solution, but a set of alternative solutions. The objectives that have to be optimized are often in competition with one another and may be contradictory; we may find ourselves trying to balance the different optimization objectives of several different goals \cite{Harman2010} \cite{el2014local}. The image of all the efficient solutions is called the Pareto front or Pareto curve or surface. The shape of the Pareto surface indicates the nature of the trade-off between the different objective functions. An example of a Pareto curve is reported in Fig. \ref{fig:pareto1}. Multi-objective optimization methods have as main purposes to minimize the distance between the non-dominated front and the Pareto optimal front and find a set of solutions that are as diverse as possible. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{./images/paretofront.png}
+\caption{An optimized Pareto front example}
+\label{fig:pareto1}
+\end{figure}
+
+What distinguishes multi-objective evolutionary algorithms from single objective metaheuristics is how they rank and select individuals in the population. If there is only one objective, individuals are naturally ranked according to this objective, and it is clear which individuals are best and should be selected as
+parents. In the case of multiple objectives, it is still necessary to rank the individuals, but it is no longer obvious how to do this. Most people probably agree that a good approximation to the Pareto front is characterized by:
+
+\begin{itemize}
+\item  a small distance of the solutions to the true Pareto frontier,
+\item  a wide range of solutions, i.e., an approximation
+of the extreme values, and
+\item a good distribution of solutions, i.e., an even
+spread along the Pareto frontier.
+\end{itemize}
+
+Multi-objective metaheuristics rank individuals according to the goals mentioned above. The implementation adapted for this paper is based on the non-dominated Sorting Genetic Algorithm II (NSGA-II) algorithm.  Deb et al.  proposed the NSGA-II, taking into account the need to reduce computational complexity in non-dominated classification, while introducing elitism and eliminating subjectivity in the allocation of the sharing parameter \cite{Deb2000}. NSGA-II is a multi-objective algorithm, based on GAs, and implements the concept of dominance, in other words, to classify the total population in fronts according to the degree of dominance. According to NSGA-II, the individuals that are located on the first front are considered the best solutions of that generation, while in the last front are the worst. Using this concept, one can find more consistent results, located closer to the Pareto region, and that are better adapted to the type of problem. 
+
+The NSGA algorithm II applies a fitness evaluation in an initial population (Figure \ref{fig:nsga2}- \ding{202} and \ding{203}). The populations are ranked using multiple tournament selections, which consist of comparing two solutions (Figure \ref{fig:nsga2}- \ding{204}). In order to estimate the density of the solutions surrounding a particular solution in the population, the common distance between the previous solution and the posterior is calculated for each of the objectives. This distance serves as an estimate of the size of the largest cuboid that includes solution i without including any other solution of the population. A solution i beats another solution if:
+
+\begin{itemize}
+\item Solution i has a better rank, then $Rank_i$ <$Rank_j$.
+\item Both solutions have the same rank, but i has a greater Distance than j, then $Rank_i$ = $Rank_j$ and $Distance_i$>$Distance_j$.
+\end{itemize}
+
+At the end of each analysis a certain group of individuals are classified as belonging to a specific category called the front, and upon completion of the classification process, all individuals will be inserted into one of the n fronts. Front 1 is made up of all non-dominated solutions. Front 2 can be achieved by considering all non-dominated solutions excluding solutions from front 1. For the determination of front 3, solutions previously classified on front 1 and 2 are excluded, and so on until all individuals have been classified on some front.
+
+After selection, recombination and mutation are performed as in conventional GAs (Figure \ref{fig:nsga2}- \ding{205}). The two sets (father and son of the same dimension) are united in a single population (dimension 2) and the classification is applied in dominance fronts. In this way, elitism is guaranteed preserving the best solutions (fronts are not dominated) in the latest population (Figure \ref{fig:nsga2}- \ding{207}).
+
+However, not all fronts can be included in the new population. Thus, Deb et al. proposed a method called crowd distance, which combines the fronts not included in the set, to compose of the last spaces of the current population, guaranteeing the diversity of the population \cite{Deb2000}. The NSGA-II algorithm creates a set of front lines, in which each front containing only non–dominating solutions. Within a front, individuals are rewarded for being ‘spread out’. The algorithm also ensures that the lowest ranked individual of a front still has a greater fitness value than the highest ranked individual of the next front \cite{Harman2007}.
+
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{./images/NSGA-2.png}
+\caption{NSGA-II Algorithm}
+\label{fig:nsga2}
+\end{figure}
+
+
 \section{Reinforcement Learning}
 
 Reinforcement learning (RL) refers to both a learning problem and a subfield of machine learning. As a learning problem, it refers to learning to control a system so as to maximize some numerical value which represents a long-term objective. The basic idea of Reinforcement learning  is simply to capture the most important aspects of the real problem, facing a learning agent interacting with its environment to achieve a goal \cite{Sutton2012}. Reinforcement learning is learning what to do—how to map situations to actions—so as to maximize a numerical reward signal. The learner needs to discover which actions yield the most reward by trying them \cite{Sutton2012}.
@@ -432,37 +499,8 @@ In Q-Learning, the system's objective is to learn a control policy $\pi = \sum_{
 
 \chapter{A Survey on Stress Testing Software Systems}
 
-Load, performance, and stress testing are typically done to locate bottlenecks in a system, to support a performance-tuning effort, and to collect other performance-related indicators to help stakeholders get informed about the quality of the application being tested \cite{Sandler2004} \cite{Corporation2007}. 
 
-Typically, the most common kind of performance testing for Internet applications is load testing. Application load can be assessed in a variety of ways \cite{Perry2004}:
-
-\begin{itemize}
-\item Concurrency. Concurrency testing seeks to validate the performance of an application with a given number of concurrent interactive users \cite{Perry2004}.
-\item Stress. Stress testing seeks to validate the performance of an application when certain aspects of the application are stretched to their maximum limits. This can include maximum number of users, and can also include maximizing table values and data values \cite{Perry2004}.
-\item Throughput. Throughput testing seeks to validate the number of transactions to be processed by an application during a given period of time. For example, one type of throughput test might be to attempt to process 100,000 transactions in one hour \cite{Perry2004}.
-\end{itemize}
-
-
-The performance testing aims at verifying a specified system performance. This kind of test is executed by simulating hundreds of simultaneous users or more over a defined time interval \cite{DiLucca2006}. The purpose of this assessment is to demonstrate that the system reaches its performance objectives \cite{Sandler2004}.  Term often used interchangeably with “stress” and “load” testing. Ideally “performance” testing is defined in requirements documentation or QA or Test Plans \cite{Lewis2005}.
-
-
-In a load testing, the system is evaluated at predefined load levels \cite{DiLucca2006}. The aim of this test is to determine whether the system can reach its performance targets for availability, concurrency, throughput, and response time. Load testing is the closest to real application use \cite{Molyneaux2009}. A typical load test can last from several hours to a few days, during which system behavior data like execution logs and various metrics are collected \cite{Afzal2009a}. 
-
-Stress testing investigates the behavior of the system under conditions
-that overload its resources. The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004} \cite{Lewis2005}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
-
-The main difference between load tests, performance tests and stress tests are:
-
-\begin{itemize}
-
-\item Performance tests demonstrate that the system reaches its performance objectives.
-\item Load tests necessary use a load (concurrent or simultaneous users).
-\item Stress tests differs from other kinds of testing in that the system is executed on or beyond its break-points, forcing the application or the supporting infrastructure to fail.
-\end{itemize}
-
-\section{Method}
-
-This paper surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. \cite{Jiang2010}  and Afzal et al. \cite{Afzal2009a} to the Stress Testing context .  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. The paper use the systematic review method proposed by Kitchenham \cite{Kitchenham2007b}.
+This chapter surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. \cite{Jiang2010}  and Afzal et al. \cite{Afzal2009a} to the Stress Testing context .  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. The paper use the systematic review method proposed by Kitchenham \cite{Kitchenham2007b}.
 
 
 
@@ -472,8 +510,8 @@ Figure \ref{fig:RESUME} presents the summary result of systematic review process
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{./images/systematic.png}
-\caption{Bubble chart for results of search with the keyword 'Load Testing'}
+\includegraphics[width=1\textwidth]{./images/systematic.png}
+\caption{Year of paper by Keyword}
 \label{fig:RESUME}
 \end{figure}
 
@@ -506,11 +544,6 @@ In order to examine the evidence of stress testing properties, we proposed the f
 \item What are the main problems found by stress tests?
 \item How are the stress tests results analysed?
 \end{itemize}
-
-
-
-
-
 
 
 \subsection{Generation of search strategy}
@@ -559,38 +592,6 @@ We used the following search terms:
 
 All papers found are listed in \url{https://www.mendeley.com/community/pesquisatesteperformance}. Figures \ref{fig:bubbleload} and \ref{fig:bubblestress} show the bubble chart for 'Load Testing'  and 'Stress Testing' keywords. Figures \ref{fig:wordcloudloadtesting} and \ref{fig:wordcloudloadtesting} present the word cloud extracted for title and abstract of the papers found with keywords 'Load testing' and'Stress testing'.
 
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.6\textwidth]{./images/loadtestingbuble.png}
-\caption{Bubble chart for results of search with the keyword 'Load Testing'}
-\label{fig:bubbleload}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.7\textwidth]{./images/stresstestingbuble.png}
-\caption{Bubble chart for results of search with the keyword 'Stress Testing'}
-\label{fig:bubblestress}
-\end{figure}
-
-
-
-\begin{figure}[h]
-\begin{minipage}{0.5\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{./images/wordcloudloadtesting.png}
-\caption{Word cloud for results of search with the keyword 'Load Testing'}
-\label{fig:wordcloudloadtesting}
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{./images/wordcloudstresstesting.png}
-\caption{Word cloud for results of search with the keyword 'Stress Testing'}
-\label{fig:testprocess}
-\end{minipage}
-\end{figure}
-
 \subsection{Study selection criteria and procedures for including and excluding
 primary studies}
 
@@ -612,54 +613,6 @@ Data synthesis involves collating and summarising the results of the included pr
 \item Type of research paper (Thesis, Journal Article, Conference Paper, Book Section or Book)  
 \item Methodology used by the test (Model based Test, FOREPOST, Search-based Tests)
 \end{itemize}
-
-Figure \ref{fig:SUMMARY} presents the type of research paper by year.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.7\textwidth]{./images/type.png}
-\caption{Summary of type of research paper by year}
-\label{fig:SUMMARY}
-\end{figure}
-
-Table \ref{tab:stresstesting} show the number of papers by type of stress testing found un the systematic review.
-
-\begin{table}[h] \centering 
-  \caption{Number of papers by type of Stress Testing} 
-  \label{tab:stresstesting} 
-\begin{tabular}{@{\extracolsep{5pt}} cccccccccccccccccccccccccc} 
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
-Analysis of load testing results & Anti-patterns & Automated Software Testing \\
-$9$ & $5$ & $1$ \\
-\hline \\[-1.8ex] 
-Complex Systems & Formal Tests & Load Search-Based Test \\
-$1$ & $2$ & $1$ \\
-\hline \\[-1.8ex] 
-Load Test Tool & Load Testing & Method for Software Testing\\
-$5$ & $16$ & $1$ \\
-\hline \\[-1.8ex] 
-Mock Objects & Model-Based Test & Performance Model\\
-$1$ & $1$ & $5$ \\
-\hline \\[-1.8ex] 
-Performance Monitoring & Performance Testing & Software Testing\\
-$2$ & $7$ & $2$ \\
-\hline \\[-1.8ex] 
-Stress Search-Based Test & Stress Testing & Survey \\
-$21$ & $4$ & $5$ \\
-\hline \\[-1.8ex] 
-Systematic Map & Test Coverage & Test Monitoring \\
-$1$ & $1$ & $1$ \\
-\hline \\[-1.8ex] 
-Testbed & Testing as Service & Unit Test \\
-$1$ & $1$ & $1$ \\
-\hline \\[-1.8ex] 
-WorkLoad Modeling & WorkLoad Prediction & FOREPOST \\ 
-$1$ & $1$ & $2$  \\ 
-\hline \\[-1.8ex] 
-\\[-1.8ex]\hline 
-\end{tabular} 
-\end{table} 
 
 \section{Research Question 1:How is a proper stress designed?}
 
@@ -749,6 +702,50 @@ are used to model expected usage profiles, so that the generated tests scenarios
 Prominent examples are Lustre, and the block diagrams of Matlab Simulink, which are often used
 to model continuous systems \cite{MarkUtting2012}.
 \end{itemize}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Model}                          & \textbf{Paper}          & \textbf{Paradigm} \\ \hline
+BeliefDesire-Intention                  & \cite{Araiza-Illan2016} & Operational       \\ \hline
+                                        & \cite{Avritzer1995b}    & Transition-based  \\ \cline{2-3} 
+                                        & \cite{Barros2007}       & Transition-based  \\ \cline{2-3} 
+                                        & \cite{Avritzer1994}     & Transition-based  \\ \cline{2-3} 
+\multirow{-4}{*}{Markov-Chains}         & \cite{Avritzer1993}     & Transition-based  \\ \hline
+MCM Model                               & \cite{Wieczorek2010}    & State-based       \\ \hline
+Petri Nets                              & \cite{Buchs2009}        & Operational       \\ \hline
+                                        & \cite{Cai2007}          & Transition-based  \\ \cline{2-3} 
+\multirow{-2}{*}{Stochastic Form Model} & \cite{Draheim2006b}     & Transition-based  \\ \hline
+                                        & \cite{Fang2012}         & State-based       \\ \cline{2-3} 
+                                        & \cite{Sridhar2013}      & State-based       \\ \cline{2-3} 
+                                        & \cite{Ganesan2016}      & Transition-based  \\ \cline{2-3} 
+                                        & \cite{SanMiguel2016}    & -                 \\ \cline{2-3} 
+                                        & \cite{Arantes2014}      & Transition-based  \\ \cline{2-3} 
+                                        & \cite{Gay2016}          & Transition-based  \\ \cline{2-3} 
+                                        & \cite{Hessel2007}       & Transition-based  \\ \cline{2-3} 
+\multirow{-8}{*}{State-Machine Models}  & \cite{Hierons2009}      & Transition-based  \\ \hline
+Symbolic Transition System              & \cite{Anisetti2013}     & Transition-based  \\ \hline
+Timed Automata                          & \cite{Anand2013}        & Transition-based  \\ \hline
+UCML                                    & \cite{Barber1999}       & Transition-based  \\ \hline
+                                        & \cite{XinyingCai2007}   & Functional        \\ \cline{2-3} 
+                                        & \cite{Shirole2013}      & Functional        \\ \cline{2-3} 
+                                        & \cite{Rauf2009}         & Functional        \\ \cline{2-3} 
+                                        & \cite{Schaefer2013}     & Functional        \\ \cline{2-3} 
+                                        & \cite{Paper2014}        & Functional        \\ \cline{2-3} 
+                                        & \cite{Kim2005}          & Functional        \\ \cline{2-3} 
+                                        & \cite{Rodrigues2014}    & Functional        \\ \cline{2-3} 
+                                        & \cite{Silveira2011}     & Functional        \\ \cline{2-3} 
+\multirow{-9}{*}{UML}                   & \cite{Lenz2007}         & Functional        \\ \hline
+\end{tabular}
+\end{table}
 
 A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions.
 
@@ -1216,53 +1213,6 @@ Gois et al. proposes a hybrid metaheuristic approach using genetic algorithms, s
 
 
 
-\FloatBarrier
-\section{NSGA-II Multi-objective heuristics}
-
-Many real optimization problems require optimizing multiple conflicting objectives with each other. There is no single optimal solution, but a set of alternative solutions. The objectives that have to be optimized are often in competition with one another and may be contradictory; we may find ourselves trying to balance the different optimization objectives of several different goals \cite{Harman2010} \cite{el2014local}. The image of all the efficient solutions is called the Pareto front or Pareto curve or surface. The shape of the Pareto surface indicates the nature of the trade-off between the different objective functions. An example of a Pareto curve is reported in Fig. \ref{fig:pareto1}. Multi-objective optimization methods have as main purposes to minimize the distance between the non-dominated front and the Pareto optimal front and find a set of solutions that are as diverse as possible. 
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{./images/paretofront.png}
-\caption{An optimized Pareto front example}
-\label{fig:pareto1}
-\end{figure}
-
-What distinguishes multi-objective evolutionary algorithms from single objective metaheuristics is how they rank and select individuals in the population. If there is only one objective, individuals are naturally ranked according to this objective, and it is clear which individuals are best and should be selected as
-parents. In the case of multiple objectives, it is still necessary to rank the individuals, but it is no longer obvious how to do this. Most people probably agree that a good approximation to the Pareto front is characterized by:
-
-\begin{itemize}
-\item  a small distance of the solutions to the true Pareto frontier,
-\item  a wide range of solutions, i.e., an approximation
-of the extreme values, and
-\item a good distribution of solutions, i.e., an even
-spread along the Pareto frontier.
-\end{itemize}
-
-Multi-objective metaheuristics rank individuals according to the goals mentioned above. The implementation adapted for this paper is based on the non-dominated Sorting Genetic Algorithm II (NSGA-II) algorithm.  Deb et al.  proposed the NSGA-II, taking into account the need to reduce computational complexity in non-dominated classification, while introducing elitism and eliminating subjectivity in the allocation of the sharing parameter \cite{Deb2000}. NSGA-II is a multi-objective algorithm, based on GAs, and implements the concept of dominance, in other words, to classify the total population in fronts according to the degree of dominance. According to NSGA-II, the individuals that are located on the first front are considered the best solutions of that generation, while in the last front are the worst. Using this concept, one can find more consistent results, located closer to the Pareto region, and that are better adapted to the type of problem. 
-
-The NSGA algorithm II applies a fitness evaluation in an initial population (Figure \ref{fig:nsga2}- \ding{202} and \ding{203}). The populations are ranked using multiple tournament selections, which consist of comparing two solutions (Figure \ref{fig:nsga2}- \ding{204}). In order to estimate the density of the solutions surrounding a particular solution in the population, the common distance between the previous solution and the posterior is calculated for each of the objectives. This distance serves as an estimate of the size of the largest cuboid that includes solution i without including any other solution of the population. A solution i beats another solution if:
-
-\begin{itemize}
-\item Solution i has a better rank, then $Rank_i$ <$Rank_j$.
-\item Both solutions have the same rank, but i has a greater Distance than j, then $Rank_i$ = $Rank_j$ and $Distance_i$>$Distance_j$.
-\end{itemize}
-
-At the end of each analysis a certain group of individuals are classified as belonging to a specific category called the front, and upon completion of the classification process, all individuals will be inserted into one of the n fronts. Front 1 is made up of all non-dominated solutions. Front 2 can be achieved by considering all non-dominated solutions excluding solutions from front 1. For the determination of front 3, solutions previously classified on front 1 and 2 are excluded, and so on until all individuals have been classified on some front.
-
-After selection, recombination and mutation are performed as in conventional GAs (Figure \ref{fig:nsga2}- \ding{205}). The two sets (father and son of the same dimension) are united in a single population (dimension 2) and the classification is applied in dominance fronts. In this way, elitism is guaranteed preserving the best solutions (fronts are not dominated) in the latest population (Figure \ref{fig:nsga2}- \ding{207}).
-
-However, not all fronts can be included in the new population. Thus, Deb et al. proposed a method called crowd distance, which combines the fronts not included in the set, to compose of the last spaces of the current population, guaranteeing the diversity of the population \cite{Deb2000}. The NSGA-II algorithm creates a set of front lines, in which each front containing only non–dominating solutions. Within a front, individuals are rewarded for being ‘spread out’. The algorithm also ensures that the lowest ranked individual of a front still has a greater fitness value than the highest ranked individual of the next front \cite{Harman2007}.
-
-
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{./images/NSGA-2.png}
-\caption{NSGA-II Algorithm}
-\label{fig:nsga2}
-\end{figure}
 
 
 

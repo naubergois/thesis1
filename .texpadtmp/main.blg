@@ -175,6 +175,10 @@ Repeated entry---line 2910 of file ../mybib.bib
  : @article{Garousi2010
  :                     ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 2936 of file ../mybib.bib
+ : @article{Avritzer1994
+ :                      ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 2947 of file ../mybib.bib
  : @phdthesis{Garousi2006
  :                       ,
@@ -190,6 +194,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 3030 of file ../mybib.bib
  : @inproceedings{Alander
  :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3039 of file ../mybib.bib
+ : @article{Barros2007
+ :                    ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 3096 of file ../mybib.bib
  : @article{Sandler2004
@@ -215,9 +223,21 @@ Repeated entry---line 3226 of file ../mybib.bib
  : @article{DiLucca2006
  :                     ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 3250 of file ../mybib.bib
+ : @article{Anand2013
+ :                   ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 3261 of file ../mybib.bib
  : @inproceedings{Penta2007
  :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3270 of file ../mybib.bib
+ : @article{Barber1999
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3277 of file ../mybib.bib
+ : @article{Silveira2011
+ :                      ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 3284 of file ../mybib.bib
  : @article{Grechanik2012
@@ -327,11 +347,55 @@ Repeated entry---line 3835 of file ../mybib.bib
  :  @book{Lewis2005
  :                 ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Kitchenham2007b"
-Warning--I didn't find a database entry for "Marinho2014"
+Repeated entry---line 4245 of file ../mybib.bib
+ : @article{Hierons2009
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4259 of file ../mybib.bib
+ : @article{MarkUtting2012
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4275 of file ../mybib.bib
+ : @article{Wang2013
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4301 of file ../mybib.bib
+ : @article{Bertolino2008
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4369 of file ../mybib.bib
+ : @article{Cai2007
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4382 of file ../mybib.bib
+ : @article{Barber1999
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4417 of file ../mybib.bib
+ : @inproceedings{Barros2007
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4430 of file ../mybib.bib
+ : @article{Silveira2011
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4440 of file ../mybib.bib
+ : @article{Avritzer1994
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4454 of file ../mybib.bib
+ : @article{Anand2013
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4468 of file ../mybib.bib
+ : @inproceedings{Draheim2006b
+ :                            ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "el2014local"
 Warning--I didn't find a database entry for "Deb2000"
 Warning--I didn't find a database entry for "Harman2007"
+Warning--I didn't find a database entry for "Kitchenham2007b"
+Warning--I didn't find a database entry for "Marinho2014"
 Warning--to sort, need author or key in Bertolino2008
 Warning--empty author in Bertolino2008
 Warning--empty booktitle in Bertolino2008
@@ -339,10 +403,18 @@ Warning--empty booktitle in Afzal2009a
 Warning--can't use both volume and number fields in Afzal2009a
 Warning--empty booktitle in Alesio2015
 Warning--can't use both volume and number fields in Alesio2015
+Warning--empty booktitle in Anand2013
+Warning--empty journal in Araiza-Illan2016
+Warning--empty journal in Arantes2014
 Warning--empty booktitle in Arcelli2012
+Warning--empty booktitle in Avritzer1993
+Warning--empty booktitle in Avritzer1994
+Warning--empty booktitle in Barber1999
+Warning--empty booktitle in Barros2007
 Warning--empty booktitle in Briand2005
 Warning--empty booktitle in Canfora
 Warning--empty booktitle in Cortellessa2007
+Warning--empty booktitle in Silveira2011
 Warning--empty booktitle in DiAlesio2013
 Warning--empty booktitle in DiAlesio2014
 Warning--empty booktitle in DiLucca2006
@@ -365,6 +437,7 @@ Warning--can't use both volume and number fields in Gross2000
 Warning--empty publisher in Halili2008
 Warning--empty booktitle in Harman2010
 Warning--can't use both volume and number fields in Harman2010
+Warning--empty publisher in Hessel2007
 Warning--empty booktitle in Hierons2009
 Warning--can't use both volume and number fields in Hierons2009
 Warning--empty booktitle in hong2000simultaneously
@@ -381,6 +454,8 @@ Warning--there's a number but no series in Menasce2002a
 Warning--empty publisher in MohammadS.Obaidat
 Warning--empty year in MohammadS.Obaidat
 Warning--empty booktitle in Mueller1998
+Warning--empty journal in Paper2014
+Warning--there's a number but no volume in Paper2014
 Warning--empty publisher in Perry2004
 Warning--empty booktitle in Pohlheim2005
 Warning--there's a number but no series in Pohlheim2005
@@ -411,45 +486,46 @@ Warning--empty booktitle in Stations
 Warning--empty booktitle in Wert2013a
 Warning--there's a number but no series in Wert2013a
 Warning--empty booktitle in Wert2014
-You've used 72 entries,
+Warning--empty journal in XinyingCai2007
+You've used 99 entries,
             2118 wiz_defined-function locations,
-            931 strings with 17209 characters,
-and the built_in function-call counts, 26215 in all, are:
-= -- 2511
-> -- 1077
-< -- 63
-+ -- 427
-- -- 354
-* -- 1590
-:= -- 3960
-add.period$ -- 218
-call.type$ -- 72
-change.case$ -- 379
+            1088 strings with 22649 characters,
+and the built_in function-call counts, 36187 in all, are:
+= -- 3516
+> -- 1537
+< -- 78
++ -- 608
+- -- 508
+* -- 2232
+:= -- 5550
+add.period$ -- 301
+call.type$ -- 99
+change.case$ -- 536
 chr.to.int$ -- 0
-cite$ -- 151
-duplicate$ -- 1210
-empty$ -- 2209
-format.name$ -- 354
-if$ -- 5757
+cite$ -- 190
+duplicate$ -- 1627
+empty$ -- 2939
+format.name$ -- 508
+if$ -- 7891
 int.to.chr$ -- 0
-int.to.str$ -- 72
-missing$ -- 79
-newline$ -- 360
-num.names$ -- 142
-pop$ -- 630
+int.to.str$ -- 99
+missing$ -- 107
+newline$ -- 495
+num.names$ -- 196
+pop$ -- 810
 preamble$ -- 2
-purify$ -- 321
+purify$ -- 452
 quote$ -- 0
-skip$ -- 955
+skip$ -- 1297
 stack$ -- 0
-substring$ -- 1429
-swap$ -- 422
-text.length$ -- 63
+substring$ -- 2033
+swap$ -- 556
+text.length$ -- 78
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 264
-warning$ -- 79
-while$ -- 258
-width$ -- 74
-write$ -- 733
-(There were 81 error messages)
+type$ -- 370
+warning$ -- 91
+while$ -- 361
+width$ -- 101
+write$ -- 1019
+(There were 97 error messages)
