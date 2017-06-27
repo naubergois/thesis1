@@ -361,10 +361,10 @@ smaller print.
 
 
 \def\@standardsub{submitted to the department of \uppercase\expandafter{\@dept}\\
-                and the committee on graduate studies}
+                of universidade de fortaleza }
 \def\@standardend{}
 
-\def\committeethesis{\let\@whichsub=\@committeesub}
+%\def\committeethesis{\let\@whichsub=\@committeesub}
 \def\programthesis{\let\@whichsub=\@programsub}
 \def\educationthesis{\let\@whichsub=\@educationsub}
 \def\businessthesis{\let\@whichsub=\@businesssub}
@@ -379,27 +379,25 @@ smaller print.
 \let\@whichend=\@dualend}
 
 
-\def\@committeesub{SUBMITTED TO THE COMMITTEE ON \uppercase\expandafter{\@dept}\\
-                AND THE COMMITTEE ON GRADUATE STUDIES}
+\def\@committeesub{}
 \def\@programsub{SUBMITTED TO THE PROGRAM IN \uppercase\expandafter{\@dept}\\
-                AND THE COMMITTEE ON GRADUATE STUDIES}
+                }
 \def\@educationsub{SUBMITTED TO THE GRADUATE SCHOOL OF EDUCATION\\
-                AND THE COMMITTEE ON GRADUATE STUDIES}
+                }
 \def\@businesssub{SUBMITTED TO THE GRADUATE SCHOOL OF BUSINESS\\ AND THE
-  COMMITTEE ON GRADUATE STUDIES}
+ }
 \def\@lawsub{SUBMITTED TO THE GRADUATE SCHOOL OF LAW\\
-                AND THE COMMITTEE ON GRADUATE STUDIES}
+                }
 
-\def\@humanitiessub{SUBMITTED TO THE DEPARTMENT OF\\ \uppercase\expandafter{\@dept}
-                                AND THE\\ COMMITTEE ON\\ GRADUATE STUDIES}
+\def\@humanitiessub{SUBMITTED TO THE DEPARTMENT OF\\ \uppercase\expandafter{\@dept}}
 \def\@humanitiesend{\\IN\\ \uppercase\expandafter{\@jointprogram} AND HUMANITIES}
 
-\def\@specialsub{SUBMITTED TO THE COMMITTEE ON GRADUATE STUDIES}
+\def\@specialsub{}
 \def\@specialend{\\IN\\ \uppercase\expandafter{\@dept}}
 
 
 \def\@dualsub{SUBMITTED TO THE DEPARTMENT OF \uppercase\expandafter{\@dept}\\
-AND THE COMMITTEE ON GRADUATE STUDIES}
+}
 \def\@dualend{\\IN\\ \uppercase\expandafter{\@languagemajor}}
 
 
@@ -424,7 +422,7 @@ AND THE COMMITTEE ON GRADUATE STUDIES}
 %                doctor of philosophy \uppercase\expandafter{\@whichend}
                 A THESIS\\
                 \uppercase\expandafter{\@whichsub}\\
-                OF UNIVERSIDADE DE FORTALEZA\\
+                (UNIFOR)\\
                 IN PARTIAL FULFILLMENT OF THE REQUIREMENTS\\
                 FOR THE DEGREE OF\\
                 DOCTOR OF SCIENCE \uppercase\expandafter{\@whichend}
@@ -439,8 +437,8 @@ AND THE COMMITTEE ON GRADUATE STUDIES}
         \null\vfill
         \begin{center}
                 \large
-                \copyright\ Copyright\ by \@author\ \@copyrightyear\\
-                All Rights Reserved
+               % \copyright\ Copyright\ by \@author\ \@copyrightyear\\
+                %All Rights Reserved
         \end{center}
         \vfill\newpage}
 

@@ -6,37 +6,39 @@
 \contentsline {subsection}{\numberline {1.1.1}State of Research on the Search-Based Stress Testing}{4}
 \contentsline {subsection}{\numberline {1.1.2}State of Industrial Practices on Stress Tests}{4}
 \contentsline {section}{\numberline {1.2}Research Hypothesis}{4}
-\contentsline {chapter}{\numberline {2}Background}{5}
-\contentsline {section}{\numberline {2.1}Load, Performance and Stress Testing}{6}
-\contentsline {section}{\numberline {2.2}Stress Test Process}{7}
-\contentsline {section}{\numberline {2.3}Metaheuristics}{9}
-\contentsline {subsection}{\numberline {2.3.1}Trajectory methods}{10}
-\contentsline {subsubsection}{Neighborhood}{10}
-\contentsline {subsubsection}{Simulated Annealing}{11}
-\contentsline {subsubsection}{Tabu Search}{11}
-\contentsline {subsection}{\numberline {2.3.2}Population-based metaheuristics}{11}
-\contentsline {section}{\numberline {2.4}Hybrid Metaheuristics}{12}
-\contentsline {section}{\numberline {2.5}Multi-objective heuristics}{13}
-\contentsline {subsection}{\numberline {2.5.1}NSGA-II Multi-objective heuristics}{13}
-\contentsline {section}{\numberline {2.6}Reinforcement Learning}{16}
-\contentsline {chapter}{\numberline {3}A Survey on Stress Testing Software Systems}{18}
-\contentsline {subsection}{\numberline {3.0.1}Planning a Systematic Review}{18}
-\contentsline {subsection}{\numberline {3.0.2}Research Questions}{19}
-\contentsline {subsection}{\numberline {3.0.3}Generation of search strategy}{19}
-\contentsline {subsection}{\numberline {3.0.4}Study selection criteria and procedures for including and excluding primary studies}{20}
-\contentsline {subsection}{\numberline {3.0.5}Data Synthesis}{20}
-\contentsline {section}{\numberline {3.1}Research Question 1:How is a proper stress designed?}{21}
-\contentsline {subsection}{\numberline {3.1.1}Model-based Stress Testing}{23}
-\contentsline {subsection}{\numberline {3.1.2}Feedback-ORiEnted PerfOrmance Software Testing}{28}
-\contentsline {section}{\numberline {3.2}Research Question 2: How is a stress test executed and automated?}{29}
-\contentsline {subsection}{\numberline {3.2.1}Load Test Tools}{29}
-\contentsline {section}{\numberline {3.3}Research Question 3: What are the main problems found by stress tests?}{33}
+\contentsline {section}{\numberline {1.3}Thesis Outline}{5}
+\contentsline {chapter}{\numberline {2}Background}{6}
+\contentsline {section}{\numberline {2.1}Load, Performance and Stress Testing}{7}
+\contentsline {subsection}{\numberline {2.1.1}Stress Test Process}{8}
+\contentsline {subsection}{\numberline {2.1.2}Stress Test Execution}{10}
+\contentsline {subsubsection}{Stress Testing Tools}{11}
+\contentsline {subsubsection}{Apache JMeter}{14}
+\contentsline {section}{\numberline {2.2}Metaheuristics}{15}
+\contentsline {subsection}{\numberline {2.2.1}Trajectory methods}{16}
+\contentsline {subsubsection}{Neighborhood}{16}
+\contentsline {subsubsection}{Simulated Annealing}{16}
+\contentsline {subsubsection}{Tabu Search}{17}
+\contentsline {subsection}{\numberline {2.2.2}Population-based metaheuristics}{17}
+\contentsline {subsection}{\numberline {2.2.3}Hybrid Metaheuristics}{18}
+\contentsline {subsection}{\numberline {2.2.4}Multi-objective heuristics}{19}
+\contentsline {subsubsection}{NSGA-II Multi-objective heuristics}{19}
+\contentsline {section}{\numberline {2.3}Reinforcement Learning}{21}
+\contentsline {chapter}{\numberline {3}A Survey on Stress Testing Software Systems}{24}
+\contentsline {subsection}{\numberline {3.0.1}Planning a Systematic Review}{24}
+\contentsline {subsection}{\numberline {3.0.2}Research Questions}{25}
+\contentsline {subsection}{\numberline {3.0.3}Generation of search strategy}{25}
+\contentsline {subsection}{\numberline {3.0.4}Study selection criteria and procedures for including and excluding primary studies}{26}
+\contentsline {subsection}{\numberline {3.0.5}Data Synthesis}{26}
+\contentsline {section}{\numberline {3.1}Research Question 1:How is a proper stress designed?}{27}
+\contentsline {subsection}{\numberline {3.1.1}Model-based Stress Testing}{29}
+\contentsline {subsection}{\numberline {3.1.2}Feedback-ORiEnted PerfOrmance Software Testing}{33}
+\contentsline {section}{\numberline {3.2}Research Question 2: What are the main problems found by stress tests?}{35}
 \contentsline {chapter}{\numberline {4}Search-Based Stress Testing}{42}
 \contentsline {section}{\numberline {4.1}Search-Based Stress Testing on Safety-critical systems}{43}
 \contentsline {section}{\numberline {4.2}Search-Based Stress Testing on Industrial systems}{45}
-\contentsline {chapter}{\numberline {5}Improving Stress Search-Based Tests with evolutionary algorithms and trajectory methods}{46}
+\contentsline {chapter}{\numberline {5}Improving Search-Based Stress Tests}{46}
 \contentsline {section}{\numberline {5.1}Improving Stress Search Based Testing using Hybrid Metaheuristic Approach}{46}
-\contentsline {subsection}{\numberline {5.1.1}Representation}{47}
+\contentsline {subsection}{\numberline {5.1.1}Representation}{46}
 \contentsline {subsection}{\numberline {5.1.2}Initial population}{47}
 \contentsline {subsection}{\numberline {5.1.3}Objective (fitness) function}{48}
 \contentsline {section}{\numberline {5.2}Improving Stress Search Based Testing using Q-Learning and Hybrid Metaheuristic Approach}{49}
@@ -44,14 +46,14 @@
 \contentsline {subsection}{\numberline {5.2.2}Exploitation phase}{52}
 \contentsline {subsection}{\numberline {5.2.3}Integration between metaheuristics and the Q-Learning algorithm }{53}
 \contentsline {section}{\numberline {5.3}Search-based stress testing applications using NSGA-II }{53}
-\contentsline {subsection}{\numberline {5.3.1}Solution life cycle}{54}
 \contentsline {chapter}{\numberline {6}IAdapter}{55}
-\contentsline {subsection}{\numberline {6.0.1}IAdapter Components}{55}
-\contentsline {section}{\numberline {6.1}The IAdapter Testbed system}{55}
-\contentsline {subsection}{\numberline {6.1.1}Test Module}{56}
-\contentsline {subsection}{\numberline {6.1.2}Emulator Module}{57}
-\contentsline {subsection}{\numberline {6.1.3}Test Scenario Library}{57}
+\contentsline {subsection}{\numberline {6.0.1}IAdapter Components}{56}
+\contentsline {section}{\numberline {6.1}The IAdapter architecture}{56}
+\contentsline {subsection}{\numberline {6.1.1}Test Module}{57}
+\contentsline {subsection}{\numberline {6.1.2}Emulator Module}{58}
+\contentsline {subsection}{\numberline {6.1.3}Test Scenario Library}{58}
 \contentsline {subsection}{\numberline {6.1.4}Operation services}{58}
+\contentsline {subsection}{\numberline {6.1.5}External dependencies}{58}
 \contentsline {chapter}{\numberline {7}Experiments}{61}
 \contentsline {section}{\numberline {7.1}Experiments with Hybrid Algorithm}{61}
 \contentsline {subsection}{\numberline {7.1.1}First Experiment: Emulated Class Test}{62}

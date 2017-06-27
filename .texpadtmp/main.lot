@@ -1,8 +1,10 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Benchmarks group\relax }}{12}
+\contentsline {table}{\numberline {2.2}{\ignorespaces My caption\relax }}{13}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces My caption\relax }}{25}
+\contentsline {table}{\numberline {3.1}{\ignorespaces My caption\relax }}{31}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Performance antipatterns\relax }}{36}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{43}
