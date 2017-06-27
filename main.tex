@@ -190,6 +190,9 @@ Chapter 3 reviews the main existing approaches in the research area referring to
 
 \chapter{Background}
 
+This chapter presents a brief introduction of the basic concepts used in this thesis.
+
+
 
 \begin{figure}[!ht]
 \centering
@@ -1527,7 +1530,7 @@ Fig. \ref{fig:iadapterlifecycle} presents the IAdapter Life Cycle. The main diff
 \end{figure}
 
 
-\subsection{IAdapter Components}
+\section{IAdapter Visual Components}
 
 JMeter has components organized  in a hierarchical manner. The IAdapter plugin provides three main components: WorkLoadThreadGroup, WorkLoadSaver, and WorkLoadController.
  
@@ -1585,6 +1588,35 @@ The Test Module (Figure \ref{fig:testbedarch}  -\ding{202}) is responsible for f
 \end{figure} 
 
 
+The WorkLoadThreadGroup class is responsible for start all threads that go simulate the users in the jmeter engine. Fig presents the WorkLoadThreadGroup life cycle. First, an instance of the class waits for the user to start the test (). Once the test is started, the start method is called and the instance goes to Running state.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{./images/statesworkload.png}
+\caption{Test module life cycle.}
+\label{fig:step2}
+\end{figure} 
+
+
+
+Figure presents the sequence diagram to the start method. The start method is responsable for load the multi-objective weights, synchronize all threads and get the new workloads from database. The multi-objective weights are stored in a static variable named 
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/startthreads.png}
+\caption{Test module life cycle.}
+\label{fig:step2}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/startthreads.png}
+\caption{Emulator module}
+\label{fig:emulator}
+\end{minipage}
+\end{figure} 
+
 
 \subsection{Emulator Module}
 
@@ -1594,14 +1626,14 @@ The Emulator Module is responsible for implementing and providing successful sce
 
 \subsection{Test Scenario Library}
 
-This modules provides a common representation for all workloads. 
+This modules provides a common representation for all workloads. The representation of each individual is encapsulated in the WorkLoad class (Fig \ref{genomeimpl} ).
 
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.7\textwidth]{./images/genomeimpl.png}
 \caption{WorkLoad class}
-\label{fig:emulator}
+\label{fig:genomeimpl}
 \end{figure} 
 
 
@@ -1611,7 +1643,7 @@ The services are responsible for performing some operations performed by metaheu
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.7\textwidth]{./images/operationservice.png}
+\includegraphics[width=0.6\textwidth]{./images/operationservice.png}
 \caption{WorkLoad class}
 \label{fig:emulator}
 \end{figure} 

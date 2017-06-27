@@ -50,10 +50,13 @@
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Test Module class diagram.\relax }}{57}
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Test module life cycle.\relax }}{58}
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Emulator module\relax }}{58}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces WorkLoad class\relax }}{59}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces WorkLoad class\relax }}{60}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Test module life cycle.\relax }}{58}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Test module life cycle.\relax }}{60}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Emulator module\relax }}{60}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces WorkLoad class\relax }}{61}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces WorkLoad class\relax }}{62}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Best results obtained in 27 generations\relax }}{63}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Maximum fitness value by number of requests\relax }}{69}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Experiment Pareto Frontier\relax }}{72}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Best results obtained in 27 generations\relax }}{65}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Maximum fitness value by number of requests\relax }}{71}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Experiment Pareto Frontier\relax }}{74}
 \addvspace {10\p@ }
