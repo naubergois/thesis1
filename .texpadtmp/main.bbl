@@ -334,6 +334,13 @@ Gyu~Baek Kim.
 \newblock {\em Proceedings - International Conference on Quality Software},
   2005:250--254, 2005.
 
+\bibitem{Kiran2015}
+Sandhya Kiran, Akshyansu Mohapatra, and Rajashekara Swamy.
+\newblock {Experiences in performance testing of web applications with Unified
+  Authentication platform using Jmeter}.
+\newblock {\em 2nd International Symposium on Technology Management and
+  Emerging Technologies, ISTMET 2015 - Proceeding}, pages 74--78, 2015.
+
 \bibitem{Lenz2007}
 Chris Lenz, J~Chimiak-Opoka, and Ruth Breu.
 \newblock {Model-Driven Testing of SOA-based Software}.
@@ -349,14 +356,6 @@ Qi~Luo, Aswathy Nair, Mark Grechanik, and Denys Poshyvanyk.
 \newblock {FOREPOST: finding performance problems automatically with
   feedback-directed learning software testing}.
 \newblock pages 1--51, 2015.
-
-\bibitem{Mamrot2016}
-Michel Mamrot, Stefan Marchlewitz, Jan~Peter Nicklas, Petra Winzer, Thomas
-  Tetzlaff, Philipp Kemper, and Ulf Witkowski.
-\newblock {Model-Based Test and Validation Support for Autonomous Mechatronic
-  Systems}.
-\newblock {\em Proceedings - 2015 IEEE International Conference on Systems,
-  Man, and Cybernetics, SMC 2015}, pages 701--706, 2016.
 
 \bibitem{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}
 Thomas~St{\"{u}}tzle {Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez,
@@ -525,6 +524,13 @@ El-Ghazali Talbi.
 \newblock {\em {Metaheuristics: From Design to Implementation}}, volume~53.
 \newblock 2013.
 
+\bibitem{Tervonen2017}
+Tommi Tervonen and United Kingdom.
+\newblock {Evaluation of multi-objective optimization approaches for solving
+  green supply chain design problems : Evaluation of multi-objective
+  optimization approaches for solving green supply chain design problems}.
+\newblock (April), 2017.
+
 \bibitem{Tracey1998}
 N~J Tracey, J~a Clark, and K~C Mander.
 \newblock {Automated Programme Flaw Finding using Simulated Annealing}.
@@ -598,5 +604,11 @@ S~Wieczorek, A~Stefanescu, and A~Roth.
 Hongwei~Zeng {Xinying Cai}.
 \newblock {Model-based Test Generation for Software Product Line}.
 \newblock 2007.
+
+\bibitem{Zitzler2001}
+Eckart Zitzler, Marco Laumanns, and Lothar Thiele.
+\newblock {SPEA2: Improving the Strength Pareto Evolutionary Algorithm}.
+\newblock {\em Evolutionary Methods for Design Optimization and Control with
+  Applications to Industrial Problems}, pages 95--100, 2001.
 
 \end{thebibliography}

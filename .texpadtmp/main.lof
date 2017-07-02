@@ -1,62 +1,69 @@
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Thesis Outline\relax }}{5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Chapter 2\relax }}{6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Load, Performance and Stress Test Process \cite {Jiang2010}\cite {Erinle2013}\relax }}{9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces TPC-W architecture \cite {MohammadS.Obaidat} \cite {Menasce2002a}\relax }}{14}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Load Runner Scripting\relax }}{14}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of neighborhood for a permutation \cite {Talbi2013}.\relax }}{16}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Categories of metaheuristc combinations \cite {Puchinger2005} \relax }}{19}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces An optimized Pareto front example\relax }}{20}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces NSGA-II Algorithm\relax }}{21}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of interation between some agent and the environment\relax }}{22}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Q Learning algorithm\relax }}{23}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Load, Performance and Stress Test Process \cite {Jiang2010}\cite {Erinle2013}\relax }}{10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces TPC-W architecture \cite {MohammadS.Obaidat} \cite {Menasce2002a}\relax }}{15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Load Runner Scripting\relax }}{15}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Workload modeling based on statistical data \cite {DiLucca2006}\relax }}{18}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Workload modeling based on the generative model \cite {DiLucca2006}\relax }}{19}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces User community modeling language \cite {Wang2013}\relax }}{22}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Stochastic Formcharts Example \cite {Draheim2006b} \cite {Wang2013}\relax }}{22}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Example of a Customer Behavior Model Graph (CBMG) \cite {Menasce2002a} \cite {Jiang2010} \cite {MohammadS.Obaidat}\relax }}{22}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Model-based stress test methodology\relax }}{23}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplary workload model\relax }}{23}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The architecture and workflow of FOREPOST\relax }}{24}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Symptoms of know performance problems \cite {Wert2013a}. \relax }}{25}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The God class\cite {Wert2013a}. \relax }}{26}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The God class\cite {Vetoio2011}. \relax }}{26}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Pipe and Filter sample \cite {Vetoio2011}\relax }}{27}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Extensive Processing sample \cite {Vetoio2011}.\relax }}{27}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Circuitous Treasure Hunt sample \cite {Vetoio2011}\relax }}{28}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Empty Semi Trucks sample \cite {Vetoio2011}.\relax }}{28}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Tower of Babel sample \cite {Vetoio2011}\relax }}{28}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces One-Lane Bridge sample \cite {Vetoio2011}.\relax }}{28}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Excessive Dynamic Allocation.\relax }}{29}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Traffic Jam Response Time \cite {Vetoio2011}.\relax }}{29}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces The Ramp sample \cite {Vetoio2011}.\relax }}{30}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Unbalanced Processing sample \cite {Wert2013a}. \relax }}{30}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces More is Less sample \cite {Vetoio2011}.\relax }}{30}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Workload modeling based on statistical data \cite {DiLucca2006}\relax }}{28}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Workload modeling based on the generative model \cite {DiLucca2006}\relax }}{29}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces User community modeling language \cite {Wang2013}\relax }}{31}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Stochastic Formcharts Example \cite {Draheim2006b} \cite {Wang2013}\relax }}{32}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Example of a Customer Behavior Model Graph (CBMG) \cite {Menasce2002a} \cite {Jiang2010} \cite {MohammadS.Obaidat}\relax }}{32}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Model-based stress test methodology\relax }}{33}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Exemplary workload model\relax }}{33}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The architecture and workflow of FOREPOST\relax }}{34}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Symptoms of know performance problems \cite {Wert2013a}. \relax }}{35}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces The God class\cite {Wert2013a}. \relax }}{36}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The God class\cite {Vetoio2011}. \relax }}{36}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Pipe and Filter sample \cite {Vetoio2011}\relax }}{37}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Extensive Processing sample \cite {Vetoio2011}.\relax }}{37}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Circuitous Treasure Hunt sample \cite {Vetoio2011}\relax }}{38}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Empty Semi Trucks sample \cite {Vetoio2011}.\relax }}{38}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Tower of Babel sample \cite {Vetoio2011}\relax }}{38}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces One-Lane Bridge sample \cite {Vetoio2011}.\relax }}{38}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Excessive Dynamic Allocation.\relax }}{39}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Traffic Jam Response Time \cite {Vetoio2011}.\relax }}{39}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces The Ramp sample \cite {Vetoio2011}.\relax }}{40}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Unbalanced Processing sample \cite {Wert2013a}. \relax }}{40}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces More is Less sample \cite {Vetoio2011}.\relax }}{40}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Number of publications in SBSE and SBST by Year. Data comes from the Harman et al., Afzal et al. and the SBSE repository \cite {Afzal2009a} \cite {Harman2015}\relax }}{32}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Number of publications in non-functional SBST by Year. Data comes from the Harman et al., Afzal et al. and the SBSE repository \cite {Afzal2009a} \cite {Harman2015} \relax }}{33}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An example of neighborhood for a permutation \cite {Talbi2013}.\relax }}{34}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Categories of metaheuristc combinations \cite {Puchinger2005} \relax }}{37}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces An optimized Pareto front example\relax }}{37}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces NSGA-II Algorithm\relax }}{39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Use of the algorithms independently \cite {Gois2016}\relax }}{45}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Use of the algorithms collaboratively \cite {Gois2016}\relax }}{46}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Solution representation, crossover and neighborhood operators \cite {Gois2016}\relax }}{47}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces WorkLoad class\relax }}{48}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Best results obtained in 27 generations\relax }}{50}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Average, median, maximum and minimal fitness value by Search Method\relax }}{54}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Finesse value by generation in all tests\relax }}{55}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Markov Decision Process used by HybridQ\relax }}{58}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces HybridQ NeighborHood Service\relax }}{60}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Maximum fitness value by number of requests\relax }}{65}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Test module life cycle.\relax }}{67}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Experiment Pareto Frontier\relax }}{69}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Maximum fitness value by number of requests\relax }}{71}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Maximum fitness value by number of requests\relax }}{71}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Use of the algorithms independently \cite {Gois2016}\relax }}{47}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Use of the algorithms collaboratively \cite {Gois2016}\relax }}{48}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Solution representation, crossover and neighborhood operators \cite {Gois2016}\relax }}{49}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Markov Decision Process used by HybridQ\relax }}{50}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces HybridQ NeighborHood Service\relax }}{51}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Test module life cycle.\relax }}{54}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces IAdapter life cycle\relax }}{82}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces WorkLoadThreadGroup component\relax }}{83}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces IAdapter main architecture.\relax }}{84}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Test Module class diagram.\relax }}{84}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Test module life cycle.\relax }}{85}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Emulator module\relax }}{85}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces WorkLoadThreadGroup class life cycle.\relax }}{85}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces WorkLoadThreadGroup start method.\relax }}{86}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces WorkLoadThreadGroup threadFinished method.\relax }}{86}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces WorkLoad class\relax }}{87}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces IAdapter life cycle\relax }}{55}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces WorkLoadThreadGroup component\relax }}{56}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces IAdapter main architecture.\relax }}{57}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Test Module class diagram.\relax }}{57}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Test module life cycle.\relax }}{58}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Emulator module\relax }}{58}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Test module life cycle.\relax }}{58}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Test module life cycle.\relax }}{60}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Emulator module\relax }}{60}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces WorkLoad class\relax }}{61}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces WorkLoad class\relax }}{62}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces NSGA-II implementation.\relax }}{89}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Best results obtained in 27 generations\relax }}{65}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Maximum fitness value by number of requests\relax }}{71}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Experiment Pareto Frontier\relax }}{74}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Example of interation between some agent and the environment\relax }}{90}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Q Learning algorithm\relax }}{92}
