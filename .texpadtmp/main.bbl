@@ -287,6 +287,13 @@ Emily~H. Halili.
   testing and performance measurement for your websites.}}
 \newblock 2008.
 
+\bibitem{Harman2015}
+Mark Harman, Yue Jia, and Yuanyuan Zhang.
+\newblock {Achievements , open problems and challenges for search based
+  software testing}.
+\newblock {\em 8th IEEE International Conference on Software Testing,
+  Verification and Validation (ICST)}, (Icst), 2015.
+
 \bibitem{Harman2010}
 Mark Harman and Phil McMinn.
 \newblock {A theoretical and empirical study of search-based testing: Local,
@@ -317,11 +324,6 @@ B.~Jones {J. Wegener, K. Grimm, M. Grochtmann, H. Sthamer}.
 \newblock {Systematic testing of real-time systems}.
 \newblock 1996.
 
-\bibitem{Jaziri2008}
-Wassim Jaziri.
-\newblock {\em {Local Search Techniques: Focus on Tabu Search}}.
-\newblock 2008.
-
 \bibitem{Jiang2010}
 ZM~Jiang.
 \newblock {\em {Automated analysis of load testing results}}.
@@ -340,6 +342,12 @@ Sandhya Kiran, Akshyansu Mohapatra, and Rajashekara Swamy.
   Authentication platform using Jmeter}.
 \newblock {\em 2nd International Symposium on Technology Management and
   Emerging Technologies, ISTMET 2015 - Proceeding}, pages 74--78, 2015.
+
+\bibitem{Kitchenham2007}
+Barbara Kitchenham and S~Charters.
+\newblock {Guidelines for performing Systematic Literature Reviews in Software
+  Engineering}.
+\newblock {\em Engineering}, 2:1051, 2007.
 
 \bibitem{Lenz2007}
 Chris Lenz, J~Chimiak-Opoka, and Ruth Breu.
@@ -369,6 +377,13 @@ Thomas~St{\"{u}}tzle {Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez,
 Alexander~Pretschner {Mark Utting} and Bruno Legeard.
 \newblock {A taxonomy of model-based testing approaches}.
 \newblock volume~24, pages 297--312, 2012.
+
+\bibitem{MatneiFilho2016}
+Rui~A. {Matnei Filho} and Silvia~R. Vergilio.
+\newblock {A multi-objective test data generation approach for mutation testing
+  of feature models}.
+\newblock {\em Journal of Software Engineering Research and Development},
+  4(1):4, 2016.
 
 \bibitem{Menasce2002a}
 Daniel~A Menasc{\'{e}} and George Mason.
