@@ -150,24 +150,27 @@ Automation of testing is a crucial concern. Through
 automation, large-scale thorough testing can become
 practical and scalable. However, the automated generation of test cases presents challenges. The general problem involves finding a (partial) solution to the path sensitization problem. That is, the problem of finding an input to drive the software down a chosen path \cite{Harman2010} \cite{dean2003managing}. 
 
-Software performance is a pervasive quality, because it is affected by every aspect of the design, code, and execution environment. Performance failures occur when a software product is unable to meet its overall objectives due to inadequate performance. Such failures negatively impact the projects by increasing costs, decreasing revenue or both \cite{Vetoio2011}. 
+Software performance is a pervasive quality, because it is affected by every aspect of the design, code, and execution environment. Performance failures occur when a software product is unable to meet its overall objectives due to inadequate performance. Such failures negatively impact the projects by increasing costs, decreasing revenue or both \cite{Vetoio2011}. Stress testing of enterprise applications is manual,laborious, costly, and not particulary effective. When running many different test cases and observing application’s behavior, testers intuitively sense that there are certain properties of test cases that are likely to reveal performance bugs \cite{Grechanik2012}. Manual analysis of load testing is inefficient and error prone due to limited knowledge of test analyst about system under test \cite{Arslan2015}.
 
 Software testing is a expensive and difficult activity. The exponential
 growth in the complexity of software makes the cost of testing has only continued to rise. Test case generation can be seen as a search problem. The test adequacy criterion is transformed into a fitness function and a set of solutions in the search
 space are evaluated with respect to the fitness function using a metaheuristic search technique. Search-based software testing is the application of metaheuristic search techniques to generate software
 tests cases or perform test execution \cite{Afzal2009a} \cite{Gay}.
 
-Stress testing of enterprise applications is manual,laborious, costly, and not particulary effective. When running many different test cases and observing application’s behavior, testers intuitively sense that there are certain properties of test cases that are likely to reveal performance bugs. Distilling these properties automatically into rules that describe how these properties affect performance of the application is a subgoal of our approach \cite{Grechanik2012}.
-
 Experimentation is important to realistically and accurately test and evaluate search-based stress tests. Experimentation on algorithms is usually made by simulation. Experiments involving search based tests are inherently complex and typically time-consuming to set up and execute. Such experiments are also extremely difficult to repeat. People who might want to duplicate published results, for example, must devote substantial resources to setting up and the environmental conditions are likely to be substantially different.
 
+Below we briefly describe the related research, thesis focus and practices on stress testing.
 
+\subsection{Thesis Focus and state of Research on the Search-Based Stress  Testing}
 
-Below we briefly describe the related research and practices on stress testing:
+Bianchi et al. presents a classification schema and a general framework for the approaches to test concurrent systems. The schema shows that the test inputs can be  test cases or a system model and the selection of the tests can be performed by space exploration or based on properties \cite{Bianchi2017}. The focus of this thesis is use the Test Cases as input performed by a space exploration algorithm. The use of space exploration algorithms on tests is named Search-based tests. Fig \ref{fig:summary} presents the summary results of the survey presented in the chapter 2. The two largest research areas on stress tests are model-based tests and search-based tests. 
 
-
-
-\subsection{State of Research on the Search-Based Stress  Testing}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{./images/Summarysurvey.png}
+\caption{Summary of state of art}
+\label{fig:summary}
+\end{figure}
 
 In the academic context, a number of studies proving the efficacy of metaheuristics to automate test execution can be found in literature. Figure \ref{fig:sbsesbst}  shows the growth in papers published on SBST and SBSE. The data is taken from the SBSE repository (\url{http://crestweb.cs.ucl.ac.uk/resources/sbse_repository/}). 
 The aim of the SBSE repository is to contain every SBSE paper. Although no repository can guarantee 100\% precision and recall, the SBSE repository has proved sufficiently usable that it has formed the basis of several other detailed analyses of the literature \cite{Harman2015}. 
@@ -204,7 +207,7 @@ There are many kinds of non-functional search based tests  \cite{Afzal2009a}:
 
 There is a great difficulty in
 comparing some approaches present in the state of
-the art, due to the lack of availability of the tools used. The present research intends to compare the proposed approach with other methods based on the use of single or multiobjective metaheuristics.A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods. However, most research studies are limited to making prototypes \cite{Afzal2009a}.  Fig. \ref{fig:metabykind} shows a comparison between the range of metaheuristcs and the type of non-functional search based test.The Data comes from Afzal et al. \cite{Afzal2009a}. Afzal's work adds to some of the latest research in this area (\cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015} \cite{Gois2016}). 
+the art, due to the lack of availability of the tools used. The present research intends to compare the proposed approach with other methods based on the use of single or multiobjective metaheuristics.A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods. However, most research studies are limited to making prototypes \cite{Afzal2009a}.  Fig. \ref{fig:metabykind} shows a comparison between the range of metaheuristcs and the type of non-functional search based test.The Data comes from Afzal et al. \cite{Afzal2009a}. Afzal's work adds to some of the latest research in this area (\cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015} \cite{Gois2016}). The thesis focus is use  hybrid and multiobjective metaheuristics in Quality of Service and Execution Time tests (Search-based stress testing).
 
 
 \begin{figure}[h]
@@ -215,11 +218,6 @@ the art, due to the lack of availability of the tools used. The present research
 \end{figure}
 
 
-
-Garousi and Alesio presents functional tools to Systems from safety-critical domains. Garousi presented a stress test methodology aimed at increasing chances of discovering faults related to distributed traffic in distributed systems. Alesio describe stress test case generation as a search problem over the space of task arrival times. The research search for worst case scenarios maximizing deadline misses where each scenario characterizes a test case. The paper combine two strategies, GA and Constraint Programming (CP) \cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015}. 
-
-
- 
 
 \subsection{State of Industrial Practices on Stress Tests}
 
@@ -236,10 +234,29 @@ Typically, performance testing is accomplished using test scripts, which are pro
 Our underlying research hypothesis is as follows:
 
 \begin{mdframed}[roundcorner=10pt]
-The use of metaheuristics and hybrid metaheuristics in combination with Q-learning can make it possible to automate the stress test execution process, improving the choice of new test cases for each interaction and finding scenarios that maximize the number of users of the application under test and minimize response time or find scenarios with a expected response time.
+The use of metaheuristics and hybrid metaheuristics in combination with Q-learning improving the choice of new test cases for each interaction, finding best or worst case scenarios.
 \end{mdframed}
 
 The purpose of this thesis is to show the validity of this hypothesis through the development of a testbed tool, algorithms that use hybrid metaheuristics and the Q-learning technique and application of validation experiments. This thesis will be useful for load test practitioners and software engineering researchers interested in large-scale testing software systems.
+
+\section{Contributions}
+
+The main contributions of this thesis are follows:
+
+\begin{itemize}
+\item Hybrid algorithm approach using Tabu Search, Simulated Annealing and Genetic Algorithms for search-based stress testing (Chapter 4).
+\item Hybrid algorithm with Q-Learning approach (Chapter 5).
+\item Comprehensive investigation on the use of multi-objective metaheuristics on search-based stress testing (Chapter 6).
+\end{itemize}
+
+
+The secondary contributions of this thesis are follows:
+
+\begin{itemize}
+\item The IAdapter tool
+\end{itemize}
+
+
 
 \section{Thesis Outline}
 
@@ -432,6 +449,8 @@ stress testing that may be required to each test scenario \cite{Lewis2005}.
 
 \end{itemize}
 
+
+
 \subsection{Stress Test Execution}
 
 The stress test execution  consists of deploy the system  and setup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behavior. There are three general approaches of load test executions \cite{Molyneaux2009}\cite{Jiang2010}:
@@ -465,7 +484,7 @@ There are several tools to execution of stress testing. Stress testing tools are
 \end{itemize}
 
 
-Comparing stress test tools is a laborious and difficult task since they offer a large amount and diversity of features \cite{Dustin1999}. In next subsection we contrast stress testing tools according to a wide set of features and capabilities, focusing on their ability to realize search-based tests or have learning capacities.The stress test tools was categorized in three different groups \cite{MohammadS.Obaidat}:
+Comparing stress test tools is a laborious and difficult task since they offer a large amount and diversity of features \cite{Dustin1999}. In next subsection we present studies that contrast stress testing tools according to a wide set of features and capabilities, focusing on their ability to realize search-based tests or have learning capacities.The stress test tools was categorized in three different groups \cite{MohammadS.Obaidat}:
 
 \begin{itemize}
 \item Benchmarks that model the client and server paradigm in Web context. 
@@ -473,7 +492,11 @@ Comparing stress test tools is a laborious and difficult task since they offer a
 \item Testing tools and other approaches for traffic generation based on HTTP traces.
 \end{itemize}
 
-Tables \ref{fig:group1},\ref{fig:group2} and \ref{fig:group3} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow. None of the presented tools uses heuristic or learning resources when choosing the scenarios to be tested or the workloads to be applied in the test.
+Illes et al. present a systematic approach for evaluation criteria for test tools. Using the TORE methodology the study identify activities which potentially could be automated or at least supported by a test tool. The study evaluate three tools: WinRunner, Rational Robot  and HTTrace. WinRunner is distributed by Mercury.  Rational Robot is distributed by IBM . HTTrace is not a commercial product, but developed for internal use for the company i-TV-T. The study evaluate the tools in the tasks: TestPlanning and monitoring, designing test cases, constructing test cases, executing test cases and analysing test cases. Key features of all three test tools are the construction of test cases by
+capturing and subsequently editing the test scripts and the execution of the recorded test
+scripts.  WinRunner and Rational Robot can be extended to provide test planning and monitoring as well as defect and reporting facilities. HTTrace’s strength lies on testing database applications by allowing the reset of consistent database states. Additionally, all three tools can be extended to provide support for testing quality attributes of the system under test \cite{Illes2005}.  
+
+Tables \ref{tab: tabtool1},\ref{tab: tabtool2} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow. None of the presented tools uses heuristic or learning resources when choosing the scenarios to be tested or the workloads to be applied in the test.
 
 Penã-Ortiz et al. present a study where stress test tools are compared using 12 features \cite{MohammadS.Obaidat}:
 
@@ -499,7 +522,7 @@ Penã-Ortiz et al. present a study where stress test tools are compared using 12
 \begin{table}[]
 \centering
 \caption{Benchmarks group}
-\label{my-label}
+\label{tab: tabtool1}
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
 \rowcolor[HTML]{EFEFEF} 
@@ -525,7 +548,7 @@ User’s Dynamism               &                   &                  &        
 \begin{table}[h]
 \centering
 \caption{Software products}
-\label{my-label}
+\label{tab: tabtool2}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \rowcolor[HTML]{EFEFEF} 
@@ -577,15 +600,24 @@ LoadRunner is one of the most popular industry-standard software products for fu
 
 WebLOAD is a software tool for Web performance commercialized by RadView. It is oriented to explore the performance of critical Web applications by quantifying the utilization of the main server resources. The tool creates scenarios that try to mimic the navigations of real users. To this end, it provides facilities to record, edit and debug test scripts, which are used to define the scenarios on workload characterization. The execution environment is a console to manage test execution, whose results are analyzed in the Analytics application. Since WebLOAD is a distributed system, it is possible to deploy several load generators to reproduce the desired load. Load generators can also be used as probing clients where a single virtual user is simulated to evaluate specific statistics of a single user. These probing clients resemble the experience of a real user using the system while it is under load \cite{MohammadS.Obaidat}.
 
-Apache JMeter is a free open source stress testing tool.  It has a large user base and offers lots of plugins to aid testing. JMeter is a desktop application designed to test and measure the performance and functional behavior of applications. The application it's purely Java-based and is highly extensible through a provided API (Application Programming Interface). JMeter works by acting as the client of a client/server application. JMeter allows multiple concurrent users to be simulated on the application \cite{Halili2008} \cite{Erinle2013}. 
+\subsubsection{Cloud testing tools}
+
+Nachiyappan and Justus show a set of other tools perform Cloud testing. Cloud testing is a form of evaluation methodology in which the applications to be tested uses cloud as a computing environment and its infrastructure to simulate real world traffic by using existing cloud computing technologies. Cloud testing are challenged by several problems such as limited budget, meeting deadlines, High cost per test, large number of test cases, little reuse of tests and geographical distributions of users.  Blitz is a load-testing tool from the cloud to the cloud. Blitz have no client to install and it is unable to test applications behind firewalls or otherwise protected from the Internet. Blaze Meter is a cloud application based on JMeter scripts that allow stress and load tests on the cloud\cite{Nachiyappan2015}.
+
+SOASTA CloudTest is a production performance testing
+tool for Web applications. It can simulate thousands of virtual users visiting website simultaneously, using either private or public cloud infrastructure service. The worker nodes can be distributed across public and private clouds to cooperate in a large load testing. Test results from distributed test agents are
+integrated for analysis \cite{Bai2011a}. 
 
 \subsubsection{Apache JMeter}
 
+Apache jmeter was the tool chosen for current research due to its open license, the use of plugins and the ease of integration with jmetal and jgap frameworks. Apache JMeter is a free open source stress testing tool.  It has a large user base and offers lots of plugins to aid testing. JMeter is a desktop application designed to test and measure the performance and functional behavior of applications. The application it's purely Java-based and is highly extensible through a provided API (Application Programming Interface). JMeter works by acting as the client of a client/server application. JMeter allows multiple concurrent users to be simulated on the application \cite{Halili2008} \cite{Erinle2013}.
 
 Apache JMeter is user friendly and a flexible open source solution for performance verification. Apache JMeter is designed in pure Java application. It is used to generate heavy loads on the servers or objects to test its strength or analyze overall performance under different load types. To briefly explain the solution how it works, as follows: An Regular Expression Extractor captures the dynamic values as mentioned above and stored in a temporary variable. The values which has been extracted and stored in temporary variables are subsequently utilized by immediate requests/re directions using HTTP samplers \cite{Kiran2015}. JMeter has components organized  in a hierarchical manner. The Test Plan is the main component in a JMeter script. A typical test plan will consist of one or more Thread Groups, logic controllers, listeners, timers, assertions, and configuration elements:
 
 \begin{itemize}\item Thread Group: Test management module responsible to simulate the users used in a test. All elements of a test plan must be under a thread group.\item Listeners: Analysis module responsible to provide access to the information gathered by JMeter about the test cases .\item Samplers: Load injectors module responsible to send requests to a server, while Logical Controllers let you customize its logic.\item Timers: allow JMeter to delay between each request.\item Assertions: test if the application under test it is returning the correct results.\item Configuration Elements: configure detais about the request protocol and test elements.
 \end{itemize}
+
+
 
 \FloatBarrier
 
@@ -637,16 +669,15 @@ Generative models are indirect in the sense that they do not model the statistic
 Both load models have their advantages and disadvantages. In general, loads resulting from realistic-load based design techniques (Descriptive models) can be used to detect both functional and non-functional problems. However, the test durations are usually longer and the test analysis is more difficult. Loads resulting from fault-inducing load design techniques (Generative models) take less time to uncover potential functional and non-functional problems, where the resulting loads usually only cover a small portion of the testing objectives \cite{Jiang2010}. The presented research work uses a generative model.
 
 
-There are  several approaches to design generative or descriptive workloads:
+There are two main approaches to design generative or descriptive workloads:
 
 \begin{itemize}
 \item Model-based Stress testing: a usage model is proposed to simulate users’ behaviors.
-\item Feedback-Directed Learning Software Testing: is an adaptive, feedback-directed learning testing system that learns rules from system execution \cite{Luo2015} \cite{Wert2014}.
 \item Search-based Stress testing. 
 \end{itemize}
 
 
-Search-Based Stress testing will be detail explained in the chapter 3.
+Search-Based Stress testing will be detail explained in the chapter 3. Six other approaches use neither a model-based test nor a search-based test.
 
 \subsection{Model-based Stress Testing}
 
@@ -799,6 +830,8 @@ Vogele et al. presents an approach that aims to automate the extraction and tran
 
 \subsection{Other Approaches}
 
+A set of other approaches dont use model-based tests or search-based tests.
+
 \subsubsection{Feedback-ORiEnted PerfOrmance Software Testing}
 
 Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces and uses these learned rules to select test input data automatically to find more performance problems in applications when compared to exploratory random performance testing \cite{Grechanik2012}.
@@ -827,7 +860,41 @@ The user can review the results of clustering (7). These clustered traces are su
 
 
 There are several antipatterns that details features about  common performance problems. Antipatterns are conceptually similar to patterns in that they document recurring solutions to common design problems. They are known as
-antipatterns because their use produces negative consequences.  Performance antipatterns document common performance mistakes made in software architectures or designs. These software Performance antipatterns have four primary uses: identifying problems,
+antipatterns because their use produces negative consequences.  
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{Performance antipatterns}
+\label{antipatterns}
+\begin{tabular}{|l|l|l|llll}
+\cline{1-3}
+\multicolumn{2}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Antipattern}}     & \cellcolor[HTML]{C0C0C0}\textbf{Papers}                                                                        &  &  &  &  \\ \cline{1-3}
+Blob or The God Class                   &                              & \cite{Wert2014} \cite{Smith2000} \cite{Trubiani2011} \cite{Vetoio2011} \cite{Cortellessa2007} \cite{Smith2003} &  &  &  &  \\ \cline{1-1} \cline{3-3}
+Circuitous Treasure Hunt                &                              & \cite{Wert2014} \cite{Trubiani2011} \cite{Vetoio2011} \cite{Smith2003} \cite{Smith2002}                        &  &  &  &  \\ \cline{1-1} \cline{3-3}
+Empty Semi Trucks                       &                              & \cite{Wert2014} \cite{Trubiani2011} \cite{Arcelli2012} \cite{Vetoio2011}                                       &  &  &  &  \\ \cline{1-1} \cline{3-3}
+Excessive Dynamic Aloccation            &                              & \cite{Trubiani2011} \cite{Vetoio2011} \cite{Smith2003} \cite{Smith2002}                                        &  &  &  &  \\ \cline{1-1} \cline{3-3}
+More is Less                            &                              & \cite{Vetoio2011} \cite{Trubiani2011} \cite{Smith2003}                                                         &  &  &  &  \\ \cline{1-1} \cline{3-3}
+One-Lane Bridge                         &                              & \cite{Vetoio2011} \cite{Trubiani2011} \cite{Smith2003} \cite{Smith2002}                                        &  &  &  &  \\ \cline{1-1} \cline{3-3}
+Stifle                                  &                              & \cite{Wert2014}                                                                                                &  &  &  &  \\ \cline{1-1} \cline{3-3}
+The Ramp                                &                              & \cite{Trubiani2011} \cite{Vetoio2011} \cite{Smith2003}                                                         &  &  &  &  \\ \cline{1-1} \cline{3-3}
+Tower of Babel                          &                              & \cite{Trubiani2011} \cite{Vetoio2011}                                                                          &  &  &  &  \\ \cline{1-1} \cline{3-3}
+Traffic Jam                             & \multirow{-10}{*}{}          & \cite{Vetoio2011} \cite{Smith2003} \cite{Smith2002}                                                            &  &  &  &  \\ \cline{1-3}
+                                        &                              & \cite{Cortellessa2007} \cite{Trubiani2011} \cite{Smith2003}                                                    &  &  &  &  \\ \cline{2-3}
+                                        & Concurrent Processing System & \cite{Vetoio2011} \cite{Smith2003}                                                                             &  &  &  &  \\ \cline{2-3}
+                                        & Piper and Filter             & \cite{Vetoio2011} \cite{Smith2003}                                                                             &  &  &  &  \\ \cline{2-3}
+\multirow{-4}{*}{Unbalanced Processing} & Extensive Process            & \cite{Vetoio2011} \cite{Smith2003}                                                                             &  &  &  &  \\ \cline{1-3}
+Unnecessary Processing                  &                              & \cite{Smith2003}                                                                                               &  &  &  &  \\ \cline{1-3}
+\end{tabular}
+\end{table}
+
+
+
+
+Performance antipatterns document common performance mistakes made in software architectures or designs. These software Performance antipatterns have four primary uses: identifying problems,
 focusing on the
 right level of abstraction,
 effectively communicating
@@ -838,28 +905,28 @@ their causes to others, and prescribing solutions \cite{brown1998antipatterns}. 
 % \usepackage{multirow}
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[h]
-\centering
-\caption{Performance antipatterns}
-\label{antipatterns}
-\begin{tabular}{|l|l|}
-\hline
-\rowcolor[HTML]{C0C0C0} 
-\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}\textbf{antipattern}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Derivations}} \\ \hline
-Blob or The God Class &  \\ \hline
- & Concurrent processing Systems \\ \cline{2-2} 
- & Piper and Filter Architectures \\ \cline{2-2} 
-\multirow{-3}{*}{Unbalanced-Processing} & Extensive Processing \\ \hline
-Circuitous Treasure Hunt &  \\ \cline{1-1}
-Empty Semi Trucks &  \\ \cline{1-1}
-Tower of Babel &  \\ \cline{1-1}
-One-Lane Bridge &  \\ \cline{1-1}
-Excessive Dynamic Allocation &  \\ \cline{1-1}
-Traffic Jam &  \\ \cline{1-1}
-The Ramp  &  \\ \cline{1-1}
-More is Less & \multirow{-10}{*}{} \\ \hline
-\end{tabular}
-\end{table}
+%\begin{table}[h]
+%\centering
+%\caption{Performance antipatterns}
+%\label{antipatterns}
+%\begin{tabular}{|l|l|}
+%\hline
+%\rowcolor[HTML]{C0C0C0} 
+%\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}\textbf{antipattern}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Derivations}} \\ \hline
+%Blob or The God Class &  \\ \hline
+% & Concurrent processing Systems \\ \cline{2-2} 
+% & Piper and Filter Architectures \\ \cline{2-2} 
+%\multirow{-3}{*}{Unbalanced-Processing} & Extensive Processing \\ \hline
+%Circuitous Treasure Hunt &  \\ \cline{1-1}
+%Empty Semi Trucks &  \\ \cline{1-1}
+%Tower of Babel &  \\ \cline{1-1}
+%One-Lane Bridge &  \\ \cline{1-1}
+%Excessive Dynamic Allocation &  \\ \cline{1-1}
+%Traffic Jam &  \\ \cline{1-1}
+%The Ramp  &  \\ \cline{1-1}
+%More is Less & \multirow{-10}{*}{} \\ \hline
+%\end{tabular}
+%\end{table}
 
 Blob antipattern is known by various names, including the “god” class [8] and the “blob” [2]. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component, a particular resource does the majority of the work in a software. The Blob antipattern occurs when a single class or component either performs all of the work of an application or holds all of the application’s data. Either manifestation results in excessive message traffic that can degrade performance \cite{Cortellessa2007} \cite{Smith2000}.
 
@@ -2426,24 +2493,6 @@ The services are responsible for performing some operations performed by metaheu
 \end{figure} 
 
 \subsection{External dependencies}
-
-
-\chapter{Multiobject algorithms implementation}
-
-\subsection{Search-based stress testing applications using NSGA-II }
-
-Figure \ref{fig:nsga2impl} presents the NSGA-II implementation. The first step of NSGA-II implementation is to load the previous parents workloads from an database. Second step, create a population object using the class SolutionSet. The SolutionSet is an adapted class from jmetal.  All previous parents are added to the 
-
-
-
-\begin{figure}[h]
-
-\centering
-\includegraphics[width=0.6\textwidth]{./images/NSGA-ii.png}
-\caption{NSGA-II implementation.}
-\label{fig:nsga2impl}
-
-\end{figure} 
 
 
 \chapter{Reinforcement Learning}

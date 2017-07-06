@@ -65,6 +65,13 @@ Davide Arcelli, Vittorio Cortellessa, and Catia Trubiani.
   Improvement}.
 \newblock pages 33--42, 2012.
 
+\bibitem{Arslan2015}
+Muhammad Arslan, Usman Qamar, Shoaib Hassan, and Sara Ayub.
+\newblock {Automatic performance analysis of cloud based load testing of
+  web-application {\&} its comparison with traditional load testing}.
+\newblock {\em 2015 6th IEEE International Conference on Software Engineering
+  and Service Science (ICSESS)}, 2015-Novem(September):140--144, 2015.
+
 \bibitem{Avritzer1995b}
 A.~Avritzer and E.J. Weyuker.
 \newblock {The automatic generation of load test suites and the assessment of
@@ -82,6 +89,12 @@ Alberto Avritzer and EJ~Weyuker.
 \newblock {Generating test suites for software load testing}.
 \newblock pages 44--57, New York, New York, USA, 1994. ACM Press.
 
+\bibitem{Bai2011a}
+Xiaoying Bai, Muyang Li, Bin Chen, Wei~Tek Tsai, and Jerry Gao.
+\newblock {Cloud testing tools}.
+\newblock In {\em Proceedings - 6th IEEE International Symposium on
+  Service-Oriented System Engineering, SOSE 2011}, pages 1--12, 2011.
+
 \bibitem{Barber1999}
 Scott Barber.
 \newblock {User Community Modeling Language ( UCML {\texttrademark} ) v1 . 1
@@ -93,6 +106,11 @@ Marcelo~De Barros and Jing Shiau.
 \newblock {Web services wind tunnel: On performance testing large-scale
   stateful web services}.
 \newblock 2007.
+
+\bibitem{Bianchi2017}
+Francesco Bianchi, Alessandro Margara, and Mauro Pezze.
+\newblock {A Survey of Recent Trends in Testing Concurrent Software Systems}.
+\newblock {\em IEEE Transactions on Software Engineering}, 5589(c):1--1, 2017.
 
 \bibitem{Blum2003}
 C.~Blum and A.~Roli.
@@ -319,10 +337,22 @@ Tzung-Pei Hong, Hong-Shung Wang, and Wei-Chou Chen.
   algorithms.
 \newblock volume~6, pages 439--455. Springer, 2000.
 
+\bibitem{Illes2005}
+T~Illes, A~Herrmann, B~Paech, and J~R{\"{u}}ckert.
+\newblock {Criteria for Software Testing Tool Evaluation – A Task Oriented
+  View}.
+\newblock 2:213--222, 2005.
+
 \bibitem{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996}
 B.~Jones {J. Wegener, K. Grimm, M. Grochtmann, H. Sthamer}.
 \newblock {Systematic testing of real-time systems}.
 \newblock 1996.
+
+\bibitem{Jeong2016}
+So-young Jeong, Cheol-jung Yoo, Hye-min Noh, and Corresponding Author.
+\newblock {State Transition Based Test Model and Test Case Generation Technique
+  for Embedded System: An Empirical Approach}.
+\newblock 10(11):233--254, 2016.
 
 \bibitem{Jiang2010}
 ZM~Jiang.
@@ -358,12 +388,6 @@ Chris Lenz, J~Chimiak-Opoka, and Ruth Breu.
 William~E. Lewis, David Dobbs, and Gunasekaran Veerapillai.
 \newblock {\em {Software testing and continuous quality improvement}}.
 \newblock 2005.
-
-\bibitem{Luo2015}
-Qi~Luo, Aswathy Nair, Mark Grechanik, and Denys Poshyvanyk.
-\newblock {FOREPOST: finding performance problems automatically with
-  feedback-directed learning software testing}.
-\newblock pages 1--51, 2015.
 
 \bibitem{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}
 Thomas~St{\"{u}}tzle {Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez,
@@ -562,11 +586,17 @@ G~Trent and M~Sake.
 \newblock {WebSTONE: The first generation in {\{}HTTP{\}} server benchmarking}.
 \newblock 1995.
 
+\bibitem{Trubiani2011}
+Catia Trubiani.
+\newblock {Automated generation of architectural feedback from software
+  performance analysis results Catia Trubiani}.
+\newblock {\em Language}, 2011.
+
 \bibitem{Vetoio2011}
-Via Vetoio.
+Catia Trubiani.
 \newblock {PhD Thesis in Computer Science Automated generation of architectural
   feedback from software performance analysis results Catia Trubiani}.
-\newblock 2011.
+\newblock {\em Language}, 2011.
 
 \bibitem{Vogele2016}
 Christian Vogele, Andr{\'{e}} van Hoorn, Eike Schulz, Wilhelm Hasselbring, and
