@@ -2163,4 +2163,356 @@ Package pdftex.def Info: ./images/genomere.png used on input line 1445.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51 <./images/independ.png>] [52 <./images/collaborative.png>] [53 <./images/g
+[51 <./images/independ.png>] [52 <./images/collaborative.png>] [53 <./images/ge
+nomere.png>]
+<./images/generationcomparative.png, id=296, 953.54669pt x 505.79515pt>
+File: ./images/generationcomparative.png Graphic file (type png)
+
+<use ./images/generationcomparative.png>
+Package pdftex.def Info: ./images/generationcomparative.png used on input line 
+1560.
+(pdftex.def)             Requested size: 433.62pt x 230.00595pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[55]
+Overfull \hbox (2.63954pt too wide) in paragraph at lines 1657--1657
+[]|\T1/txr/m/n/10 Id| 
+ []
+
+
+Overfull \hbox (5.69818pt too wide) in paragraph at lines 1657--1657
+[]|\T1/txr/m/n/10 90per| 
+ []
+
+
+Overfull \hbox (5.69818pt too wide) in paragraph at lines 1657--1657
+[]|\T1/txr/m/n/10 80per| 
+ []
+
+
+Overfull \hbox (5.69818pt too wide) in paragraph at lines 1657--1657
+[]|\T1/txr/m/n/10 70per| 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56 <./images/generationcomparative.png>] [57] [58]
+<./images/experiment1-4.png, id=315, 582.175pt x 427.5975pt>
+File: ./images/experiment1-4.png Graphic file (type png)
+
+<use ./images/experiment1-4.png>
+Package pdftex.def Info: ./images/experiment1-4.png used on input line 1766.
+(pdftex.def)             Requested size: 346.89731pt x 254.79231pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/experiment2-2.png, id=316, 582.175pt x 427.5975pt>
+File: ./images/experiment2-2.png Graphic file (type png)
+
+<use ./images/experiment2-2.png>
+Package pdftex.def Info: ./images/experiment2-2.png used on input line 1799.
+(pdftex.def)             Requested size: 346.89731pt x 254.79231pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[59] [60 <./images/experiment1-4.png>] [61 <./images/experiment2-2.png>]
+[62]
+Chapter 5.
+<./images/mdp3.png, id=332, 528.97626pt x 826.08624pt>
+File: ./images/mdp3.png Graphic file (type png)
+ <use ./images/mdp3.png>
+Package pdftex.def Info: ./images/mdp3.png used on input line 1868.
+(pdftex.def)             Requested size: 173.44534pt x 270.8572pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[63
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[64 <./images/mdp3.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/q-neighborservice.png, id=340, 566.115pt x 495.8525pt>
+File: ./images/q-neighborservice.png Graphic file (type png)
+
+<use ./images/q-neighborservice.png>
+Package pdftex.def Info: ./images/q-neighborservice.png used on input line 1988
+.
+(pdftex.def)             Requested size: 260.17464pt x 227.89063pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+./main.tex:1995: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1995 ...applied as an automatic algorithm con^^\
+                                                  guration tool for tunning ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[65] [66 <./images/q-neighborservice.png>] [67] [68]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 2080.
+
+[69] <./images/experiment1.png, id=358, 706.64pt x 519.9425pt>
+File: ./images/experiment1.png Graphic file (type png)
+
+<use ./images/experiment1.png>
+Package pdftex.def Info: ./images/experiment1.png used on input line 2113.
+(pdftex.def)             Requested size: 433.62pt x 319.06061pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[70] [71 <./images/experiment1.png>] [72]
+Chapter 6.
+<./images/step3.png, id=369, 489.83pt x 423.5825pt>
+File: ./images/step3.png Graphic file (type png)
+ <use ./images/step3.png>
+Package pdftex.def Info: ./images/step3.png used on input line 2166.
+(pdftex.def)             Requested size: 260.17464pt x 224.98886pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[73
+
+] [74 <./images/step3.png>]
+<./images/pareto0curve.png, id=378, 901.3675pt x 522.95375pt>
+File: ./images/pareto0curve.png Graphic file (type png)
+
+<use ./images/pareto0curve.png>
+Package pdftex.def Info: ./images/pareto0curve.png used on input line 2243.
+(pdftex.def)             Requested size: 433.62pt x 251.5815pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[75] [76 <./images/pareto0curve.png>]
+<./images/nsga2paretofrontier2.png, id=386, 706.64pt x 519.9425pt>
+File: ./images/nsga2paretofrontier2.png Graphic file (type png)
+
+<use ./images/nsga2paretofrontier2.png>
+Package pdftex.def Info: ./images/nsga2paretofrontier2.png used on input line 2
+304.
+(pdftex.def)             Requested size: 216.81pt x 159.5303pt.
+
+<./images/paesfrontier2.jpeg, id=387, 706.64pt x 519.9425pt>
+File: ./images/paesfrontier2.jpeg Graphic file (type jpg)
+
+<use ./images/paesfrontier2.jpeg>
+Package pdftex.def Info: ./images/paesfrontier2.jpeg used on input line 2310.
+(pdftex.def)             Requested size: 216.81pt x 159.5303pt.
+
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 2302--2314
+[]$[]$ $[]$ 
+ []
+
+[77 <./images/nsga2paretofrontier2.png> <./images/paesfrontier2.jpeg>]
+Chapter 7.
+
+Overfull \hbox (59.32953pt too wide) in paragraph at lines 2351--2352
+\T1/txr/m/n/10 sim-u-lated an-neal-ing, and tabu search al-go-rithms in stress 
+tests. A tool named IAdapter (github.com/naubergois/newiadapter),
+ []
+
+[78
+
+] (/Users/naubergois/Downloads/write-theses-two/.texpadtmp/main.bbl [79]
+[80
+
+] [81] [82] [83] [84] [85] [86] [87]) [88]
+Appendix A.
+<./images/lifecycle2.png, id=429, 488.82625pt x 440.64626pt>
+File: ./images/lifecycle2.png Graphic file (type png)
+
+<use ./images/lifecycle2.png>
+Package pdftex.def Info: ./images/lifecycle2.png used on input line 2396.
+(pdftex.def)             Requested size: 303.53267pt x 273.62144pt.
+ [89
+
+ <./images/lifecycle2.png>]
+<./images/tela1iadapter.png, id=434, 997.7275pt x 674.52pt>
+File: ./images/tela1iadapter.png Graphic file (type png)
+
+<use ./images/tela1iadapter.png>
+Package pdftex.def Info: ./images/tela1iadapter.png used on input line 2410.
+(pdftex.def)             Requested size: 346.89731pt x 234.5211pt.
+ [90 <./images/tela1iadapter.png>]
+<./images/testbedarch.png, id=439, 475.7775pt x 590.205pt>
+File: ./images/testbedarch.png Graphic file (type png)
+
+<use ./images/testbedarch.png>
+Package pdftex.def Info: ./images/testbedarch.png used on input line 2426.
+(pdftex.def)             Requested size: 216.81pt x 268.95796pt.
+
+<./images/myheuristic.png, id=440, 562.1pt x 263.98625pt>
+File: ./images/myheuristic.png Graphic file (type png)
+
+<use ./images/myheuristic.png>
+Package pdftex.def Info: ./images/myheuristic.png used on input line 2432.
+(pdftex.def)             Requested size: 216.81pt x 101.82231pt.
+
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 2424--2436
+[]$[]$ $[]$ 
+ []
+
+<./images/step2.png, id=441, 467.7475pt x 373.395pt>
+File: ./images/step2.png Graphic file (type png)
+ <use ./images/step2.png>
+Package pdftex.def Info: ./images/step2.png used on input line 2449.
+(pdftex.def)             Requested size: 216.81pt x 173.07991pt.
+
+<./images/emulator.png, id=442, 548.0475pt x 419.5675pt>
+File: ./images/emulator.png Graphic file (type png)
+
+<use ./images/emulator.png>
+Package pdftex.def Info: ./images/emulator.png used on input line 2455.
+(pdftex.def)             Requested size: 216.81pt x 165.98662pt.
+
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 2447--2459
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[91 <./images/testbedarch.png> <./images/myheuristic.png>]
+<./images/statesworkload.png, id=449, 473.77pt x 431.6125pt>
+File: ./images/statesworkload.png Graphic file (type png)
+
+<use ./images/statesworkload.png>
+Package pdftex.def Info: ./images/statesworkload.png used on input line 2467.
+(pdftex.def)             Requested size: 216.81pt x 197.51675pt.
+ [92 <./images/step2.png> <./images/emulator.png> <./images/statesworkload.png>
+]
+<./images/startthreads.png, id=456, 461.725pt x 852.18375pt>
+File: ./images/startthreads.png Graphic file (type png)
+
+<use ./images/startthreads.png>
+Package pdftex.def Info: ./images/startthreads.png used on input line 2479.
+(pdftex.def)             Requested size: 216.81pt x 400.14932pt.
+
+<./images/finishthread.png, id=457, 456.70625pt x 784.9325pt>
+File: ./images/finishthread.png Graphic file (type png)
+
+<use ./images/finishthread.png>
+Package pdftex.def Info: ./images/finishthread.png used on input line 2485.
+(pdftex.def)             Requested size: 216.81pt x 372.61925pt.
+
+Overfull \hbox (1.90001pt too wide) in paragraph at lines 2477--2489
+[]$[]$ $[]$ 
+ []
+
+[93 <./images/startthreads.png> <./images/finishthread.png>]
+<./images/genomeimpl.png, id=463, 573.14125pt x 571.13374pt>
+File: ./images/genomeimpl.png Graphic file (type png)
+
+<use ./images/genomeimpl.png>
+Package pdftex.def Info: ./images/genomeimpl.png used on input line 2503.
+(pdftex.def)             Requested size: 303.53267pt x 302.47285pt.
+
+<./images/operationservice.png, id=464, 544.0325pt x 577.15625pt>
+File: ./images/operationservice.png Graphic file (type png)
+
+<use ./images/operationservice.png>
+Package pdftex.def Info: ./images/operationservice.png used on input line 2515.
+
+(pdftex.def)             Requested size: 260.17464pt x 276.02788pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[94 <./images/genomeimpl.png>] [95 <./images/operationservice.png>]
+Appendix B.
+<./images/agentenv.png, id=473, 306.14375pt x 215.80624pt>
+File: ./images/agentenv.png Graphic file (type png)
+
+<use ./images/agentenv.png>
+Package pdftex.def Info: ./images/agentenv.png used on input line 2535.
+(pdftex.def)             Requested size: 173.44534pt x 122.26334pt.
+ [96
+
+ <./images/agentenv.png>]
+<./images/qalgo.png, id=478, 486.81876pt x 364.36125pt>
+File: ./images/qalgo.png Graphic file (type png)
+
+<use ./images/qalgo.png>
+Package pdftex.def Info: ./images/qalgo.png used on input line 2558.
+(pdftex.def)             Requested size: 260.17464pt x 194.72841pt.
+ [97 <./images/qalgo.png>]
+(/Users/naubergois/Downloads/write-theses-two/.texpadtmp/main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 27164 strings out of 493089
+ 504635 string characters out of 6134842
+ 988267 words of memory out of 5000000
+ 30042 multiletter control sequences out of 15000+600000
+ 66199 words of font info for 102 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,20n,92p,10413b,1442s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/txfonts/t1xbtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
+lic/txfonts/t1xtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/tx
+fonts/txex.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t
+xsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on /Users/naubergois/Downloads/write-theses-two/.texpadtmp/main.
+pdf (109 pages, 7829521 bytes).
+PDF statistics:
+ 535 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+
