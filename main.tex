@@ -746,7 +746,9 @@ Petri Nets                              & \cite{Buchs2009}        & Operational 
 \multirow{-9}{*}{State-Machine Models}  & \cite{Jeong2016}        & State-based          & 2016          \\ \hline
 Symbolic Transition System              & \cite{Anisetti2013}     & Transition-based     & 2013          \\ \hline
 Timed Automata                          & \cite{Anand2013}        & Transition-based     & 2013          \\ \hline
-UCML                                    & \cite{Barber1999}       & Transition-based     & 1999          \\ \hline
+UCML                                    & \cite{Barber1999}       & Transition-based     & 1999          \\ 
+UCML &
+\cite{Wang2013}    & Transition-based           & 2013          \\ \hline
                                         & \cite{XinyingCai2007}   & Functional           & 2007          \\ \cline{2-4} 
                                         & \cite{Shirole2013}      & Functional           & 2013          \\ \cline{2-4} 
                                         & \cite{Rauf2009}         & Functional           & 2009          \\ \cline{2-4} 
@@ -755,14 +757,22 @@ UCML                                    & \cite{Barber1999}       & Transition-b
                                         & \cite{Kim2005}          & Functional           & 2005          \\ \cline{2-4} 
                                         & \cite{Rodrigues2014}    & Functional           & 2014          \\ \cline{2-4} 
                                         & \cite{Silveira2011}     & Functional           & 2011          \\ \cline{2-4} 
-\multirow{-9}{*}{UML}                   & \cite{Lenz2007}         & Functional           & 2007          \\ \hline
+                                        &
+\cite{Vogele2016}    & Functional           & 2016          \\ \cline{2-4} 
+                                        
+                                        
+\multirow{-10}{*}{UML}                   & \cite{Lenz2007}         & Functional           & 2007          \\ \hline
 \end{tabular}
 \end{table}
 
 
+
+
+\subsubsection{Transition-based models}
+
+There are several transition-based models
+
 A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions.
-
-
 
 
 
@@ -795,6 +805,8 @@ Another technique to create workload models it is Stochastic Formcharts. The wor
 One way to capture the navigational pattern within a session is through the Customer Behavior Model Graph (CBMG). Figure \ref{fig:cbmg} depicts an example of a CBMG showing that customers may be in several different states—Home, Browse, Search, Select, Add, and Pay—and they may transition between these states as indicated by the arcs connecting them. The numbers on the arcs represent transition probabilities. A state not explicitly represented in the figure is the Exit state \cite{Menasce2002a} \cite{Jiang2010} \cite{MohammadS.Obaidat}. 
 
 
+\subsubsection{Functional Models}
+
 Garousi et al. proposes derivate Stress Test Requirements from an UML model. The input model consists of a number of UML diagrams. Some of
 them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}).
 
@@ -823,6 +835,8 @@ them are standard in mainstream development methodologies and others are needed 
 \label{fig:forepost}
 
 \end{figure}
+
+\subsubsection{State-based models}
 
 Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
 \begin{itemize}\item An Application Model, specifying allowed sequences of service invocations and SUT-specific details for generating valid requests.\item A set of Behavior Models,each providing a probabilistic representation of user sessions in terms of invoked services.\item A Behavior Mix, specified as probabilities for the individual Behavior Models to occur during workload gen- eration.\item A Workload Intensity that includes a function which specifies the number of concurrent users during the workload generation execution.
