@@ -26,11 +26,12 @@
 \contentsline {subsubsection}{Apache JMeter}{21}
 \contentsline {section}{\numberline {2.2}Research Question 1:How is a proper stress designed?}{21}
 \contentsline {subsection}{\numberline {2.2.1}Model-based Stress Testing}{23}
-\contentsline {subsubsection}{Transition-based models}{25}
-\contentsline {subsubsection}{Functional Models}{26}
-\contentsline {subsubsection}{State-based models}{27}
+\contentsline {subsubsection}{Functional Models}{25}
+\contentsline {subsubsection}{Stochastic Notation}{25}
+\contentsline {subsubsection}{Transition-based models}{27}
+\contentsline {subsubsection}{State-based models}{28}
 \contentsline {subsection}{\numberline {2.2.2}Other Approaches}{28}
-\contentsline {subsubsection}{Feedback-ORiEnted PerfOrmance Software Testing}{28}
+\contentsline {subsubsection}{Feedback-ORiEnted PerfOrmance Software Testing}{29}
 \contentsline {section}{\numberline {2.3}Research Question 2: What are the main problems found by stress tests?}{30}
 \contentsline {chapter}{\numberline {3}Search-Based Stress Testing}{37}
 \contentsline {section}{\numberline {3.1}Metaheuristics}{38}

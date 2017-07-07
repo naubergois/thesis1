@@ -1,0 +1,11 @@
+{
+  "projectPath": "/home/74397176353/thesis1",
+  "title": "LaTeX-Plus Project",
+  "root": "main.aux",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}

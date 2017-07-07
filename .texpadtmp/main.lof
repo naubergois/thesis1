@@ -10,24 +10,24 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Load Runner Scripting\relax }}{20}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Workload modeling based on statistical data \cite {DiLucca2006}\relax }}{23}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Workload modeling based on the generative model \cite {DiLucca2006}\relax }}{24}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces User community modeling language \cite {Wang2013}\relax }}{27}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Stochastic Formcharts Example \cite {Draheim2006b} \cite {Wang2013}\relax }}{27}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Example of a Customer Behavior Model Graph (CBMG) \cite {Menasce2002a} \cite {Jiang2010} \cite {MohammadS.Obaidat}\relax }}{27}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Model-based stress test methodology\relax }}{28}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplary workload model\relax }}{28}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces The architecture and workflow of FOREPOST\relax }}{29}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Model-based stress test methodology\relax }}{27}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Exemplary workload model\relax }}{27}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The architecture and workflow of FOREPOST\relax }}{28}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces User community modeling language \cite {Wang2013}\relax }}{29}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Stochastic Formcharts Example \cite {Draheim2006b} \cite {Wang2013}\relax }}{29}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Example of a Customer Behavior Model Graph (CBMG) \cite {Menasce2002a} \cite {Jiang2010} \cite {MohammadS.Obaidat}\relax }}{29}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Symptoms of know performance problems \cite {Wert2013a}. \relax }}{30}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces The God class\cite {Wert2013a}. \relax }}{31}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces The God class\cite {Vetoio2011}. \relax }}{31}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Unbalanced Processing sample \cite {Wert2013a}. \relax }}{32}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The God class\cite {Wert2013a}. \relax }}{32}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The God class\cite {Vetoio2011}. \relax }}{32}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Unbalanced Processing sample \cite {Wert2013a}. \relax }}{33}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Pipe and Filter sample \cite {Vetoio2011}\relax }}{33}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Extensive Processing sample \cite {Vetoio2011}.\relax }}{33}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Circuitous Treasure Hunt sample \cite {Vetoio2011}\relax }}{33}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Empty Semi Trucks sample \cite {Vetoio2011}.\relax }}{33}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Tower of Babel sample \cite {Vetoio2011}\relax }}{34}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces One-Lane Bridge sample \cite {Vetoio2011}.\relax }}{34}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Excessive Dynamic Allocation.\relax }}{34}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Traffic Jam Response Time \cite {Vetoio2011}.\relax }}{34}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Tower of Babel sample \cite {Vetoio2011}\relax }}{33}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces One-Lane Bridge sample \cite {Vetoio2011}.\relax }}{33}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Circuitous Treasure Hunt sample \cite {Vetoio2011}\relax }}{34}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Empty Semi Trucks sample \cite {Vetoio2011}.\relax }}{34}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Excessive Dynamic Allocation.\relax }}{35}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Traffic Jam Response Time \cite {Vetoio2011}.\relax }}{35}
 \contentsline {figure}{\numberline {2.24}{\ignorespaces The Ramp sample \cite {Vetoio2011}.\relax }}{35}
 \contentsline {figure}{\numberline {2.25}{\ignorespaces More is Less sample \cite {Vetoio2011}.\relax }}{35}
 \addvspace {10\p@ }
