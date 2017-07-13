@@ -481,6 +481,12 @@ R~Raidl.
 \newblock {A Unified View on Hybrid Metaheuristics}.
 \newblock pages 1--12, 2006.
 
+\bibitem{Rakshit2017}
+Pratyusha Rakshit, Amit Konar, and Swagatam Das.
+\newblock {Noisy evolutionary optimization algorithms – A comprehensive
+  survey}.
+\newblock {\em Swarm and Evolutionary Computation}, 33:18--45, 2017.
+
 \bibitem{Rauf2009}
 Irum Rauf, Muhammad Zohaib~Z Iqbal, and Zafar~I Malik.
 \newblock {Model Based Testing of Web Service Composition Using UML Profile}.
@@ -523,6 +529,13 @@ Marwa Shousha.
 \newblock {\em Performance Stress Testing of Real-Time Systems Using Genetic
   Algorithms}.
 \newblock PhD thesis, Carleton University Ottawa, 2003.
+
+\bibitem{Siegmund2013}
+Florian Siegmund, Amos H~C Ng, and Kalyanmoy Deb.
+\newblock {A comparative study of dynamic resampling strategies for guided
+  Evolutionary Multi-objective Optimization}.
+\newblock {\em 2013 IEEE Congress on Evolutionary Computation, CEC 2013},
+  (2013008):1826--1835, 2013.
 
 \bibitem{Smith2000}
 Connie~U. Smith and Lloyd~G. Williams.

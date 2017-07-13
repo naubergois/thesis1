@@ -8,7 +8,6 @@
 %
 \documentclass{report}
 \usepackage{graphicx}
-
 \usepackage[labelfont=bf]{caption}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -70,13 +69,22 @@ framexleftmargin=20pt
 \author{Francisco Nauber Bernardo Gois}
 \principaladviser{D.Sc. Pedro Porfírio Muniz de Farias (UNIFOR)}
 \firstreader{D.Sc. André Luís Vasconcelos Coelho (UNIFOR)}
-\secondreader{D. Sc. João Paulo Pordeus Gomes (UFC)}
-\thirdreader{D. Sc. Pedro de Alcantara dos Santos Neto
-(UFPI) } %if needed
+\secondreader{D. Sc. Pedro de Alcantara dos Santos Neto
+(UFPI)}
+\thirdreader{D. Sc. João Paulo Pordeus Gomes (UFC)} %if needed
 \fourthreader{Ph.D. Americo Tadeu Falcone Sampaio (UNIFOR)}
 \fifthreader{Docteur Napoleão Vieira Nepomuceno (UNIFOR)} %if needed
 
+
+
 \beforepreface
+
+\clearpage
+
+Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.
+Read more at: https://www.brainyquote.com/quotes/quotes/a/alberteins125368.html
+
+
 \prefacesection{Preface}
 
 The doctoral thesis at hand encompasses three research papers. First research paper discuss about use a hybrid single metaheuristics  in stress tests.
@@ -85,7 +93,11 @@ The doctoral thesis at hand encompasses three research papers. First research pa
 
 \prefacesection{Acknowledgments}
 I would like to thank...
-\afterpreface
+
+
+
+
+
 
 \prefacesection{Abstract}
 
@@ -112,7 +124,7 @@ The following publications are related to this thesis:
 \end{itemize}
 
 
-
+\afterpreface
 
 
 
@@ -492,6 +504,8 @@ Comparing stress test tools is a laborious and difficult task since they offer a
 \item Testing tools and other approaches for traffic generation based on HTTP traces.
 \end{itemize}
 
+\subsubsection{Comparative test tool studies}
+
 Illes et al. present a systematic approach for evaluation criteria for test tools. Using the TORE methodology the study identify activities which potentially could be automated or at least supported by a test tool. The study evaluate three tools: WinRunner, Rational Robot  and HTTrace. WinRunner is distributed by Mercury.  Rational Robot is distributed by IBM . HTTrace is not a commercial product, but developed for internal use for the company i-TV-T. The study evaluate the tools in the tasks: TestPlanning and monitoring, designing test cases, constructing test cases, executing test cases and analysing test cases. Key features of all three test tools are the construction of test cases by
 capturing and subsequently editing the test scripts and the execution of the recorded test
 scripts.  WinRunner and Rational Robot can be extended to provide test planning and monitoring as well as defect and reporting facilities. HTTrace’s strength lies on testing database applications by allowing the reset of consistent database states. Additionally, all three tools can be extended to provide support for testing quality attributes of the system under test \cite{Illes2005}.
@@ -716,7 +730,7 @@ to model continuous systems \cite{MarkUtting2012}.
 \end{itemize}
 
 
-Table presents the papers found by the survey. All results was classified by model and paradigm of the model-based test. The most used paradigms in search-based stress testing are: Transition-based, State-based and funcional based models. 
+Table \ref{modelsummary} presents the papers found by the survey about model-based tests. All results was classified by model and paradigm. The most used paradigms in search-based stress testing are:  Funcional-based models, Transition-based and State-based models. 
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
@@ -725,7 +739,7 @@ Table presents the papers found by the survey. All results was classified by mod
 \begin{table}[!h]
 \centering
 \caption{My caption}
-\label{my-label}
+\label{modelsummary}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \rowcolor[HTML]{C0C0C0}
@@ -753,8 +767,8 @@ Petri Nets                              & \cite{Buchs2009}        & Operational 
 \multirow{-9}{*}{State-Machine Models}  & \cite{Jeong2016}        & State-based          & 2016          \\ \hline
 Symbolic Transition System              & \cite{Anisetti2013}     & Transition-based     & 2013          \\ \hline
 Timed Automata                          & \cite{Anand2013}        & Transition-based     & 2013          \\ \hline
-UCML                                    & \cite{Barber1999}       & Transition-based     & 1999          \\
-UCML &
+                                         & \cite{Barber1999}       & Transition-based     & 1999          \\
+\multirow{-2}{*}{UCML} &
 \cite{Wang2013}    & Transition-based           & 2013          \\ \hline
                                         & \cite{XinyingCai2007}   & Functional           & 2007          \\ \cline{2-4}
                                         & \cite{Shirole2013}      & Functional           & 2013          \\ \cline{2-4}
@@ -780,31 +794,7 @@ Among the several functional models approaches, we can highlight the User Commun
 Garousi et al. proposes derivate Stress Test Requirements from an UML model. The input model consists of a number of UML diagrams. Some of
 them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}).
 
-\begin{figure}[!ht]
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{./images/modelmethodology.png}
-\caption{Model-based stress test methodology}
-\label{fig:modelbased}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\centering
-\includegraphics[width=1\textwidth]{./images/vogel.png}
-\caption{Exemplary workload model}
-\label{fig:vogel}
 
-
-\end{minipage}
-\end{figure}
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.6\textwidth]{./images/FOREPOST.png}
-\caption{The architecture and workflow of FOREPOST}
-\label{fig:forepost}
-
-\end{figure}
 
 \subsubsection{Stochastic Notation}
 
@@ -851,13 +841,37 @@ Vogele et al. presents an approach that aims to automate the extraction and tran
 \item A Workload Intensity that includes a function which specifies the number of concurrent users during the workload generation execution.
 \end{itemize}
 
+\begin{figure}[!ht]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/modelmethodology.png}
+\caption{Model-based stress test methodology}
+\label{fig:modelbased}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\centering
+\includegraphics[width=1\textwidth]{./images/vogel.png}
+\caption{Exemplary workload model}
+\label{fig:vogel}
 
 
+\end{minipage}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/FOREPOST.png}
+\caption{The architecture and workflow of FOREPOST}
+\label{fig:forepost}
+
+\end{figure}
 
 
 \subsubsection{State-based models}
 
 
+Sridhar proposed an approach to generate test cases with MATLAB using Simulink/ Stateflow tool. After the model creation, test sequences are generated a dependency graph of that system \cite{Sridhar2013}. 
 
 
 
@@ -1088,7 +1102,7 @@ The Traffic Jam antipattern occurs if many concurrent threads or processes are w
 \begin{figure}[!h]
 \begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{./images/ramp.png}
+\includegraphics[width=0.6\textwidth]{./images/ramp.png}
 \caption{The Ramp sample \cite{Vetoio2011}.}
 \label{fig:ramp}
 \end{minipage}
@@ -1103,6 +1117,8 @@ The Traffic Jam antipattern occurs if many concurrent threads or processes are w
 The Ramp it is a antipattern where the processing time increases as the system is used. The Ramp can arise in several different ways. Any situation in which the amount of processing required to satisfy a request increases over time will produce the behavior. With the Ramp antipattern, the memory consumption of the application is growing over time. The root cause is Specific Data Structures which are growing during operation or which are not properly disposed \cite{Wert2014} \cite{Smith2003}. Fig. \ref{fig:ramp} shows a system  with The Ramp problem:  (i) the monitored response time of the operation opx at time t1, i.e. \$RT(opx, t1), is much lower than the monitored response time of the operation opx at time t2, i.e. \$RT(opx, t2), with t1 < t2; (ii) the monitored throughput of the operation opx at time t1, i.e. \$Th(opx, t1), is much larger than the monitored throughput of the operation opx at time t2, i.e. \$Th(opx, t2), with t1 < t2.
 
 More is less occurs when a system spends more time "thrashing” than accomplishing real work because there are too many processes relative to available resources. More is Less are presented when it is running too many programs overtime. This antipattern causes too much system paging and systems spend all their time servicing page faults rather than processing requests. In distributed systems, there are more causes.They include: creating too many database connections and  allowing too many internet connection. Fig. \ref{fig:moreisless} describes a system  with a More Is Less problem: There is a processing node PN1 and the monitored runtime parameters (e.g. database connections, etc.) at time t1, i.e. \$Par(PN1[p], t1), are much larger than the same parameters at time t2, i.e. \$Par(PN1[p], t2), with t1 < t2.
+
+\section{Summary}
 
 \chapter{Search-Based Stress Testing}
 
@@ -1347,6 +1363,30 @@ SPEA uses a regular population and an archive. Starting with an initial populati
 The main differences between SPEA2 and NSGA-II are the diversity assignment and replacement. NSGA-II uses a fast non-dominated sorting algorithm and uses Pareto optimality levels as the primary criterion to select solutions. SPEA2 derives the strength of each solution from the number of other solutions it dominates. NSGA-II uses the crowding-distance to maintain a well-spread set of solutions whereas SPEA2 applies the k-nearest neighbor approach \cite{Tervonen2017}.
 
 
+\subsection{Metaheuristic Noise Reduction}
+
+Noisy optimization is currently receiving increasing popularity for its widespread applications in engineering optimization
+problems, where the objective functions are often found to be contaminated with noisy \cite{Rakshit2017}. Software is pervasive, which raises the value of testing it \cite{Sandler2004}. Various actions outside the application under test can cause high response times such as pagination, network usage or even a software upgrade.
+
+
+Standard Error Dynamic Resampling (SEDR), strategy has been employed for solving both noisy single and multi-objective evolutionary
+optimization problems. The working principle of SEDR is to add samples to a solution sequentially until the standard error of
+the objectives falls below a chosen threshold value \cite{Siegmund2013}. It was proposed in [11] for single-objective optimization problems. In this study we apply SEDR on multi-objective problems by aggregating all objective values to a scalar value. As aggregation the median of the objective standard errors is used.
+
+
+The strategy is concerned with the optimal allocation of sampling budget to a trial solution based on the noise strength at its corresponding position in the search space. The contamination level of noise is captured by the standard error of the mean fitness estimate of a trial solution. 
+
+
+\begin{algorithm}[h]
+  \caption{SEDR algorithm \cite{Siegmund2013}}\label{SEDR}
+  \begin{algorithmic}[1]
+
+    \State \textbf{input :} Solution s
+    \State Draw $b_{min}\ge 2$ initial samples of s, F(s)
+    \State Calculate mean of the available fitness for each of the \textit{m} objectives: $\mu_{n} = \frac{1}{n} $
+  \end{algorithmic}
+\end{algorithm}
+
 
 \section{Search-based Stress testing}
 
@@ -1495,7 +1535,7 @@ penalty=100 * \Delta \\
 
 \section{Experiments with Hybrid Algorithm}
 
-This section presents two experiments. The first one was performed on an emulated component, and the second one was performed using an installed Moodle application. The experiments used the following fitness function:
+This section presents three experiments. The first one was performed on an emulated component, the second one was performed using an installed Moodle application and the third one was performed using four antipatterns. The experiments used the following fitness function:
 
 \begin{equation}
 \begin{aligned}
@@ -2174,7 +2214,7 @@ This chapter present experiments to assert the benefits of multiobjective metahe
 
 \centering
 \includegraphics[width=0.6\textwidth]{./images/step3.png}
-\caption{Test module life cycle.}
+\caption{Multiobjective implemented solution life cycle}
 \label{fig:step2}
 \end{figure}
 
@@ -2300,10 +2340,19 @@ In this section,  we present the experimental results,  in which we carried out 
 \item MOEAD
 \end{itemize}
 
-The experiment was conducted with the JPetStore application in two cycles with or without a noise reduction strategy. The maximum tolerated response time in the test was 10000 seconds.  The whole process of stress  tests, which run for 4 days and 492 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 50 previously established  generations by the algorithm. The experiments use the follow application features:
+The experiment was conducted with the JPetStore application in two cycles with or without a noise reduction strategy. The maximum tolerated response time in the test was 10000 seconds.  The whole process of stress  tests, which run for 4 days and 492 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 50 previously established  generations by the algorithm. 
 
 
 
+The experiments was conducted a customized version of the SEDR algorithm for noise reduction.
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/suspectlist.png}
+\caption{SEDR customized algorithm}
+\label{fig:sedrcustomized}
+\end{figure}
 
 
 \subsection{Experiment Results}
@@ -2311,8 +2360,8 @@ The experiment was conducted with the JPetStore application in two cycles with o
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{./images/nsga2paretofrontier2.png}
-\caption{Maximum fitness value by number of requests}
+\includegraphics[width=1\textwidth]{./images/spea2paretofrontier2.png}
+\caption{SPEA2 Pareto Frontier}
 \label{fig:paretofrontier2}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
@@ -2322,6 +2371,7 @@ The experiment was conducted with the JPetStore application in two cycles with o
 \label{fig:paretofrontier2}
 \end{minipage}
 \end{figure}
+
 
 
 
