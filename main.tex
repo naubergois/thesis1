@@ -39,6 +39,7 @@
 \usepackage[inline]{enumitem}
 \usepackage{booktabs}
 \usepackage{txfonts}
+\usepackage{soul}
 \usepackage{colortbl}%
   \newcommand{\myrowcolour}{\rowcolor[gray]{0.925}}
 \newenvironment{Figure}
@@ -61,6 +62,8 @@ framexleftmargin=20pt
 \DeclareCaptionFormat{mylst}{\hrule#1#2#3}
 \captionsetup[lstlisting]{format=mylst,labelfont=bf,singlelinecheck=off,labelsep=space,font={normalsize,tt}}
 
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+
 \usepackage{suthesis-2e}
 \dept{Computer Science}
 
@@ -77,12 +80,21 @@ framexleftmargin=20pt
 
 
 
+
 \beforepreface
 
 \clearpage
 
-Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.
-Read more at: https://www.brainyquote.com/quotes/quotes/a/alberteins125368.html
+\vspace*{\fill}
+\begin{quote} 
+\centering 
+    Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. 
+\end{quote}
+\vspace*{\fill}
+
+
+
+\clearpage
 
 
 \prefacesection{Preface}
@@ -256,7 +268,7 @@ The purpose of this thesis is to show the validity of this hypothesis through th
 The main contributions of this thesis are follows:
 
 \begin{itemize}
-\item Hybrid algorithm approach using Tabu Search, Simulated Annealing and Genetic Algorithms for search-based stress testing (Chapter 4).
+\item Hybrid algorithm approach using Tabu Search, Simulated Annealing and Genetic Algorithms for search-based stress testing (Chapter 4) \cite{Gois2016}.
 \item Hybrid algorithm with Q-Learning approach (Chapter 5).
 \item Comprehensive investigation on the use of multi-objective metaheuristics on search-based stress testing (Chapter 6).
 \end{itemize}
@@ -1360,21 +1372,49 @@ SPEA uses a regular population and an archive. Starting with an initial populati
   \end{algorithmic}
 \end{algorithm}
 
-The main differences between SPEA2 and NSGA-II are the diversity assignment and replacement. NSGA-II uses a fast non-dominated sorting algorithm and uses Pareto optimality levels as the primary criterion to select solutions. SPEA2 derives the strength of each solution from the number of other solutions it dominates. NSGA-II uses the crowding-distance to maintain a well-spread set of solutions whereas SPEA2 applies the k-nearest neighbor approach \cite{Tervonen2017}.
+The main differences between SPEA2 and NSGA-II are the diversity assignment and replacement. NSGA-II uses a fast non-dominated sorting algorithm and uses Pareto optimality levels as the primary criterion to select solutions. SPEA2 derives the strength of each solution from the number of other solutions it dominates. NSGA-II uses the crowding-distance to maintain a well-spread set of solutions whereas SPEA2 applies the k-nearest neighbor approach (Figure \ref{fig:speansga}) \cite{Tervonen2017} \cite{Deb2005}.
 
+
+
+
+\subsubsection{Comparing multi-objective metaheuristics}
+
+Deb states that are two orthogonals goals for any multi-objective algorithm \cite{deb2001multi}:
+
+\begin{itemize}
+\item Identify solutions as close as possible  to the true Pareto frontier;
+\item identify a diverse of sets of solutions distributed across the entire Pareto-optimal surface.
+\end{itemize}
+
+There are several metrics either closeness or diversity. Example of metrics which measure the closeness of Pareto frontier is Error ratio and Set coverage. Example of metrics which measure the diversity are the Spacing and the Spread. The Hypervolume metric measure both closeness and diversity \cite{janssens2010multiple}.
+
+The Hypervolume metric calculates the volume in an objective space covered by the non-dominated individuals. For each solution, a hypercube is computed from a reference point and the solution as the diagonal corners of the hypercube \cite{janssens2010multiple}.
+
+
+\begin{figure}[h]
+\begin{minipage}{.6\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/speansga.png}
+\caption{Comparison between SPEA-2 and NSGA-II \cite{Deb2005}}
+\label{fig:speansga}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+\centering
+\includegraphics[width=0.7\textwidth]{./images/hypervolume-annot.png}
+\caption{Hypervolume metric \cite{Lacour2015}}
+\label{fig:hypervolume}
+\end{minipage}
+\end{figure}
 
 \subsection{Metaheuristic Noise Reduction}
 
-Noisy optimization is currently receiving increasing popularity for its widespread applications in engineering optimization
-problems, where the objective functions are often found to be contaminated with noisy \cite{Rakshit2017}. Software is pervasive, which raises the value of testing it \cite{Sandler2004}. Various actions outside the application under test can cause high response times such as pagination, network usage or even a software upgrade.
+Software is pervasive, which raises the value of testing it \cite{Sandler2004}. Various actions outside the application under test can cause high response times such as pagination, network usage or even a software upgrade. It is necessary a noisy reduction strategy in stress test in this situations. Noisy optimization is currently receiving increasing popularity for its widespread applications in engineering optimization
+problems, where the objective functions are often found to be contaminated with noisy \cite{Rakshit2017}. 
 
 
 Standard Error Dynamic Resampling (SEDR), strategy has been employed for solving both noisy single and multi-objective evolutionary
 optimization problems. The working principle of SEDR is to add samples to a solution sequentially until the standard error of
-the objectives falls below a chosen threshold value \cite{Siegmund2013}. It was proposed in [11] for single-objective optimization problems. In this study we apply SEDR on multi-objective problems by aggregating all objective values to a scalar value. As aggregation the median of the objective standard errors is used.
-
-
-The strategy is concerned with the optimal allocation of sampling budget to a trial solution based on the noise strength at its corresponding position in the search space. The contamination level of noise is captured by the standard error of the mean fitness estimate of a trial solution. 
+the objectives falls below a chosen threshold value \cite{Siegmund2013}. It was proposed in \cite{DiPietro2004} for single-objective optimization problems. In this study we apply SEDR on multi-objective problems by aggregating all objective values to a scalar value. As aggregation the median of the objective standard errors is used. The strategy is concerned with the optimal allocation of sampling budget to a trial solution based on the noise strength at its corresponding position in the search space. The contamination level of noise is captured by the standard error of the mean fitness estimate of a trial solution. The SEDR algorithm is described in Alg. \ref{SEDR}.
 
 
 \begin{algorithm}[h]
@@ -1383,10 +1423,15 @@ The strategy is concerned with the optimal allocation of sampling budget to a tr
 
     \State \textbf{input :} Solution s
     \State Draw $b_{min}\ge 2$ initial samples of s, F(s)
-    \State Calculate mean of the available fitness for each of the \textit{m} objectives: $\mu_{n} = \frac{1}{n} $
+    \State Calculate mean of the available fitness for each of the \textit{m} objectives: $\mu_{i}(s)$, i=1,...,m
+    \State Calculate standart desviation: $\sigma_{i}=\sqrt{ \frac{1}{n-1} \sum_{n}^{j=1} (F^i_{j}-\mu_{i}(s))^2} $
+    \State Calculate the standart error: $se_{i}(s)=\frac{\sigma_{i}}{\sqrt{n}}$
+    \State Calculate an aggregation og the standart errors $\overline{se}(s)$
+    \State Stop if  $\overline{se}(s)$ > threshold or $b_{s}\ge b_{max}$ otherwise go to step 2
   \end{algorithmic}
 \end{algorithm}
 
+SEDR noise reduction is used by this research in multi-objective scenarios experiments where the objective of the experiments besides finding the tests with the longest response time also needs to find the Pareto frontier of the application.
 
 \section{Search-based Stress testing}
 
@@ -1766,15 +1811,13 @@ Table \ref{fig:gened} presents the percentage of genes in all test scenarios by 
 
 \subsection{Third Experiment: AntiPatterns}
 
-In this subsection, We present the results of the experiment which we carried out to verify the antipatterns  implementation and the metaheuristics used by the testbed tool. We conducted the experiment in two phases in order to verify the effectiveness of the testbed tool. Each experiment use two different antipatterns and the happy scenarios. The experiment ran for 17 generations. The experiments used an initial population of 4 individuals by metaheuristic. The genetic algorithm used the top 10 individuals from each generation in the crossover operation. The Tabu list was configured with the size of 10 individuals and expired every 2 generations.  The mutation operation was applied to 10\% of the population on each generation. The experiments uses tabu search, genetic algorithms and the hybrid metaheuristic approach proposed by Gois et al. \cite{Gois2016}. The objective function applied is intended to maximize the number of users and minimize the response time of the scenarios being tested.  In this experiments, better fitness values means to find scenarios with more users and lower values of a response time. A penalty is applied when the response time is greater than the  maximum response time expected.
+In this subsection, We present the results of the experiment which we carried out to verify the best case scenarios found by the hybrid metaheuristic approach. We conducted the experiment in two phases in order to verify the effectiveness of the hybrid algorithm. Each experiment use two different antipatterns and happy scenarios. The experiment ran for 17 generations. The experiments used an initial population of 4 individuals by metaheuristic. The genetic algorithm used the top 10 individuals from each generation in the crossover operation. The Tabu list was configured with the size of 10 individuals and expired every 2 generations.  The mutation operation was applied to 10\% of the population on each generation. The experiments uses tabu search, genetic algorithms and the hybrid metaheuristic approach proposed by Gois et al. \cite{Gois2016}. The objective function applied is intended to maximize the number of users and minimize the response time of the scenarios being tested (Best Case Scenarios).  In this experiments, better fitness values means to find scenarios with more users and lower values of a response time. A penalty is applied when the response time is greater than the  maximum response time expected.
 
 \subsection{Experiment Research Questions}
 
 The following research question is addressed:
 \begin{itemize*}
-\item Does the IAdapter testbed correctly emulates an antipattern?
-\item Does the IAdapter testbed be able to provide metrics with the aim of being used for stress search-based evaluation studies?
-\item Is the IAdapter testbed extensible, allowing the use of several metaheuristic approaches?
+\item Does the Hybrid algorithm  finds scenarios without the antipatterns presented?
 \end{itemize*}
 
 \subsection{Variables}
@@ -1783,28 +1826,10 @@ The independent variables are the test scenarios (antipatterns and happy scenari
 
 \subsection{Hypotheses}
 
+With regard to the antipatterns found by hybrid metaheuristic:
 \begin{itemize}
-\item With regard to antipatterns implementation or emulation:
-\begin{itemize*}
 \item $H_{0}$ (A null hypothesis) :the best workloads found in the experiments contain antipatterns
 \item $H_{1}$  : the best workloads found in the experiments do not contain antipatterns.
-\end{itemize*}
-\end{itemize}
-
-\begin{itemize}
-\item With regard to metrics provided by the IAdapter:
-\begin{itemize*}
-\item $H_{0}$ (A null hypothesis) : The IAdapter testbed does not be able to provide metrics with the aim of being used for stress search-based evaluation studies.
-\item $H_{1}$  : The IAdapter testbed is able to provide metrics with the aim of being used for stress search-based evaluation studies.
-\end{itemize*}
-\end{itemize}
-
-\begin{itemize}
-\item With regard to the IAdapter testbed customization:
-\begin{itemize*}
-\item $H_{0}$ (A null hypothesis) :the IAdapter testbed is not extensible, disallowing the use of several metaheuristic approaches.
-\item $H_{1}$  : the IAdapter testbed is extensible, allowing the use of several metaheuristic approaches.
-\end{itemize*}
 \end{itemize}
 
 \subsection{The Ramp and Circuitous Treasure Hunt experiment}
@@ -1813,12 +1838,12 @@ The experiment was carried out for 8 continuous hours.  All tests in the experim
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{./images/experiment1-4.png}
+\includegraphics[width=0.8\textwidth]{./images/antipattern1.png}
 \caption{Average, median, maximum and minimal fitness value by Search Method}
 \label{fig:boxplot1}
 \end{figure}
 
-Table \ref{tab:bestindividuals} shows 4 best individuals found in the experiment. None of the best individuals has one of the antipatterns used in the experiment, excluding the scenarios with antipatterns.
+Table \ref{tab:bestindividuals} shows 4 best individuals found in the experiment by hybrid algorithm. None of the best individuals has one of the antipatterns used in the experiment, excluding the scenarios with antipatterns.
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
@@ -1846,7 +1871,7 @@ The experiment was carried out for 6 continuous hours. In this experiment, Scena
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{./images/experiment2-2.png}
+\includegraphics[width=0.8\textwidth]{./images/antipattern2.png}
 \caption{Finesse value by generation in all tests}
 \label{fig:boxplot2}
 \end{figure}
@@ -1861,7 +1886,7 @@ Table \ref{tab:bestindividuals2} shows the 4 best workloads found in the second 
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[h]
 \centering
-\caption{Best individuals found in the second experiment}
+\caption{Best individuals found by hybrid algorithm in the second experiment}
 \label{tab:bestindividuals2}
 \begin{tabular}{lllll}
 \rowcolor[HTML]{FFCCC9}
@@ -2344,8 +2369,7 @@ The experiment was conducted with the JPetStore application in two cycles with o
 
 
 
-The experiments was conducted a customized version of the SEDR algorithm for noise reduction.
-
+The experiments uses a customized version of the SEDR algorithm for noise reduction. The algorithm runs as long as each workload has at least 3 samples or the SEDR condition is satisfied for all workloads ( Figure \ref{fig:sedrcustomized} - \ding{202}). The algorithm add all workloads in OUTLIERS list to the list of execution ( Figure \ref{fig:sedrcustomized} - \ding{203}). All workloads are performed and the SEDR condition is verified  ( Figure \ref{fig:sedrcustomized} - \ding{204} and \ding{205} ). If the SEDR condition is satisfied the workload is removed from OUTLIERS list ( Figure \ref{fig:sedrcustomized} - \ding{206}) otherwise the workload is included in the list if it is no longer present ( Figure \ref{fig:sedrcustomized} - \ding{207}).
 
 \begin{figure}[!h]
 \centering

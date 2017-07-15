@@ -1,0 +1,24 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Benchmarks group\relax }}{16}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Software products\relax }}{16}
+\contentsline {table}{\numberline {2.3}{\ignorespaces My caption\relax }}{24}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Performance antipatterns\relax }}{29}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{46}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{56}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Results obtained from the second experiment\relax }}{56}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{57}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{57}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Best individuals found in the first experiment\relax }}{59}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Best individuals found by hybrid algorithm in the second experiment\relax }}{60}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Hypothetical MDP Q-values \relax }}{64}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Q values for response times bellow than service level\relax }}{68}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Pareto Frontier workload results\relax }}{74}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

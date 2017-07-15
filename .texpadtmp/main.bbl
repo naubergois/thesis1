@@ -169,6 +169,18 @@ MB~da~Silveira, EM~Rodrigues, and AF~Zorzo.
 Leffingwell Dean and Widrig Don.
 \newblock Managing software requirements: A use case approach, 2003.
 
+\bibitem{deb2001multi}
+Kalyanmoy Deb.
+\newblock {\em Multi-objective optimization using evolutionary algorithms},
+  volume~16.
+\newblock John Wiley \& Sons, 2001.
+
+\bibitem{Deb2005}
+Kalyanmoy Deb, M.~Mohan, and S.~Mishra.
+\newblock {Evaluating the epislon-domination based multiobjective evolutionary
+  algorithm for a quick computation of Pareto-optimal solutions}.
+\newblock {\em Evolutionary Computation Journal}, 13(4):501--525, 2005.
+
 \bibitem{DiAlesio2013}
 S~{Di Alesio}, S~Nejati, L~Briand, and A~Gotlieb.
 \newblock {Stress testing of task deadlines: A constraint programming
@@ -186,6 +198,13 @@ Giuseppe~a. {Di Lucca} and Anna~Rita Fasolino.
 \newblock {Testing Web-based applications: The state of the art and future
   trends}.
 \newblock volume~48, pages 1172--1186, 2006.
+
+\bibitem{DiPietro2004}
+A.~{Di Pietro}, L.~While, and L.~Barone.
+\newblock {Applying evolutionary algorithms to problems with noisy,
+  time-consuming fitness functions}.
+\newblock {\em Proceedings of the 2004 Congress on Evolutionary Computation},
+  pages 1254--1261, 2004.
 
 \bibitem{Draheim2006b}
 D.~Draheim, J.~Grundy, J.~Hosking, C.~Lutteroth, and G.~Weber.
@@ -348,6 +367,13 @@ B.~Jones {J. Wegener, K. Grimm, M. Grochtmann, H. Sthamer}.
 \newblock {Systematic testing of real-time systems}.
 \newblock 1996.
 
+\bibitem{janssens2010multiple}
+Gerrit Janssens and Jos{\'e} Pangilinan.
+\newblock Multiple criteria performance analysis of non-dominated sets obtained
+  by multi-objective evolutionary algorithms for optimisation.
+\newblock {\em Artificial Intelligence Applications and Innovations}, pages
+  94--103, 2010.
+
 \bibitem{Jeong2016}
 So-young Jeong, Cheol-jung Yoo, Hye-min Noh, and Corresponding Author.
 \newblock {State Transition Based Test Model and Test Case Generation Technique
@@ -378,6 +404,11 @@ Barbara Kitchenham and S~Charters.
 \newblock {Guidelines for performing Systematic Literature Reviews in Software
   Engineering}.
 \newblock {\em Engineering}, 2:1051, 2007.
+
+\bibitem{Lacour2015}
+Renaud Lacour, Kathrin Klamroth, and Carlos~M. Fonseca.
+\newblock {A box decomposition algorithm to compute the hypervolume indicator}.
+\newblock {\em Computers and Operations Research}, pages 1--21, 2015.
 
 \bibitem{Lenz2007}
 Chris Lenz, J~Chimiak-Opoka, and Ruth Breu.

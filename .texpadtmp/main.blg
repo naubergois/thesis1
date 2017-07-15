@@ -3,399 +3,399 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: ../mybib.bib
-Repeated entry---line 204 of file ../mybib.bib
+Repeated entry---line 233 of file ../mybib.bib
  : @article{Illes2005
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 660 of file ../mybib.bib
+Repeated entry---line 722 of file ../mybib.bib
  : @inproceedings{Aleti2016
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 682 of file ../mybib.bib
+Repeated entry---line 744 of file ../mybib.bib
  : @inproceedings{Blum2003
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 916 of file ../mybib.bib
+Repeated entry---line 978 of file ../mybib.bib
  : @inproceedings{Vetoio2011
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 933 of file ../mybib.bib
+Repeated entry---line 995 of file ../mybib.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1298 of file ../mybib.bib
+Repeated entry---line 1360 of file ../mybib.bib
  : @inproceedings{Harman2015
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1584 of file ../mybib.bib
+Repeated entry---line 1646 of file ../mybib.bib
  : @inproceedings{Bertolino2008
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1598 of file ../mybib.bib
+Repeated entry---line 1660 of file ../mybib.bib
  : @inproceedings{MarkUtting2012
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1876 of file ../mybib.bib
+Repeated entry---line 1938 of file ../mybib.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1910 of file ../mybib.bib
+Repeated entry---line 1972 of file ../mybib.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2546 of file ../mybib.bib
+Repeated entry---line 2608 of file ../mybib.bib
  : @book{talbi2009metaheuristics
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2572 of file ../mybib.bib
+Repeated entry---line 2634 of file ../mybib.bib
  : @article{Smith2002
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2625 of file ../mybib.bib
+Repeated entry---line 2687 of file ../mybib.bib
  : @article{Wang2013
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2677 of file ../mybib.bib
+Repeated entry---line 2739 of file ../mybib.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2714 of file ../mybib.bib
+Repeated entry---line 2776 of file ../mybib.bib
  : @article{Wert2013a
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2729 of file ../mybib.bib
+Repeated entry---line 2791 of file ../mybib.bib
  : @article{Smith2003
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2742 of file ../mybib.bib
+Repeated entry---line 2804 of file ../mybib.bib
  : @article{Glover1986
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2752 of file ../mybib.bib
+Repeated entry---line 2814 of file ../mybib.bib
  : @article{Gay
  :             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2761 of file ../mybib.bib
+Repeated entry---line 2823 of file ../mybib.bib
  : @article{Wert2014
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2775 of file ../mybib.bib
+Repeated entry---line 2837 of file ../mybib.bib
  : @article{Arcelli2012
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2789 of file ../mybib.bib
+Repeated entry---line 2851 of file ../mybib.bib
  : @article{Cortellessa2007
  :                         ,
 I'm skipping whatever remains of this entry
-You're missing an entry type---line 2791 of file ../mybib.bib
+You're missing an entry type---line 2853 of file ../mybib.bib
  : file = {:Users/naubergois/Downloads/10.1007@
  :                                             978-3-540-75211-013.pdf:pdf},
 I'm skipping whatever remains of this entry
-Repeated entry---line 2798 of file ../mybib.bib
+Repeated entry---line 2860 of file ../mybib.bib
  : @article{Smith2000
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2812 of file ../mybib.bib
+Repeated entry---line 2874 of file ../mybib.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2827 of file ../mybib.bib
+Repeated entry---line 2889 of file ../mybib.bib
  : @article{Aleti2016
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2849 of file ../mybib.bib
+Repeated entry---line 2911 of file ../mybib.bib
  : @article{Blum2003
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2865 of file ../mybib.bib
+Repeated entry---line 2927 of file ../mybib.bib
  : @incollection{raidl2010metaheuristic
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2874 of file ../mybib.bib
+Repeated entry---line 2936 of file ../mybib.bib
  : @article{DiAlesio2014
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2882 of file ../mybib.bib
+Repeated entry---line 2944 of file ../mybib.bib
  : @article{DiAlesio2013
  :                      ,
 I'm skipping whatever remains of this entry
-"}" immediately follows an entry type---line 2886 of file ../mybib.bib
+"}" immediately follows an entry type---line 2948 of file ../mybib.bib
  :  File = {:Users/naubergois/Documents/10.0000@www.computer.org@generic-DD33B05EC8B4.pdf:pdf
  :                                                                                           },
 I'm skipping whatever remains of this entry
-Repeated entry---line 2894 of file ../mybib.bib
+Repeated entry---line 2956 of file ../mybib.bib
  : @article{Alesio2015
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2903 of file ../mybib.bib
+Repeated entry---line 2965 of file ../mybib.bib
  : @article{Raidl2006
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2915 of file ../mybib.bib
+Repeated entry---line 2977 of file ../mybib.bib
  : @article{Pohlheim2005
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2925 of file ../mybib.bib
+Repeated entry---line 2987 of file ../mybib.bib
  : @article{Gross2000
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2946 of file ../mybib.bib
+Repeated entry---line 3008 of file ../mybib.bib
  : @article{Puchinger2005
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3013 of file ../mybib.bib
+Repeated entry---line 3075 of file ../mybib.bib
  : @phdthesis{Jiang2010
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3027 of file ../mybib.bib
+Repeated entry---line 3089 of file ../mybib.bib
  : @article{Afzal2009a
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3043 of file ../mybib.bib
+Repeated entry---line 3105 of file ../mybib.bib
  : @article{Stations
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3055 of file ../mybib.bib
+Repeated entry---line 3117 of file ../mybib.bib
  : @book{Molyneaux2009
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3071 of file ../mybib.bib
+Repeated entry---line 3133 of file ../mybib.bib
  : @article{Sullivan
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3077 of file ../mybib.bib
+Repeated entry---line 3139 of file ../mybib.bib
  : @inproceedings{Draheim2006b
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3087 of file ../mybib.bib
+Repeated entry---line 3149 of file ../mybib.bib
  : @article{Vetoio2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3098 of file ../mybib.bib
+Repeated entry---line 3160 of file ../mybib.bib
  : @book{brown1998antipatterns
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3105 of file ../mybib.bib
+Repeated entry---line 3167 of file ../mybib.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3144 of file ../mybib.bib
+Repeated entry---line 3206 of file ../mybib.bib
  : @article{Garousi2010
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3170 of file ../mybib.bib
+Repeated entry---line 3232 of file ../mybib.bib
  : @article{Avritzer1994
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3181 of file ../mybib.bib
+Repeated entry---line 3243 of file ../mybib.bib
  : @phdthesis{Garousi2006
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3210 of file ../mybib.bib
+Repeated entry---line 3272 of file ../mybib.bib
  : @article{Garousi2008
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3250 of file ../mybib.bib
+Repeated entry---line 3312 of file ../mybib.bib
  : @article{Wegener1997
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3264 of file ../mybib.bib
+Repeated entry---line 3326 of file ../mybib.bib
  : @inproceedings{Alander
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3273 of file ../mybib.bib
+Repeated entry---line 3335 of file ../mybib.bib
  : @article{Barros2007
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3330 of file ../mybib.bib
+Repeated entry---line 3392 of file ../mybib.bib
  : @article{Sandler2004
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3344 of file ../mybib.bib
+Repeated entry---line 3406 of file ../mybib.bib
  : @book{Erinle2013
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3351 of file ../mybib.bib
+Repeated entry---line 3413 of file ../mybib.bib
  : @misc{Corporation2007
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3394 of file ../mybib.bib
+Repeated entry---line 3456 of file ../mybib.bib
  : @article{Goncalves2014
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3399 of file ../mybib.bib
+Repeated entry---line 3461 of file ../mybib.bib
  : @book{Feitelson2013
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3460 of file ../mybib.bib
+Repeated entry---line 3522 of file ../mybib.bib
  : @article{DiLucca2006
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3472 of file ../mybib.bib
+Repeated entry---line 3534 of file ../mybib.bib
  : @article{Harman2015
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3484 of file ../mybib.bib
+Repeated entry---line 3546 of file ../mybib.bib
  : @article{Anand2013
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3495 of file ../mybib.bib
+Repeated entry---line 3557 of file ../mybib.bib
  : @inproceedings{Penta2007
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3504 of file ../mybib.bib
+Repeated entry---line 3566 of file ../mybib.bib
  : @article{Barber1999
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3511 of file ../mybib.bib
+Repeated entry---line 3573 of file ../mybib.bib
  : @article{Silveira2011
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3518 of file ../mybib.bib
+Repeated entry---line 3580 of file ../mybib.bib
  : @article{Grechanik2012
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3551 of file ../mybib.bib
+Repeated entry---line 3613 of file ../mybib.bib
  : @misc{dean2003managing
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3574 of file ../mybib.bib
+Repeated entry---line 3636 of file ../mybib.bib
  : @article{Harman2010
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3590 of file ../mybib.bib
+Repeated entry---line 3652 of file ../mybib.bib
  : @book{MohammadS.Obaidat
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3617 of file ../mybib.bib
+Repeated entry---line 3679 of file ../mybib.bib
  : @book{Talbi2013
  :                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3637 of file ../mybib.bib
+Repeated entry---line 3699 of file ../mybib.bib
  : @article{Greenwald2003
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3649 of file ../mybib.bib
+Repeated entry---line 3711 of file ../mybib.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3665 of file ../mybib.bib
+Repeated entry---line 3727 of file ../mybib.bib
  : @article{Hierons2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3679 of file ../mybib.bib
+Repeated entry---line 3741 of file ../mybib.bib
  : @phdthesis{shousha2003performance
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3686 of file ../mybib.bib
+Repeated entry---line 3748 of file ../mybib.bib
  : @article{hong2000simultaneously
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3697 of file ../mybib.bib
+Repeated entry---line 3759 of file ../mybib.bib
  : @article{Vogele2016
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3714 of file ../mybib.bib
+Repeated entry---line 3776 of file ../mybib.bib
  : @article{Menasce2002a
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3724 of file ../mybib.bib
+Repeated entry---line 3786 of file ../mybib.bib
  : @article{Sutton2012
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3761 of file ../mybib.bib
+Repeated entry---line 3823 of file ../mybib.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3775 of file ../mybib.bib
+Repeated entry---line 3837 of file ../mybib.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3791 of file ../mybib.bib
+Repeated entry---line 3853 of file ../mybib.bib
  : @article{Trent1995
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3886 of file ../mybib.bib
+Repeated entry---line 3948 of file ../mybib.bib
  : @phdthesis{tracey2000search
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3898 of file ../mybib.bib
+Repeated entry---line 3960 of file ../mybib.bib
  : @article{Tracey1998
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3921 of file ../mybib.bib
+Repeated entry---line 3983 of file ../mybib.bib
  : @article{Mueller1998
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3943 of file ../mybib.bib
+Repeated entry---line 4005 of file ../mybib.bib
  : @article{Puschner1998
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3962 of file ../mybib.bib
+Repeated entry---line 4024 of file ../mybib.bib
  : @article{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996
  :                                                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3982 of file ../mybib.bib
+Repeated entry---line 4044 of file ../mybib.bib
  : @article{Briand2005
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3992 of file ../mybib.bib
+Repeated entry---line 4054 of file ../mybib.bib
  : @article{Canfora
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4038 of file ../mybib.bib
+Repeated entry---line 4100 of file ../mybib.bib
  : @article{Wegener1998
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4052 of file ../mybib.bib
+Repeated entry---line 4114 of file ../mybib.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4069 of file ../mybib.bib
+Repeated entry---line 4131 of file ../mybib.bib
  :  @book{Lewis2005
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4479 of file ../mybib.bib
+Repeated entry---line 4541 of file ../mybib.bib
  : @article{Hierons2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4493 of file ../mybib.bib
+Repeated entry---line 4555 of file ../mybib.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4509 of file ../mybib.bib
+Repeated entry---line 4571 of file ../mybib.bib
  : @article{Wang2013
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4535 of file ../mybib.bib
+Repeated entry---line 4597 of file ../mybib.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4603 of file ../mybib.bib
+Repeated entry---line 4665 of file ../mybib.bib
  : @article{Cai2007
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4616 of file ../mybib.bib
+Repeated entry---line 4678 of file ../mybib.bib
  : @article{Barber1999
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4651 of file ../mybib.bib
+Repeated entry---line 4713 of file ../mybib.bib
  : @inproceedings{Barros2007
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4664 of file ../mybib.bib
+Repeated entry---line 4726 of file ../mybib.bib
  : @article{Silveira2011
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4674 of file ../mybib.bib
+Repeated entry---line 4736 of file ../mybib.bib
  : @article{Avritzer1994
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4688 of file ../mybib.bib
+Repeated entry---line 4750 of file ../mybib.bib
  : @article{Anand2013
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4702 of file ../mybib.bib
+Repeated entry---line 4764 of file ../mybib.bib
  : @inproceedings{Draheim2006b
  :                            ,
 I'm skipping whatever remains of this entry
@@ -499,45 +499,45 @@ Warning--empty booktitle in Wert2014
 Warning--empty journal in XinyingCai2007
 Warning--empty journal in Ye2007
 Warning--there's a number but no volume in Ye2007
-You've used 115 entries,
+You've used 120 entries,
             2118 wiz_defined-function locations,
-            1181 strings with 26227 characters,
-and the built_in function-call counts, 41844 in all, are:
-= -- 4089
-> -- 1824
-< -- 82
-+ -- 720
-- -- 604
-* -- 2655
-:= -- 6502
-add.period$ -- 349
-call.type$ -- 115
-change.case$ -- 633
+            1208 strings with 27201 characters,
+and the built_in function-call counts, 43710 in all, are:
+= -- 4283
+> -- 1898
+< -- 86
++ -- 749
+- -- 628
+* -- 2774
+:= -- 6793
+add.period$ -- 364
+call.type$ -- 120
+change.case$ -- 659
 chr.to.int$ -- 0
-cite$ -- 211
-duplicate$ -- 1828
-empty$ -- 3328
-format.name$ -- 604
-if$ -- 9049
+cite$ -- 216
+duplicate$ -- 1907
+empty$ -- 3469
+format.name$ -- 628
+if$ -- 9455
 int.to.chr$ -- 0
-int.to.str$ -- 115
-missing$ -- 122
-newline$ -- 575
-num.names$ -- 228
-pop$ -- 883
+int.to.str$ -- 120
+missing$ -- 128
+newline$ -- 600
+num.names$ -- 238
+pop$ -- 911
 preamble$ -- 2
-purify$ -- 532
+purify$ -- 554
 quote$ -- 0
-skip$ -- 1449
+skip$ -- 1515
 stack$ -- 0
-substring$ -- 2397
-swap$ -- 601
-text.length$ -- 82
+substring$ -- 2533
+swap$ -- 630
+text.length$ -- 86
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 436
+type$ -- 454
 warning$ -- 96
-while$ -- 421
-width$ -- 118
-write$ -- 1194
+while$ -- 442
+width$ -- 123
+write$ -- 1249
 (There were 99 error messages)
