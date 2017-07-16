@@ -779,6 +779,8 @@ MCM Model                               & \cite{Wieczorek2010}    & State-based 
 \multirow{-2}{*}{Other Aproaches}       & \cite{Arcaini2015}      & Model Decomposition  & 2015          \\ \hline
 Petri Nets                              & \cite{Buchs2009}        & Operational          & 2009          \\ \hline
                                         & \cite{Cai2007}          & Stochastic Notation    & 2007          \\ \cline{2-4}
+                                        
+                                        
                                                                                 & \cite{Menasce2002a}          & Stochastic Notation    & 2002          \\ \cline{2-4}
 \multirow{-3}{*}{Stochastic Form Model} & \cite{Draheim2006b}     & Stochastic Notation     & 2006          \\ \hline
                                         & \cite{Fang2012}         & State-based          & 2012          \\ \cline{2-4}
@@ -790,12 +792,12 @@ Petri Nets                              & \cite{Buchs2009}        & Operational 
                                         & \cite{Hessel2007}       & Transition-based     & 2007          \\ \cline{2-4}
                                         & \cite{Hierons2009}      & Transition-based     & 2009          \\ \cline{2-4}
 \multirow{-9}{*}{State-Machine Models}  & \cite{Jeong2016}        & State-based          & 2016          \\ \hline
-Symbolic Transition System              & \cite{Anisetti2013}     & Transition-based     & 2013          \\ \hline
-Timed Automata                          & \cite{Anand2013}        & Transition-based     & 2013          \\ \hline
-                                         & \cite{Barber1999}       & Functional     & 1999          \\
-\multirow{-2}{*}{UCML} &
-\cite{Wang2013}    & Functional           & 2013          \\ \hline
-                                        & \cite{XinyingCai2007}   & Functional           & 2007          \\ \cline{2-4}
+\begin{minipage} {.2\textwidth}
+An orchestrated survey of methodologies for automated software test case generation \end{minipage}                           & \cite{Anand2013}        &   ---     & 2013          \\ \hline
+\begin{minipage} {.2\textwidth}
+Survey on Model-based Testing of Web Applications \end{minipage}                         &
+\cite{Wang2013}    & ---          & 2013          \\ \hline
+UCML                                        & \cite{Barber1999}       & Functional     & 1999          \\ \hline                                         & \cite{XinyingCai2007}   & Functional           & 2007          \\ \cline{2-4}
                               
                                         & \cite{Rauf2009}         & Functional           & 2009          \\ \cline{2-4}
                                         & \cite{Schaefer2013}     & Functional           & 2013          \\ \cline{2-4}
@@ -809,7 +811,7 @@ Timed Automata                          & \cite{Anand2013}        & Transition-b
 \cite{Vogele2016}    & Transition-based      & 2016          \\ \cline{2-4}
 
 
-\multirow{-10}{*}{UML}                   & \cite{Lenz2007}         & Functional           & 2007          \\ \hline
+\multirow{-9}{*}{UML}                   & \cite{Lenz2007}         & Functional           & 2007          \\ \hline
 \end{tabular}
 \end{table}
 
@@ -820,7 +822,7 @@ All possible answers of the system, including exceptions, are defined in the fun
 model.  The functional notation defines the authorized input values and models all the possible functional errors during execution \cite{utting2010practical}. Among the several functional models approaches, we can highlight the User Community Modeling Language (UCML). A UCML is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions. 
 
 Garousi et al. proposes derivate Stress Test Requirements from an UML model. The input model consists of a number of UML diagrams. Some of
-them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}). Cai and Zeng use activity diagrams to describle variation points in use cases. Variation points describe what varies between the applications of an software product line \cite{XinyingCai2007}. Raulf et al. present an approach for testing of web service compositions using UML profile for Business Process Execution Language (BPEL) \cite{Rauf2009}. Schaefer et al. present the Crushinator, a framework that provides a game-independent testing tool simulating clients that perform http requests using a UML model \cite{Schaefer2013}. Moscher and  Fögen compares the techniques Capture and Replay (CR) and Model-Based Testing (MBT) are using a model named PLeTsPerf. PLeTsPerf describe the system under tests using use cases and activity diagrams \cite{moscher2017facing}.
+them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}). Cai and Zeng use activity diagrams to describle variation points in use cases. Variation points describe what varies between the applications of an software product line \cite{XinyingCai2007}. Raulf et al. present an approach for testing of web service compositions using UML profile for Business Process Execution Language (BPEL) \cite{Rauf2009}. Schaefer et al. present the Crushinator, a framework that provides a game-independent testing tool simulating clients that perform http requests using a UML model \cite{Schaefer2013}. Moscher and  Fögen compares the techniques Capture and Replay (CR) and Model-Based Testing (MBT) are using a model named PLeTsPerf. PLeTsPerf describe the system under tests using use cases and activity diagrams \cite{moscher2017facing}. Kim proposes a approach to generate massive virtual clients and realistic traffic. A session is composed of a series of the expected operations made by a user in the target domain using a uml class and a sequence diagram \cite{Kim2005}.
 
 
 
@@ -831,7 +833,7 @@ For many software programs, probabilistic models are a useful asset in
 modeling statistical behavior, such that coverage testing is possible by automating
 test-case selection, execution and evaluation. Ussualy, the stochastic notations are used in Markov Chains and Stochastic Formcharts. 
 
-Avritzer and Weyuker present two variants markov chain approach to realize load and stress tests and an automatic generation of load test suites approach \cite{Avritzer1993} \cite{Avritzer1995b}. Barros et al. provide techniques for load pattern characterization via the application of Markov Chains to performance evaluation of stateful systems \cite{Barros2007}. The work of Draheim and Weber’s Formoriented analysis is a methodology for the specification of ultra-thin client based systems. Form-oriented models describe a web application as a bipartite state machine which consists of pages, actions, and transitions between them. Stochastic Formcharts are the combination of formoriented model and probability features. The Fig. \ref{fig:stform} shows a sample where all users have a probability of 100\% of realize a login into the application under test. Once logged in, users have a probability of 40\% of navigate on the application and so on \cite{Draheim2006b} \cite{Marinescu2015}.
+Avritzer and Weyuker present two variants markov chain approach to realize load and stress tests and an automatic generation of load test suites approach \cite{Avritzer1993} \cite{Avritzer1995b}. Barros et al. provide techniques for load pattern characterization via the application of Markov Chains to performance evaluation of stateful systems \cite{Barros2007}. Cai et al. uses a stochastic form chart as its client loading model \cite{Cai2007}. The work of Draheim and Weber’s Formoriented analysis is a methodology for the specification of ultra-thin client based systems. Form-oriented models describe a web application as a bipartite state machine which consists of pages, actions, and transitions between them. Stochastic Formcharts are the combination of formoriented model and probability features. The Fig. \ref{fig:stform} shows a sample where all users have a probability of 100\% of realize a login into the application under test. Once logged in, users have a probability of 40\% of navigate on the application and so on \cite{Draheim2006b} \cite{Marinescu2015}.
 
 
 \begin{figure}[!ht]
@@ -871,7 +873,7 @@ used, the model can be annotated with triggering events, which are
 conditions sufficient for the transition to take place, or guards that are necessary
 preconditions for the transition to be fired. The common techniques used for generating test-cases from transition-based notations are Finite State Machines (FSM), Labeled Transition Systems and UML statecharts \cite{Marinescu2015}.
 
-Arantes et al. present a tool named WEB-PerformCharts that generate test cases using statecharts or FSMs \cite{Arantes2014}. Gay et al. present propose an automated steering framework that can adjust the behavior of the model to better match the behavior of the system under test to reduce the rate of false positives.  The model is defined as a transition system \cite{Gay2016}. Hessel addressed in her study two model-based problems: how to formalize a coverage criteria and how to generate a test suite to a formal timed system model \cite{Hessel2007}. Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016} \cite{utting2010practical}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
+Arantes et al. present a tool named WEB-PerformCharts that generate test cases using statecharts or FSMs \cite{Arantes2014}. Gay et al. present propose an automated steering framework that can adjust the behavior of the model to better match the behavior of the system under test to reduce the rate of false positives.  The model is defined as a transition system \cite{Gay2016}. Hessel addressed in her study two model-based problems: how to formalize a coverage criteria and how to generate a test suite to a formal timed system model \cite{Hessel2007}. Ganesan describe how we created a test automation architecture for testing concurrent inter-task communication as carried out by the software bus. The model uses a FSM \cite{Ganesan2016}. Hierons et al. show a formal specification approach to support functional or non-functional tests \cite{Hierons2009}. Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016} \cite{utting2010practical}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
 \begin{itemize}
 \item An Application Model, specifying allowed sequences of service invocations and SUT-specific details for generating valid requests.
 \item A set of Behavior Models,each providing a probabilistic representation of user sessions in terms of invoked services.
@@ -1057,8 +1059,8 @@ A project containing a “god” class usually has a single, complex controller 
 \end{minipage}
 \end{figure}
 
-Unbalanced Processing it's characterises for one scenario where a specific class of requests generates a pattern of execution within the system that tends to overload a particular resource. In other words the overloaded resource will be executing a certain type of job very often, thus in practice damaging other classes
-of jobs that will experience very long waiting times. Unbalanced Processing occurs in three different situations. The first case that cause unbalanced processing it is when processes cannot make effective use of available processors either because processors are dedicated to other tasks or because of single-threaded code. This manifestation has available processors and we need to ensure that the software is able to use them. Fig. \ref{fig:unbalanced}  shows a sample of the Unbalanced Processing. In The Fig. \ref{fig:unbalanced}, four tasks are performed. The task D it is waiting for the task C conclusion that are submmited to a heavy processing situation.
+A characteristic of Unbalanced Processing is the tendency to overload a particular resource, wherein one scenario a specific class of requests generates a pattern of execution within the system. In other words, the overloaded resource will be executing a certain type of job very often, thus in practice damaging other classes
+of jobs that will experience very long waiting times. Unbalanced Processing occurs in three different situations. The first case that causes unbalanced processing is when processes cannot make effective use of available processors either because processors are dedicated to other tasks or because of single-threaded code. This manifestation has available processors and we need to ensure that the software is able to use them. Fig. \ref{fig:unbalanced}  shows a sample of the Unbalanced Processing. In Fig. \ref{fig:unbalanced}, four tasks are performed. Task D is waiting for task C to conclude, and both are submitted to a heavy processing situation.
 
 \begin{figure}[h]
 \centering
@@ -1067,7 +1069,7 @@ of jobs that will experience very long waiting times. Unbalanced Processing occu
 \label{fig:unbalanced}
 \end{figure}
 
-The pipe and filter architectures  and extensive processing antipattern represents a manifestation of the unbalanced processing antipattern. The pipe and filter architectures occurs when the throughput of the overall system is determined by the slowest filter. The  Fig. \ref{fig:pipefilter} describes a software S with a Pipe and Filter Architectures problem:  the operation opx is invoked in a service  and the throughput of the service (\$Th(S)) is lower than the required one. The extensive processing occurs when a process monopolizes a processor and prevents a set of other jobs to be executed until it finishes its computation. The Fig. \ref{fig:extpro} describes a software S with a Extensive Processing problem: the operations opx and opy are alternatively invoked in a service and the response time of the service (\$RT(S)) is larger than the required one \cite{Vetoio2011}.
+The pipe and filter architectures  and extensive processing antipattern represents a manifestation of the unbalanced processing antipattern. The pipe and filter architectures occurs when the throughput of the overall system is determined by the slowest filter. Fig \ref{fig:pipefilter} illustrates a software S with a Pipe and Filter Architectures problem:  the operation opx is invoked in a service  and the throughput of the service (\$Th(S)) is lower than the required one. The extensive processing occurs when a process monopolizes a processor and prevents a set of other jobs to be executed until it finishes its computation. The Fig. \ref{fig:extpro} describes a software S with a Extensive Processing problem: the operations opx and opy are alternatively invoked in a service and the response time of the service (\$RT(S)) is larger than the required one \cite{Vetoio2011}.
 
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
@@ -1086,10 +1088,10 @@ The pipe and filter architectures  and extensive processing antipattern represen
 
 
 Circuitous Treasure Hunt antipattern occurs when software retrieves data from a first componet, uses those results in a second component, retrieves data from the second component, and so on, until the last results are obtained \cite{Smith2002} \cite{Smith2003}. Circuitous Treasure Hunt
-are typical performance antipatterns that causes unnecessarily frequent database requests. The Circuitous Treasure Hunt antipattern is a result from a bad database schema or query design. A common Circuitous Treasure Hunt design creates a data dependency between single queries. For instance, a query requires the
+are typical performance antipatterns that causes  unnecessarily high amount of frequent database requests. The Circuitous Treasure Hunt antipattern is a result of a bad database schema or query design. A common Circuitous Treasure Hunt design creates a data dependency between single queries. For instance, a query requires the
 result of a previous query as input. The longer the chain of
 dependencies between individual queries the more the Circuitous
-Treasure Hunt antipattern hurts performance \cite{Wert2014}. The Fig. \ref{fig:circuit}  shows a software S with a Circuitous Treasure Hunt problem: the software  S generates a large number of database calls by performing several queries up to the final operation \cite{Vetoio2011}.
+Treasure Hunt antipattern hurts performance \cite{Wert2014}. Fig. \ref{fig:circuit}  shows a software S with a Circuitous Treasure Hunt problem: the software  S generates a large number of database calls by performing several queries up to the final operation \cite{Vetoio2011}.
 
 
 \begin{figure}[h]
@@ -1102,18 +1104,18 @@ Treasure Hunt sample \cite{Vetoio2011}}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{./images/trucks2.png}
+\includegraphics[width=1.2\textwidth]{./images/trucks2.png}
 \caption{Empty Semi Trucks sample \cite{Vetoio2011}.}
 \label{fig:trucks}
 \end{minipage}
 \end{figure}
 
-Empty Semi Trucks occurs when an excessive number of requests is required to perform a task. It may be due to inefficient use of available bandwidth, an inefficient interface, or both \cite{Arcelli2012}. There are a special case of Empty Semi Trucks that occurs  when many fields in a user interface must be retrieved from a
-remote system. Fig. shows a software S with a Empty Semi Trucks problem: the software instance Sa generates an excessive message traffic by sending a big amount of messages with low sizes, much lower than the network bandwidth, hence the network link might have a low utilization value \cite{Vetoio2011}.
+Empty Semi Trucks occurs when an excessive number of requests is required to perform a task. It may be due to inefficient use of available bandwidth, an inefficient interface, or both \cite{Arcelli2012}. There is a special case of Empty Semi Trucks that occurs  when many fields in a user interface must be retrieved from a
+remote system. Fig. \ref{fig:trucks} shows a software S with a Empty Semi Trucks problem: the software instance Sa generates an excessive message traffic by sending a high amount of messages with low sizes, much lower than the network bandwidth, hence the network link might have a low utilization value \cite{Vetoio2011}.
 
-The Tower of Babel antipattern most often occurs when information is translated into an exchange format, such as XML, by the sending process then parsed and translated into an
+The Tower of Babel antipattern most often occurs when information is translated into an exchange format, such as XML, where the sending process is then parsed and translated into an
 internal format by the receiving process. When the translation and parsing is excessive, the system spends most
-of its time doing this and relatively little doing real work \cite{Smith2003}. Fig. shows a system with a Tower of Babel problem: the software instances Sd performs many times the translation of format for communicating with other instances \cite{Vetoio2011}.
+of its time doing this and relatively little real work \cite{Smith2003}. Fig. \ref{fig:babel} shows a system with a Tower of Babel problem: the software instances Sd performs the format translation to communicate with other instances many times \cite{Vetoio2011}.
 
 \begin{figure}[H]
 \begin{minipage}{.5\textwidth}
@@ -1131,10 +1133,10 @@ of its time doing this and relatively little doing real work \cite{Smith2003}. F
 \end{figure}
 
 
-One-Lane Bridge is a antipattern that occurs when one or a few processes execute concurrently using a shared resource and other processes are waiting for use the shared resource. It frequently occurs in applications that access a database. Here, a lock ensures that only one process may update the associated portion of the database at a time. This antipatterns is common when many concurrent threads or processes are waiting for the same shared resources. These can either be passive resources (like semaphores or mutexes) or active resources (like CPU or hard disk). In the first case, we have a typical One Lane Bridge whose critical resource needs to be identified. Figure 3.10 shows a system with a One-Lane Bridge problem:  the software instance Sc receives an excessive number of synchronous calls in a service S and the predicted response time is higher than the required \cite{Vetoio2011}.
+One-Lane Bridge is an antipattern that occurs when one or a few processes execute concurrently using a shared resource and while the other processes are waiting to use the shared resource. It frequently occurs in applications that access a database. Here, a lock ensures that only one process may update the associated portion of the database at a time. This antipatterns is common when many concurrent threads or processes are waiting for the same shared resources. These can either be passive resources (like semaphores or mutexes) or active resources (like CPU or hard disk). In the first case, we have a typical One Lane Bridge whose critical resource needs to be identified. Figure 3.10 shows a system with a One-Lane Bridge problem:  the software instance Sc receives an excessive number of synchronous calls in a service S and the predicted response time is higher than the required one \cite{Vetoio2011}.
 
 
-Using dynamic allocation, objects are created when they are first accessed and then destroyed when they are no longer needed. Excessive Dynamic Allocation, however, addresses frequent, unnecessary creation and destruction of objects of the same class. Dynamic allocation is expensive , an object created in memory must be allocated from the heap, and any initialization code for the object and the contained objects must be executed. When the object is no longer needed, necessary clean-up must be performed, and the reclaimed memory must be returned to the heap to avoid memory leaks \cite{Smith2002} \cite{Smith2003}.
+Using dynamic allocation, objects are created when they are first accessed and then destroyed when they are no longer needed. Excessive Dynamic Allocation, however, addresses frequent, unnecessary creation and destruction of objects of the same class. Dynamic allocation is expensive, an object created in memory must be allocated from the heap, and any initialization code for the object and the contained objects must be executed. When the object is no longer needed, necessary clean-up must be performed, and the reclaimed memory must be returned to the heap to avoid memory leaks \cite{Smith2002} \cite{Smith2003}.
 
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
@@ -1151,9 +1153,9 @@ Using dynamic allocation, objects are created when they are first accessed and t
 \end{minipage}
 \end{figure}
 
-The Fig. \ref{fig:dynallocation} shows a Excessive Dynamic Allocation sample. This example is drawn from a call (an offHook event), the switch creates a Call object to manage the call. When the call is completed, the Call object is destroyed. Constructing a single Call object it is not seem as excessive. A Call is a complex object that contains several other objects that must also be created. The Excessive Dynamic Allocation occurs when  a switch receive hundreds of thousands of offHook events. In a case like this, the overhead for dynamically allocating call objects adds substantial delays to the time needed to complete a call.
+Fig. \ref{fig:dynallocation} shows an Excessive Dynamic Allocation sample. This example is drawn from a call (an offHook event) and the switch creates a Call object to manage the call. When the call is completed, the Call object is destroyed. Constructing a single Call object is not as excessive. A Call is a complex object that contains several other objects that must also be created. The Excessive Dynamic Allocation occurs when  a switch receive hundreds of thousands of offHook events. In a case like this, the overhead for dynamically allocating call objects adds substantial delays to the time needed to complete a call.
 
-The Traffic Jam antipattern occurs if many concurrent threads or processes are waiting for the same  active resources (like CPU or hard disk). This antipatterns produces a large backlog in jobs waiting for service. The performance impact of the Traffic Jam is the transient behavior that produces wide variability in response time. Sometimes it is fine, but at other times, it is unacceptably long. Figure \ref{fig:jam} describes a software with a Traffic Jam problem, the monitored response time of the operation shows a wide variability in response time which persists long \cite{Vetoio2011}.
+The Traffic Jam antipattern occurs if many concurrent threads or processes are waiting for the same  active resources (like CPU or hard disk). This antipatterns produces a large backlog in jobs waiting for service. The performance impact of the Traffic Jam is the transient behavior that produces wide variability in response time. Sometimes it is fine, but at other times, it is unacceptably long. Figure \ref{fig:jam} exhibits a software with a Traffic Jam problem, in which the monitored response time of the operation shows a wide variability in a response time that persists long \cite{Vetoio2011}.
 
 
 \begin{figure}[!h]
@@ -1171,11 +1173,16 @@ The Traffic Jam antipattern occurs if many concurrent threads or processes are w
 \end{minipage}
 \end{figure}
 
-The Ramp it is a antipattern where the processing time increases as the system is used. The Ramp can arise in several different ways. Any situation in which the amount of processing required to satisfy a request increases over time will produce the behavior. With the Ramp antipattern, the memory consumption of the application is growing over time. The root cause is Specific Data Structures which are growing during operation or which are not properly disposed \cite{Wert2014} \cite{Smith2003}. Fig. \ref{fig:ramp} shows a system  with The Ramp problem:  (i) the monitored response time of the operation opx at time t1, i.e. \$RT(opx, t1), is much lower than the monitored response time of the operation opx at time t2, i.e. \$RT(opx, t2), with t1 < t2; (ii) the monitored throughput of the operation opx at time t1, i.e. \$Th(opx, t1), is much larger than the monitored throughput of the operation opx at time t2, i.e. \$Th(opx, t2), with t1 < t2.
+Ramp is an antipattern where the processing time increases as the system is used. Ramp can arise in several different ways. Any situation in which the amount of processing required to satisfy a request increases over time will produce the behavior. With the Ramp antipattern, the memory consumption of the application is growing over time. The root causes are the Specific Data Structures, which are growing during operation or which are not properly disposed \cite{Wert2014} \cite{Smith2003}. Fig. \ref{fig:ramp} shows a system  with the Ramp problem:  (i) the monitored response time of the operation opx at time t1, i.e. \$RT(opx, t1), is much lower than at time t2, i.e. \$RT(opx, t2), with t1 < t2; (ii) the monitored throughput of the operation opx at time t1, i.e. \$Th(opx, t1), is much larger than at time t2, i.e. \$Th(opx, t2), with t1 < t2.
 
-More is less occurs when a system spends more time "thrashing” than accomplishing real work because there are too many processes relative to available resources. More is Less are presented when it is running too many programs overtime. This antipattern causes too much system paging and systems spend all their time servicing page faults rather than processing requests. In distributed systems, there are more causes.They include: creating too many database connections and  allowing too many internet connection. Fig. \ref{fig:moreisless} describes a system  with a More Is Less problem: There is a processing node PN1 and the monitored runtime parameters (e.g. database connections, etc.) at time t1, i.e. \$Par(PN1[p], t1), are much larger than the same parameters at time t2, i.e. \$Par(PN1[p], t2), with t1 < t2.
+More is Less occurs when a system spends more time "thrashing” than accomplishing real work because there are too many processes relative to available resources. More is Less is presented when it is running too many programs overtime. This antipattern causes too much system paging and systems spend all their time servicing page faults rather than processing requests. In distributed systems, there are more causes. They include: creating too many database connections and  allowing too many internet connection. Fig. \ref{fig:moreisless} illustrates a system  with a More Is Less problem: There is a processing node PN1 and the monitored runtime parameters (e.g. database connections, etc.) at time t1, i.e. \$Par(PN1[p], t1), are much larger than the same parameters at time t2, i.e. \$Par(PN1[p], t2), with t1 < t2.
 
-\section{Summary}
+\section{Conclusion}
+
+Stress testing investigates the behavior of the system under conditions
+that overload its resources \cite{Sandler2004} \cite{Lewis2005}. The core activities in conducting an usual Load, Performance and Stress tests are  Identify the test environment, Identify acceptance criteria, Plan and design tests, Prepare the test environment, Record the test plan, Run the tests and Analyze results. This research focuses on the generation and execution of test cases. It is not scope of the research the automatic analysis of the results and the treatment of log of tests. The two main approaches to creating workloads are generative and descriptive workload approaches. The main goal of descriptive workloads is to ensure that the system can function correctly once. Generative workloads  aims to design loads, which are likely to cause functional or non-functional problem. 
+
+The main approaches to generate test cases to stress testing are: Model-based testing and Search-based testing. Model-based testing use a model to describle the states and transitions of a system under test. Although the use of models allows greater control of generated test cases, since all test cases are generated from the previously defined model, it is also the main limitation of this approach since the model may not include all possible scenarios of test because it depends intrinsically of the test designer responsible for creating the models.
 
 \chapter{Search-Based Stress Testing}
 

@@ -35,11 +35,6 @@ Saswat Anand, Edmund~K. Burke, Tsong~Yueh Chen, John Clark, Myra~B. Cohen,
   case generation}.
 \newblock volume~86, pages 1978--2001, 2013.
 
-\bibitem{Anisetti2013}
-Marco Anisetti, Claudio~A. Ardagna, Ernesto Damiani, and Francesco Saonara.
-\newblock {A test-based security certification scheme for web services}.
-\newblock {\em ACM Transactions on the Web}, 7(2):1--41, 2013.
-
 \bibitem{Araiza-Illan2016}
 Dejanira Araiza-Illan, Anthony~G. Pipe, and Kerstin Eder.
 \newblock {Model-based Test Generation for Robotic Software: Automata versus
