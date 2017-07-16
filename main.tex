@@ -473,6 +473,19 @@ stress testing that may be required to each test scenario \cite{Lewis2005}.
 
 \end{itemize}
 
+Utting et al. presents four classic test process \cite{utting2010practical}: 
+
+\begin{itemize}
+\item Manual Testing process;
+\item Capture/Replay Testing process; 
+\item Script-based Testing process;
+\item Keyword-Driven Automated Testing process;
+
+\end{itemize}
+
+In Manual Testing process the execution is done manually for each test case. The tester follows a test case and interacts directly with the application under test. The manual-designing of the tests is time-consuming and not ensure systematic coverage of the application. Capture/Replay attemps to reduce the cost of test re-execution by capturing interactions with the application during a test execution session and replay those interactions in later test executions \cite{utting2010practical}.
+
+A test script is an executable script that runs one or more test cases. The Script-based testing process tries to resolve the test execution problem by automating it. Keyword-driven testing, or action-word testing, takes this a step further by using action keywords in the test cases, in addition to data. Each action keyword corresponds to a fragment of a test script \cite{utting2010practical}.
 
 
 \subsection{Stress Test Execution}
@@ -508,7 +521,7 @@ There are several tools to execution of stress testing. Stress testing tools are
 \end{itemize}
 
 
-Comparing stress test tools is a laborious and difficult task since they offer a large amount and diversity of features \cite{Dustin1999}. In next subsection we present studies that contrast stress testing tools according to a wide set of features and capabilities, focusing on their ability to realize search-based tests or have learning capacities.The stress test tools was categorized in three different groups \cite{MohammadS.Obaidat}:
+Comparing stress test tools is a laborious and difficult task since they offer a large amount and diversity of features \cite{Dustin1999}. In next subsection we present studies that contrast stress testing tools according to a wide set of features and capabilities, focusing on their ability to realize search-based tests or have learning capacities. In the following subsection, we present details about the JMeter tool and the reasons why it was chosen as object of the present research.The stress test tools was categorized in three different groups \cite{MohammadS.Obaidat}:
 
 \begin{itemize}
 \item Benchmarks that model the client and server paradigm in Web context.
@@ -727,7 +740,7 @@ of its behaviour over time. Message-sequence charts and related formalisms are a
 graphical and textual notations for specifying sequences of interactions between components \cite{MarkUtting2012}.
 \item Functional Notations. These describe a system as a collection of mathematical functions. The
 functions may be first-order only, as in the case of algebraic specifications, or higher-order, as in
-notations like HOL \cite{MarkUtting2012}. Functional models also show the functionality of the system from the user’s perspective \cite{Ye2007}.
+notations like HOL \cite{MarkUtting2012}. Functional models also show the functionality of the system from the user’s perspective \cite{Ye2007}. This research also classified in the  functional notation paradigm the studies that used more than one uml diagram. 
 \item Operational Notations. These describe a system as a collection of executable processes,
 executing in parallel. They are particularly suited to describing distributed systems and
 communications protocols. Examples include process algebras such as CSP or CCS as well as
@@ -750,17 +763,17 @@ Table \ref{modelsummary} presents the papers found by the survey about model-bas
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[!h]
 \centering
-\caption{My caption}
+\caption{Summary of studies in model-based stress testing}
 \label{modelsummary}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \rowcolor[HTML]{C0C0C0}
 \textbf{Model}                          & \textbf{Paper}          & \textbf{Paradigm}    & \textbf{Year} \\ \hline
 BeliefDesire-Intention                  & \cite{Araiza-Illan2016} & Operational          & 2016          \\ \hline
-                                        & \cite{Avritzer1995b}    & Transition-based     & 1995          \\ \cline{2-4}
-                                        & \cite{Barros2007}       & Transition-based     & 2007          \\ \cline{2-4}
-                                        & \cite{Avritzer1994}     & Transition-based     & 1994          \\ \cline{2-4}
-\multirow{-4}{*}{Markov-Chains}         & \cite{Avritzer1993}     & Transition-based     & 1993          \\ \hline
+                                        & \cite{Avritzer1995b}    & Stochastic Notation         & 1995          \\ \cline{2-4}
+                                        & \cite{Barros2007}       & Stochastic Notation        & 2007          \\ \cline{2-4}
+                                        & \cite{Avritzer1994}     & Stochastic Notation        & 1994          \\ \cline{2-4}
+\multirow{-4}{*}{Markov-Chains}         & \cite{Avritzer1993}     & Stochastic Notation         & 1993          \\ \hline
 MCM Model                               & \cite{Wieczorek2010}    & State-based          & 2010          \\ \hline
                                         & \cite{Enoiu2013}        & UPPAAL model checker & 2013          \\ \cline{2-4}
 \multirow{-2}{*}{Other Aproaches}       & \cite{Arcaini2015}      & Model Decomposition  & 2015          \\ \hline
@@ -779,14 +792,16 @@ Petri Nets                              & \cite{Buchs2009}        & Operational 
 \multirow{-9}{*}{State-Machine Models}  & \cite{Jeong2016}        & State-based          & 2016          \\ \hline
 Symbolic Transition System              & \cite{Anisetti2013}     & Transition-based     & 2013          \\ \hline
 Timed Automata                          & \cite{Anand2013}        & Transition-based     & 2013          \\ \hline
-                                         & \cite{Barber1999}       & Transition-based     & 1999          \\
+                                         & \cite{Barber1999}       & Functional     & 1999          \\
 \multirow{-2}{*}{UCML} &
-\cite{Wang2013}    & Transition-based           & 2013          \\ \hline
+\cite{Wang2013}    & Functional           & 2013          \\ \hline
                                         & \cite{XinyingCai2007}   & Functional           & 2007          \\ \cline{2-4}
-                                        & \cite{Shirole2013}      & Functional           & 2013          \\ \cline{2-4}
+                              
                                         & \cite{Rauf2009}         & Functional           & 2009          \\ \cline{2-4}
                                         & \cite{Schaefer2013}     & Functional           & 2013          \\ \cline{2-4}
                                         & \cite{Paper2014}        & Functional           & 2014          \\ \cline{2-4}
+                                        & 
+\cite{moscher2017facing}        & Functional           & 2017          \\ \cline{2-4}
                                         & \cite{Kim2005}          & Functional           & 2005          \\ \cline{2-4}
                                         & \cite{Rodrigues2014}    & Functional           & 2014          \\ \cline{2-4}
                                         & \cite{Silveira2011}     & Functional           & 2011          \\ \cline{2-4}
@@ -799,20 +814,24 @@ Timed Automata                          & \cite{Anand2013}        & Transition-b
 \end{table}
 
 
-\subsubsection{Functional Models}
+\subsubsection{Functional Notation}
 
-Among the several functional models approaches, we can highlight the User Community Modeling Language (UCML). A UCML is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions.
+All possible answers of the system, including exceptions, are defined in the functional
+model.  The functional notation defines the authorized input values and models all the possible functional errors during execution \cite{utting2010practical}. Among the several functional models approaches, we can highlight the User Community Modeling Language (UCML). A UCML is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions. 
 
 Garousi et al. proposes derivate Stress Test Requirements from an UML model. The input model consists of a number of UML diagrams. Some of
-them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}).
+them are standard in mainstream development methodologies and others are needed to describe the distributed architecture of the system under test (Fig. \ref{fig:modelbased}). Cai and Zeng use activity diagrams to describle variation points in use cases. Variation points describe what varies between the applications of an software product line \cite{XinyingCai2007}. Raulf et al. present an approach for testing of web service compositions using UML profile for Business Process Execution Language (BPEL) \cite{Rauf2009}. Schaefer et al. present the Crushinator, a framework that provides a game-independent testing tool simulating clients that perform http requests using a UML model \cite{Schaefer2013}. Moscher and  Fögen compares the techniques Capture and Replay (CR) and Model-Based Testing (MBT) are using a model named PLeTsPerf. PLeTsPerf describe the system under tests using use cases and activity diagrams \cite{moscher2017facing}.
 
 
 
 \subsubsection{Stochastic Notation}
 
 
+For many software programs, probabilistic models are a useful asset in
+modeling statistical behavior, such that coverage testing is possible by automating
+test-case selection, execution and evaluation. Ussualy, the stochastic notations are used in Markov Chains and Stochastic Formcharts. 
 
-Another technique to create workload models it is Stochastic Formcharts. The work of Draheim and Weber’s Formoriented analysis is a methodology for the specification of ultra-thin client based systems. Form-oriented models describe a web application as a bipartite state machine which consists of pages, actions, and transitions between them. Stochastic Formcharts are the combination of formoriented model and probability features. The Fig. \ref{fig:stform} shows a sample where all users have a probability of 100\% of realize a login into the application under test. Once logged in, users have a probability of 40\% of navigate on the application and so on \cite{Draheim2006b}.
+Avritzer and Weyuker present two variants markov chain approach to realize load and stress tests and an automatic generation of load test suites approach \cite{Avritzer1993} \cite{Avritzer1995b}. Barros et al. provide techniques for load pattern characterization via the application of Markov Chains to performance evaluation of stateful systems \cite{Barros2007}. The work of Draheim and Weber’s Formoriented analysis is a methodology for the specification of ultra-thin client based systems. Form-oriented models describe a web application as a bipartite state machine which consists of pages, actions, and transitions between them. Stochastic Formcharts are the combination of formoriented model and probability features. The Fig. \ref{fig:stform} shows a sample where all users have a probability of 100\% of realize a login into the application under test. Once logged in, users have a probability of 40\% of navigate on the application and so on \cite{Draheim2006b} \cite{Marinescu2015}.
 
 
 \begin{figure}[!ht]
@@ -842,10 +861,17 @@ One way to capture the navigational pattern within a session is through the Cust
 
 
 
-\subsubsection{Transition-based models}
+\subsubsection{Transition-based notation}
 
 
-Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
+For model-based testing, the transition-based notations are the most used for developing behavioral models \cite{utting2010practical}. Broadly speaking, the
+transition-based notations are best for control-oriented applications. Instead of characterizing the system based on its admissible states, the system is characterized as transitions from one state to another, the properties are specified as a set of transitions functions, which
+map each input state to the corresponding output state. Based on the notations
+used, the model can be annotated with triggering events, which are
+conditions sufficient for the transition to take place, or guards that are necessary
+preconditions for the transition to be fired. The common techniques used for generating test-cases from transition-based notations are Finite State Machines (FSM), Labeled Transition Systems and UML statecharts \cite{Marinescu2015}.
+
+Arantes et al. present a tool named WEB-PerformCharts that generate test cases using statecharts or FSMs \cite{Arantes2014}. Gay et al. present propose an automated steering framework that can adjust the behavior of the model to better match the behavior of the system under test to reduce the rate of false positives.  The model is defined as a transition system \cite{Gay2016}. Hessel addressed in her study two model-based problems: how to formalize a coverage criteria and how to generate a test suite to a formal timed system model \cite{Hessel2007}. Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016} \cite{utting2010practical}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
 \begin{itemize}
 \item An Application Model, specifying allowed sequences of service invocations and SUT-specific details for generating valid requests.
 \item A set of Behavior Models,each providing a probabilistic representation of user sessions in terms of invoked services.
@@ -880,17 +906,38 @@ Vogele et al. presents an approach that aims to automate the extraction and tran
 \end{figure}
 
 
-\subsubsection{State-based models}
+\subsubsection{State-based notation}
 
+State based notations like STATECHARTS
+or activity diagrams describe the behavior based on abstract
+states and support behavior integration only using
+state composition \cite{Giese1999}. In State-based or notations, the system is modeled as a collection of variables representing its state at a specific point of the execution, together with a collection of operations defined by a precondition that defines the
+admissible set of initial states, and a postcondition that specifies the guaranteed
+set of final states. Examples of such notations include the Z language, the
+B machine, UML’s Object Constraint Language (OCL), Java Modeling
+Language (JML), VDM , and Spec# \cite{Marinescu2015}.
 
-Sridhar proposed an approach to generate test cases with MATLAB using Simulink/ Stateflow tool. After the model creation, test sequences are generated a dependency graph of that system \cite{Sridhar2013}. 
+Sridhar proposed an approach to generate test cases with MATLAB using Simulink/ Stateflow tool. After the model creation, test sequences are generated a dependency graph of that system \cite{Sridhar2013}.  Fang et al. developed a test case generator, from which an entire test suite can be extracted \cite{Fang2012}.  Jeong et al. propose
+a state transition model based to test case generation \cite{Jeong2016}. Wieczorek et al. propose an approach that uses proprietary models called Message Choreography Models (MCM) using a state-based representation \cite{Wieczorek2010}.
 
 
 
 
 \subsection{Other Approaches}
 
-A set of other approaches dont use model-based tests or search-based tests.
+A set of other approaches dont use model-based tests or search-based tests:
+
+\begin{itemize}
+\item Automatic feedback, control-based, stress and load testing \cite{Bayan2008};
+\item Feedback-ORiEnted PerfOrmance Software Testing \cite{Luo2015};
+\item PASASM : A Method for the
+Performance Assessment of Software Architectures \cite{Williams2002}.
+\end{itemize}
+
+Bayan and Cangussu present a apporach based on the application of a feedback
+PID (Proportional, Integral, and Derivative) controller to drive the input and make the system achieve a specified level of resource usage. For example, if the user defines the system should be tested with a memory use of 95\%, starting from an initial input value, the PID controller will automatically change the input(s) until the desired level of stress has been achieved \cite{Bayan2008}.
+
+Williams and Smith describe the PASA method, a method for performance assessment of software architectures. PASA uses the principles and techniques of software performance engineering (SPE) to determine whether an architecture is capable of supporting its performance objectives  \cite{Williams2002}. Among the three approaches presented, we can highlight FOREPOST that develops a plugin of the JMeter tool to generate test cases using unsupervised learning.
 
 \subsubsection{Feedback-ORiEnted PerfOrmance Software Testing}
 
@@ -914,12 +961,12 @@ The user can review the results of clustering (7). These clustered traces are su
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Symptoms.png}
-\caption{Symptoms of know performance problems \cite{Wert2013a}. }
+\caption{Symptoms of known performance problems \cite{Wert2013a}. }
 \label{fig:symptoms}
 \end{figure}
 
 
-There are several antipatterns that details features about  common performance problems. Antipatterns are conceptually similar to patterns in that they document recurring solutions to common design problems. They are known as
+There are several antipatterns that detailed features about  common performance problems. Antipatterns are conceptually similar to patterns in that they document recurring solutions to common design problems. They are known as
 antipatterns because their use produces negative consequences.
 
 % Please add the following required packages to your document preamble:
@@ -958,7 +1005,7 @@ Performance antipatterns document common performance mistakes made in software a
 focusing on the
 right level of abstraction,
 effectively communicating
-their causes to others, and prescribing solutions \cite{brown1998antipatterns}. The table \ref{antipatterns} present some of the most common performance antipatterns.
+their causes to others, and prescribing solutions \cite{brown1998antipatterns}. Table \ref{antipatterns} present some of the most common performance antipatterns.
 
 
 % Please add the following required packages to your document preamble:
@@ -990,9 +1037,7 @@ their causes to others, and prescribing solutions \cite{brown1998antipatterns}. 
 
 Blob antipattern is known by various names, including the “god” class [8] and the “blob” [2]. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component, a particular resource does the majority of the work in a software. The Blob antipattern occurs when a single class or component either performs all of the work of an application or holds all of the application’s data. Either manifestation results in excessive message traffic that can degrade performance \cite{Cortellessa2007} \cite{Smith2000}.
 
-A project containing a “god” class is usually has a single, complex controller class that is surrounded by simple classes that serve only as data containers. These classes typically contain only accessor operations (operations to get() and set() the data) and perform little or no computation of their own \cite{Smith2000}.
-The  Figures \ref{fig:godclass} and \ref{fig:godclass2} describes an hypotetical system with a BLOB problem:
-The Fig. \ref{fig:godclass} presents a sample where the Blob class uses the features A,B,C,D,E,F and G of the hypotetical system; The Fig. \ref{fig:godclass2}  shows a static view where  a complex software entity instance, i.e. Sd, is connected to other software instances, e.g. Sa, Sb and Sc, through many dependencies \cite{Vetoio2011}\cite{Wert2013a}.
+A project containing a “god” class usually has a single, complex controller class that is surrounded by simple classes that serve only as data containers. These classes typically contain only accessor operations (operations to get() and set() the data) and perform little or no computation of their own \cite{Smith2000}. According to Figure \ref{fig:godclass} and \ref{fig:godclass2}, a hypothetical system with a BLOB problem is shown: Figure \ref{fig:godclass} presents a sample where the Blob class uses the features A,B,C,D,E,F and G of the hypothetical system, and Fig. \ref{fig:godclass2} shows a static view where  a complex software entity instance, i.e. Sd, is connected to other software instances, e.g. Sa, Sb and Sc, through many dependencies \cite{Vetoio2011}\cite{Wert2013a}.
 
 
 
@@ -1388,7 +1433,7 @@ Deb states that are two orthogonals goals for any multi-objective algorithm \cit
 
 There are several metrics either closeness or diversity. Example of metrics which measure the closeness of Pareto frontier is Error ratio and Set coverage. Example of metrics which measure the diversity are the Spacing and the Spread. The Hypervolume metric measure both closeness and diversity \cite{janssens2010multiple}.
 
-The Hypervolume metric calculates the volume in an objective space covered by the non-dominated individuals. For each solution, a hypercube is computed from a reference point and the solution as the diagonal corners of the hypercube \cite{janssens2010multiple}.
+The Hypervolume metric calculates the volume in an objective space covered by the non-dominated individuals. The hypervolume was originally proposed by Zitzler and Thiele \cite{Zitzler1999}. It is especially useful when the true Pareto-optimal solution is unknown. For each solution, a hypercube is computed from a reference point and the solution as the diagonal corners of the hypercube ( Figure \ref{fig:hypervolume} ) \cite{janssens2010multiple}. 
 
 
 \begin{figure}[h]
@@ -1405,6 +1450,16 @@ The Hypervolume metric calculates the volume in an objective space covered by th
 \label{fig:hypervolume}
 \end{minipage}
 \end{figure}
+
+
+The reference point is found by constructing a vector of worst objects fitness value. The equation of the hypervolume is:
+
+
+\begin{equation}
+Hypervolume =  volume (U^{|Q|}_{i=1}  v_{i}  )
+\end{equation}
+
+ 
 
 \subsection{Metaheuristic Noise Reduction}
 
@@ -1451,7 +1506,7 @@ Table \ref{tab:comparison}  shows a comparison between the research studies on l
                                                                 & \multicolumn{2}{c|}{\textbf{Prototypes}}            & \textbf{Functional Tool} \\ \cline{2-4}
                                                                 & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time  \end{minipage}          & \begin{minipage}{0.2\textwidth}\footnotesize Processor Cycles \end{minipage}        & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time \end{minipage}           \\ \cline{2-4}
 %\setlength{\extrarowheight}{20pt}
-\begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search\\ +Q-Learning \\ \\ \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.2\textwidth}  \cellcolor{blue!25} \small Our approach  \end{minipage}  \\[2ex] \cline{2-4}
+\begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search\\ +Q-Learning \\ + Multi-objective heuristics \\ \\ \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.2\textwidth}  \cellcolor{blue!25} \small Our approach \cite{Gois2016} \end{minipage}  \\[2ex] \cline{2-4}
 \begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth} \small Gois et al. 2016 \cite{Gois2016}  \end{minipage}  \\[2ex] \cline{2-4}
 \begin{minipage}{0.1\textwidth}\small GA \end{minipage}                                                              & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small \textnormal{ \\  Alander et al.,1998 \cite{Alander} \\ Wegener et al., 1996 and 1997 \cite{Wegener1997}\cite{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996} \\  Sullivan et al., 1998 \cite{Sullivan} \\ Briand et al., 2005 \cite{Briand2005} \\ Canfora et al., 2005 \cite{Canfora}  \\ }\end{minipage} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth} \small \textrm{  \\ Wegener and Grochtmann, 1998 \cite{Wegener1998} \\  Mueller et al., 1998 \cite{Mueller1998} \\ Puschner et al. \cite{Puschner1998} \\ Wegener et al., 2000 \cite{Stations} \\ Gro et al., 2000 \cite{Gross2000}  \\ }\end{minipage}& \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.22\textwidth}   \small \textnormal{ \\  Di Penta et al., 2007 \cite{Penta2007} \\ Garoussi, 2006 \cite{Garousi2006} \\ Garousi, 2008 \cite{Garousi2008} \\ Garousi, 2010 \cite{Garousi2010} \\ } \end{minipage} \\[2ex] \cline{2-4}
 \begin{minipage}{0.1\textwidth}\small Simulated \\ Annealing \\ (SA) \end{minipage}                                                             & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small  Tracey, 1998 \cite{Tracey1998} \end{minipage} \\[2ex] \cline{2-4}
@@ -1463,7 +1518,7 @@ Table \ref{tab:comparison}  shows a comparison between the research studies on l
 \end{tabular}
 \end{table}
 
-The studies can be grouped into two main groups: Search-Based Stress Tesing on Safety-critical systems or Search-Based Stress Testing on Industrial systems.
+The studies can be grouped into two main groups: Search-Based Stress Tesing on Safety-critical systems or Search-Based Stress Testing on non Safety-critical systems.
 
 
 \subsection{Search-Based Stress Testing on Safety-critical systems}
@@ -1490,7 +1545,7 @@ on Constraint Programming (CP) to automate the generation of test cases that rev
 
 Alesio describes stress test case generation as a search problem over the space of task arrival times. The research locates the  worst-case scenarios maximizing deadline misses where each scenario characterizes a test case. The paper combines two strategies, GA and CP. The results show that, in comparison with GA and CP in isolation, GA+CP achieves nearly the same effectiveness as CP and the same efficiency and solution diversity as GA, thus combining the advantages of the two strategies. Alesio concludes that a combined GA+CP approach to stress testing is more likely to scale to large and complex systems \cite{Alesio2015}.
 
-\subsection{Search-Based Stress Testing on Industrial systems}
+\subsection{Search-Based Stress Testing on non Safety-critical systems}
 
 Usually, the application of Search-Based Stress Testing on non safety-critical systems deals with the generation of test cases that causes Service Level Agreement (SLA) violations.
 

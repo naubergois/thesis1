@@ -47,11 +47,11 @@ Dejanira Araiza-Illan, Anthony~G. Pipe, and Kerstin Eder.
 \newblock pages 1--16, 2016.
 
 \bibitem{Arantes2014}
-Alessandro~Oliveira Arantes.
-\newblock {Tool support for generating model-based test cases via web Valdivino
-  Alexandre de Santiago J{\'{u}}nior , Nandamudi Lankalapalli Vijaykumar and
-  Erica Ferreira de Souza}.
-\newblock 9(1):62--96, 2014.
+Alessandro~Oliveira Arantes, Valdivino~Alexandre {De Santiago},
+  Nandamudi~Lankalapalli Vijaykumar, and Erica~Ferreira {De Souza}.
+\newblock {Tool support for generating model-based test cases via web}.
+\newblock {\em International Journal of Web Engineering and Technology},
+  9(1):62--96, 2014.
 
 \bibitem{Arcaini2015}
 Paolo Arcaini, Angelo Gargantini, and Elvinia Riccobene.
@@ -106,6 +106,12 @@ Marcelo~De Barros and Jing Shiau.
 \newblock {Web services wind tunnel: On performance testing large-scale
   stateful web services}.
 \newblock 2007.
+
+\bibitem{Bayan2008}
+Mohamad Bayan and Jo{\~{a}}o~W. Cangussu.
+\newblock {Automatic feedback, control-based, stress and load testing}.
+\newblock {\em Proceedings of the 2008 ACM symposium on Applied computing - SAC
+  '08}, page 661, 2008.
 
 \bibitem{Bianchi2017}
 Francesco Bianchi, Alessandro Margara, and Mauro Pezze.
@@ -281,6 +287,13 @@ Gregory Gay, Sanjai Rayadurgam, and Mats~P.E. Heimdahl.
   Behaviors}.
 \newblock {\em IEEE Transactions on Software Engineering}, PP(99), 2016.
 
+\bibitem{Giese1999}
+H~Giese, J~Graf, and G~Wirtz.
+\newblock {Seamless visual object-oriented behavior modeling for distributed
+  software systems}.
+\newblock {\em Visual Languages, 1999. Proceedings. 1999 IEEE Symposium on},
+  pages 156--199, 1999.
+
 \bibitem{Glover1986}
 Fred Glover and Rafael Mart{\'{i}}.
 \newblock {Tabu Search}.
@@ -420,6 +433,12 @@ William~E. Lewis, David Dobbs, and Gunasekaran Veerapillai.
 \newblock {\em {Software testing and continuous quality improvement}}.
 \newblock 2005.
 
+\bibitem{Luo2015}
+Qi~Luo, Aswathy Nair, Mark Grechanik, and Denys Poshyvanyk.
+\newblock {FOREPOST: finding performance problems automatically with
+  feedback-directed learning software testing}.
+\newblock pages 1--51, 2015.
+
 \bibitem{ManuelLopez-IbanezJeremieDubois-LacosteLesliePerezCaceresMauroBirattari2016}
 Thomas~St{\"{u}}tzle {Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez,
   J{\'{e}}r{\'{e}}mie Dubois-Lacoste, Leslie P{\'{e}}rez C{\'{a}}ceres, Mauro
@@ -427,6 +446,13 @@ Thomas~St{\"{u}}tzle {Manuel L{\'{o}}pez-Ib{\'{a}}{\~{n}}ez,
 \newblock {The irace package: Iterated racing for automatic algorithm
   configuration}.
 \newblock {\em Operations Research Perspectives}, 3:43--58, 2016.
+
+\bibitem{Marinescu2015}
+Raluca Marinescu, Cristina Seceleanu, H{\`{e}}l{\'{e}}ne {Le Guen}, and Paul
+  Pettersson.
+\newblock {\em {A Research Overview of Tool-Supported Model-based Testing of
+  Requirements-based Designs}}, volume~98.
+\newblock 2015.
 
 \bibitem{Marinho2014}
 Marcelo Marinho, Suzana Sampaio, Telma Lima, and Hermano de~Moura.
@@ -447,6 +473,11 @@ Rui~A. {Matnei Filho} and Silvia~R. Vergilio.
 \newblock {\em Journal of Software Engineering Research and Development},
   4(1):4, 2016.
 
+\bibitem{Paper2014}
+Kai-Steffen~Hielscher {Matthias Beyer, Winfried Dulz}.
+\newblock {Performance Issues in Statistical Testing}.
+\newblock (April 2006), 2014.
+
 \bibitem{Menasce2002a}
 Daniel~A Menasc{\'{e}} and George Mason.
 \newblock {TPC-W : A Benchmark for E-commerce}.
@@ -463,16 +494,23 @@ Ian Molyneaux.
   Programmers and Quality Assurance}}.
 \newblock "O'Reilly Media, Inc.", 1st edition, January 2009.
 
+\bibitem{moscher2017facing}
+Marco Moscher and Konrad F{\"o}gen.
+\newblock Facing synthetic workload generation as part of performance
+  testing--a tools approach.
+\newblock {\em Full-scale Software Engineering/The Art of Software Testing},
+  page~38, 2017.
+
 \bibitem{Mueller1998}
 F.~Mueller and J.~Wegener.
 \newblock {A comparison of static analysis and evolutionary testing for the
   verification of timing constraints}.
 \newblock 1998.
 
-\bibitem{Paper2014}
-Conference Paper.
-\newblock {Performance Issues in Statistical Testing}.
-\newblock (April 2006), 2014.
+\bibitem{Nachiyappan2015}
+S~Nachiyappan and S~Justus.
+\newblock {Cloud Testing Tools and Its Challenges : A Comparative Study}.
+\newblock {\em Procedia - Procedia Computer Science}, 50:482--489, 2015.
 
 \bibitem{Penta2007}
 Massimiliano~Di Penta, Gerardo Canfora, and Gianpiero Esposito.
@@ -549,11 +587,6 @@ Christopher Schaefer, Hyunsook Do, and Brian~M. Slator.
 \newblock {Crushinator: A framework towards game-independent testing}.
 \newblock {\em 2013 28th IEEE/ACM International Conference on Automated
   Software Engineering, ASE 2013 - Proceedings}, pages 726--729, 2013.
-
-\bibitem{Shirole2013}
-Mahesh Shirole and Rajeev Kumar.
-\newblock {UML behavioral model based test case generation}.
-\newblock {\em ACM SIGSOFT Software Engineering Notes}, 38(4):1, 2013.
 
 \bibitem{shousha2003performance}
 Marwa Shousha.
@@ -649,6 +682,11 @@ Catia Trubiani.
   feedback from software performance analysis results Catia Trubiani}.
 \newblock {\em Language}, 2011.
 
+\bibitem{utting2010practical}
+Mark Utting and Bruno Legeard.
+\newblock {\em Practical model-based testing: a tools approach}.
+\newblock Morgan Kaufmann, 2010.
+
 \bibitem{Vogele2016}
 Christian Vogele, Andr{\'{e}} van Hoorn, Eike Schulz, Wilhelm Hasselbring, and
   Helmut Krcmar.
@@ -696,6 +734,13 @@ S~Wieczorek, A~Stefanescu, and A~Roth.
 \newblock {\em Quality of Information and Communications Technology (QUATIC),
   2010 Seventh International Conference on the}, pages 292--297, 2010.
 
+\bibitem{Williams2002}
+Lloyd~G. Williams and Connie~U. Smith.
+\newblock {PASASM : A Method for the Performance Assessment of Software
+  Architectures}.
+\newblock {\em Proceedings of the third international workshop on Software and
+  performance - WOSP '02}, (January 2002):179, 2002.
+
 \bibitem{XinyingCai2007}
 Hongwei~Zeng {Xinying Cai}.
 \newblock {Model-based Test Generation for Software Product Line}.
@@ -705,6 +750,13 @@ Hongwei~Zeng {Xinying Cai}.
 Li~Ye.
 \newblock {Model-Based Testing Approach for Web Applications}.
 \newblock (June), 2007.
+
+\bibitem{Zitzler1999}
+E.~Zitzler and L.~Thiele.
+\newblock {Multiobjective evolutionary algorithms: a comparative case
+  study$\backslash$nand the strength Pareto approach}.
+\newblock {\em IEEE Transactions on Evolutionary Computation}, 3(4):257--271,
+  1999.
 
 \bibitem{Zitzler2001}
 Eckart Zitzler, Marco Laumanns, and Lothar Thiele.
