@@ -47,11 +47,11 @@ Dejanira Araiza-Illan, Anthony~G. Pipe, and Kerstin Eder.
 \newblock pages 1--16, 2016.
 
 \bibitem{Arantes2014}
-Alessandro~Oliveira Arantes.
-\newblock {Tool support for generating model-based test cases via web Valdivino
-  Alexandre de Santiago J{\'{u}}nior , Nandamudi Lankalapalli Vijaykumar and
-  Erica Ferreira de Souza}.
-\newblock 9(1):62--96, 2014.
+Alessandro~Oliveira Arantes, Valdivino~Alexandre {De Santiago},
+  Nandamudi~Lankalapalli Vijaykumar, and Erica~Ferreira {De Souza}.
+\newblock {Tool support for generating model-based test cases via web}.
+\newblock {\em International Journal of Web Engineering and Technology},
+  9(1):62--96, 2014.
 
 \bibitem{Arcaini2015}
 Paolo Arcaini, Angelo Gargantini, and Elvinia Riccobene.
@@ -416,6 +416,11 @@ Rui~A. {Matnei Filho} and Silvia~R. Vergilio.
 \newblock {\em Journal of Software Engineering Research and Development},
   4(1):4, 2016.
 
+\bibitem{Paper2014}
+Kai-Steffen~Hielscher {Matthias Beyer, Winfried Dulz}.
+\newblock {Performance Issues in Statistical Testing}.
+\newblock (April 2006), 2014.
+
 \bibitem{Menasce2002a}
 Daniel~A Menasc{\'{e}} and George Mason.
 \newblock {TPC-W : A Benchmark for E-commerce}.
@@ -438,10 +443,10 @@ F.~Mueller and J.~Wegener.
   verification of timing constraints}.
 \newblock 1998.
 
-\bibitem{Paper2014}
-Conference Paper.
-\newblock {Performance Issues in Statistical Testing}.
-\newblock (April 2006), 2014.
+\bibitem{Nachiyappan2015}
+S~Nachiyappan and S~Justus.
+\newblock {Cloud Testing Tools and Its Challenges : A Comparative Study}.
+\newblock {\em Procedia - Procedia Computer Science}, 50:482--489, 2015.
 
 \bibitem{Penta2007}
 Massimiliano~Di Penta, Gerardo Canfora, and Gianpiero Esposito.
