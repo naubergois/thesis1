@@ -413,6 +413,13 @@ Barbara Kitchenham and S~Charters.
   Engineering}.
 \newblock {\em Engineering}, 2:1051, 2007.
 
+\bibitem{Knowles1999}
+J.~Knowles and D.~Corne.
+\newblock {The Pareto archived evolution strategy: a new baseline
+  algorithm$\backslash$nfor Pareto multiobjective optimisation}.
+\newblock {\em Proceedings of the 1999 Congress on Evolutionary
+  Computation-CEC99 (Cat. No. 99TH8406)}, 1:98--105, 1999.
+
 \bibitem{Lacour2015}
 Renaud Lacour, Kathrin Klamroth, and Carlos~M. Fonseca.
 \newblock {A box decomposition algorithm to compute the hypervolume indicator}.
@@ -473,10 +480,23 @@ Kai-Steffen~Hielscher {Matthias Beyer, Winfried Dulz}.
 \newblock {Performance Issues in Statistical Testing}.
 \newblock (April 2006), 2014.
 
+\bibitem{McConaghy2011}
+Trent McConaghy, Pieter Palmers, Michiel Steyaert, and Georges G~E Gielen.
+\newblock {Trustworthy genetic programming-based synthesis of analog circuit
+  topologies using hierarchical domain-specific building blocks}.
+\newblock {\em IEEE Transactions on Evolutionary Computation}, 15(4):557--570,
+  2011.
+
 \bibitem{Menasce2002a}
 Daniel~A Menasc{\'{e}} and George Mason.
 \newblock {TPC-W : A Benchmark for E-commerce}.
 \newblock Number June, pages 1--6, 2002.
+
+\bibitem{Michalak2014}
+Krzysztof Michalak.
+\newblock {The effects of asymmetric neighborhood assignment in the MOEA/D
+  algorithm}.
+\newblock {\em Applied Soft Computing Journal}, 25:97--106, 2014.
 
 \bibitem{MohammadS.Obaidat}
 Petros~Nicopolitidis {Mohammad S. Obaidat} and Faouzi Zarai.
@@ -506,6 +526,12 @@ F.~Mueller and J.~Wegener.
 S~Nachiyappan and S~Justus.
 \newblock {Cloud Testing Tools and Its Challenges : A Comparative Study}.
 \newblock {\em Procedia - Procedia Computer Science}, 50:482--489, 2015.
+
+\bibitem{Oltean2005}
+Mihai Oltean, Ajith Abraham, and K~Mario.
+\newblock {Multiobjective Optimization Using Adaptive Pareto Archived Evolution
+  Strategy}.
+\newblock pages 1--6, 2005.
 
 \bibitem{Penta2007}
 Massimiliano~Di Penta, Gerardo Canfora, and Gianpiero Esposito.
@@ -745,6 +771,19 @@ Hongwei~Zeng {Xinying Cai}.
 Li~Ye.
 \newblock {Model-Based Testing Approach for Web Applications}.
 \newblock (June), 2007.
+
+\bibitem{Yuen2009}
+Tey~Jing Yuen and Rahizar Ramli.
+\newblock {Comparison of Computational Efficiency of Moea $\backslash$ D and
+  Nsga-Ii for Passive Vehicle Suspension Optimization}.
+\newblock 2(Cd), 2009.
+
+\bibitem{Zhang2007}
+Q.~Zhang and Hui Li.
+\newblock {MOEA/D: A Multiobjective Evolutionary Algorithm Based on
+  Decomposition}.
+\newblock {\em IEEE Transactions on Evolutionary Computation}, 11(6):712--731,
+  2007.
 
 \bibitem{Zitzler1999}
 E.~Zitzler and L.~Thiele.

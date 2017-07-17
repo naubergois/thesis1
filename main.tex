@@ -161,9 +161,7 @@ then, the individuals in the two populations are sorted according to their rank,
 
 This thesis addresses the use of hybrid and multi-objective metaheuristics in conjunction with reinforcement learning techniques in search-based tests. Reinforcement learning (RL) refers to both a learning problem and a subfield of machine learning. As a learning problem, it refers to learning to control a system so as to maximize some numerical value which represents a long-term objective. The basic idea of Reinforcement learning  is simply to capture the most important aspects of the real problem, facing a learning agent interacting with its environment to achieve a goal \cite{Sutton2012}. Reinforcement learning is learning what to do—how to map situations to actions—so as to maximize a numerical reward signal. The learner needs to discover which actions yield the most reward by trying them \cite{Sutton2012}.
 
-A tool named IAdapter (www.iadapter.org, github.com/naubergois/newiadapter), a JMeter plugin for performing search-based load tests, was extended \cite{Gois2016}.  Several experiments was conducted to validate the proposed approach. The experiment uses the NSGA-II algorithm with one objective: discover application scenarios where there is a high response time for a small number of users. The relevance of finding scenarios with high response times is to enable corrective actions before the application under test is released in a production environment.
-
-
+A tool named IAdapter (www.iadapter.org, github.com/naubergois/newiadapter), a JMeter plugin for performing search-based load tests, was extended \cite{Gois2016}.  Several experiments was conducted to validate the proposed approach.
 
 \section{Motivation}
 
@@ -196,24 +194,24 @@ Bianchi et al. presents a classification schema and a general framework for the 
 \label{fig:summary}
 \end{figure}
 
-In the academic context, a number of studies proving the efficacy of metaheuristics to automate test execution can be found in literature. Figure \ref{fig:sbsesbst}  shows the growth in papers published on SBST and SBSE. The data is taken from the SBSE repository (\url{http://crestweb.cs.ucl.ac.uk/resources/sbse_repository/}).
+In the academic context, a number of studies proving the efficacy of metaheuristics to automate test execution can be found in literature. Figure \ref{fig:sbsesbst}  shows the growth in papers published on SBST and SBSE. The data is taken from the SBSE repository (\url{http://crestweb.cs.ucl.ac.uk/resources/sbse_repository/}) and Afzal et al. \cite{Afzal2009a} \cite{Harman2015}.
 The aim of the SBSE repository is to contain every SBSE paper. Although no repository can guarantee 100\% precision and recall, the SBSE repository has proved sufficiently usable that it has formed the basis of several other detailed analyses of the literature \cite{Harman2015}.
 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{./images/publications1.png}
-\caption{Number of publications in SBSE and SBST by Year. Data comes from the Harman et al., Afzal et al. and the SBSE repository  \cite{Afzal2009a} \cite{Harman2015}}
+\caption{Number of publications in SBSE and SBST by year \cite{Afzal2009a} \cite{Harman2015}}
 \label{fig:sbsesbst}
 \end{figure}
 
-SBST has made many achievements, and demonstrated its wide applicability and increasing uptake. Nevertheless, there are pressing open problems and challenges that need more attention like to extend SBST to test non-functional properties, a topic that remains relatively under-explored, compared to structural testing. The Fig. \ref{fig:nonfunctional} shows the non-funtional SBST by year \cite{Aleti2016} \cite{Harman2015}.
+SBST has made many achievements, and demonstrated its wide applicability and increasing uptake. Nevertheless, there are pressing open problems and challenges that need more attention like to extend SBST to test non-functional properties, a topic that remains relatively under-explored, compared to structural testing.  Fig. \ref{fig:nonfunctional} shows the non-funtional SBST by year, data comes from the Harman et al., Afzal et al. and the SBSE repository \cite{Aleti2016} \cite{Harman2015}.
 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/nonfunctional.png}
-\caption{Number of publications in non-functional SBST by Year. Data comes from the Harman et al., Afzal et al. and the SBSE repository  \cite{Afzal2009a} \cite{Harman2015} }
+\caption{Number of publications in non-functional SBST by year \cite{Afzal2009a} \cite{Harman2015} }
 \label{fig:nonfunctional}
 \end{figure}
 
@@ -237,17 +235,34 @@ the art, due to the lack of availability of the tools used. The present research
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{./images/metaheuristics.png}
-\caption{Range of metaheuristics by Type of non-functional Search Based Test\cite{Afzal2009a}. }
+\caption{Range of metaheuristics by type of non-functional Search Based Test\cite{Afzal2009a}. }
 \label{fig:metabykind}
 \end{figure}
 
 
+The context of application of this study is in independent test teams who needs to benchmark the response time of an application without necessarily having access to their production environment. This context guided the choice of the workload definition strategy, the time measurement metrics and the test tool chosen for adaptation and application in the experiments.
+
 
 \subsection{State of Industrial Practices on Stress Tests}
 
-The stress testing process in the industry still follows a non-automated and ad-hoc model where the designer or tester is responsible for running the tests analyzing the results and deciding which new tests should be performed \cite{Lewis2005}.
+The stress testing process in the industry still follows a semi-automated model where the designer or tester is responsible for running the tests, analyzing the results and deciding which new tests should be performed \cite{Lewis2005}.
 
 Typically, performance testing is accomplished using test scripts, which are programs that test designers write to automate testing. These test scripts performs actions or mimicking user actions on GUI objects of the system to feed input data. Current approaches to load testing suffer from limitations. Their cost-effectiveness is highly dependent on the particular test scenarios that are used yet there is no support for choosing those scenarios. A poor choice of scenarios could lead to underestimating system response time thereby missing an opportunity to detect a performance \cite{Grechanik2012}.
+
+Several tools provide support for process and running tests with different approaches. While some of the tools are open source, other tools are provided by companies in different business models. Some tools still using scripting-based approach, other tools already use model-based testing. None of the commercial solutions researched presented any implementation of search-based test techniques.
+
+
+The Tool LoadUI pro uses a model-based approach. The main advantages of this tool are: build load tests from pre-configured templates in just a few clicks; easily reuse existing functional tests from SoapUI in a few clicks and distributed load testing through on-premise or cloud based load agents. Microsoft provides the Spec Explorer.
+Spec Explorer is a model-based test tool. It is a tool that extends Microsoft Visual Studio for creating models of software behavior, analyzing those models with graphical visualization, checking the validity of those models, and generating test cases from the models.
+
+HP, IBM and Microfocus present tools based on recorded scripts. IBM Rational Performance Test Server is a workload test engine that allows you to validate application performance and scalability. The solution maximizes use of your test infrastructure to quickly deploy load scenarios and create large-scale system test activity. The Microfocus company presents a tool named Silk Test. Silk Test alows to create automated tests without coding enables software testers to keep up with the pace of development, and developers to create tests in their choice of IDE. Silk Test's automation is effective for regression,
+cross-platform, and localization testing. It
+works across all technologies including AJAX,
+web, mobile web, Java, .NET, client/server, terminal host, and SAP systems.
+
+
+Other tools provide the cloud-testing service, based on a user-submitted script. BlazeMeter provides a tool in cloud to running massively scalable, open source-based performance tests against apps, from web and mobile apps to microservices and APIs. The tool allows write tests as code in domain specific language (DSL) to generate and instantly run JMete, Selenium, Gatling, Locust and more tests without leaving your favorite application development tool. Use the same DSL to configure and launch tests using any major open source performance testing tool.
+
 
 
 
@@ -286,7 +301,17 @@ The secondary contributions of this thesis are follows:
 
 This thesis is organized as follows.
 
-Chapter 3 reviews the main existing approaches in the research area referring to the search-based stress testing. In particular, two categories of approaches are out-lined: (i) Search-Based Stress Testing on Safety-critical systems; (ii) Search-Based Stress Testing on Industrial systems. In the context of the search-based process two metrics can be applied: processor cycles or response time.
+Chapter 2 surveys the state of the art literature in stress testing research. This survey will be useful for stress testing practitioners and software engineering researchers. The chapter presents the most common techniques of designing stress tests models. The main anti-patterns found in stress tests.
+
+
+Chapter 3 reviews the main existing approaches in the research area referring to the search-based stress testing. In particular, two categories of approaches are out-lined: (i) Search-Based Stress Testing on Safety-critical systems; (ii) Search-Based Stress Testing on non Safety-critical systems. In the context of the search-based process two metrics can be applied: processor cycles or response time. The chapter also presents initial concepts about the use of metaheuristics, hybrid metaheuristics, and multi-objective metaheuristics.
+
+
+Chapter 4 presents a hybrid approach that combines genetic algorithms, simulated annealing, and tabu search algorithms in stress tests. A tool named IAdapter, a JMeter plugin for performing search-based load tests, was developed. Three experiments were conducted to validate the proposed approach. The first experiment was performed on an emulated component, and the second one was performed using an installed Moodle application. The chapter presents the solution representation and the objective function of the proposed approach.
+
+Chapter 5 presents a reinforcement learning approach to optimize the choice of neighboring solutions to explore, reducing the time needed to obtain the scenarios with the longest response time in the application. The chapter presents a study that extends the article "Improving stress search based testing using a hybrid metaheuristic approach"  in order to ascertain if the use of the Q-learning technique allows the meta-heuristic algorithms to improve the search to application failures with a smaller number of requests consuming a shorter time assuming that the same application can be submitted to more than one test execution.
+
+Chapter 6 presents experiments to assert the benefits of multiobjective metaheuristics in search-based stress testing. The first experiment uses the NSGA-II algorithm to discover application scenarios where there is a high response time for a small number of users. 
 
 \chapter{A Survey on Stress Testing Software Systems}
 
@@ -535,7 +560,7 @@ Illes et al. present a systematic approach for evaluation criteria for test tool
 capturing and subsequently editing the test scripts and the execution of the recorded test
 scripts.  WinRunner and Rational Robot can be extended to provide test planning and monitoring as well as defect and reporting facilities. HTTrace’s strength lies on testing database applications by allowing the reset of consistent database states. Additionally, all three tools can be extended to provide support for testing quality attributes of the system under test \cite{Illes2005}.
 
-Tables \ref{tab: tabtool1},\ref{tab: tabtool2} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow. None of the presented tools uses heuristic or learning resources when choosing the scenarios to be tested or the workloads to be applied in the test.
+Tables \ref{tab: tabtool1} and \ref{tab: tabtool2} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow. None of the presented tools uses heuristic or learning resources when choosing the scenarios to be tested or the workloads to be applied in the test.
 
 Penã-Ortiz et al. present a study where stress test tools are compared using 12 features \cite{MohammadS.Obaidat}:
 
@@ -651,7 +676,7 @@ integrated for analysis \cite{Bai2011a}.
 
 Apache jmeter was the tool chosen for current research due to its open license, the use of plugins and the ease of integration with jmetal and jgap frameworks. Apache JMeter is a free open source stress testing tool.  It has a large user base and offers lots of plugins to aid testing. JMeter is a desktop application designed to test and measure the performance and functional behavior of applications. The application it's purely Java-based and is highly extensible through a provided API (Application Programming Interface). JMeter works by acting as the client of a client/server application. JMeter allows multiple concurrent users to be simulated on the application \cite{Halili2008} \cite{Erinle2013}.
 
-Apache JMeter is user friendly and a flexible open source solution for performance verification. Apache JMeter is designed in pure Java application. It is used to generate heavy loads on the servers or objects to test its strength or analyze overall performance under different load types. To briefly explain the solution how it works, as follows: An Regular Expression Extractor captures the dynamic values as mentioned above and stored in a temporary variable. The values which has been extracted and stored in temporary variables are subsequently utilized by immediate requests/re directions using HTTP samplers \cite{Kiran2015}. JMeter has components organized  in a hierarchical manner. The Test Plan is the main component in a JMeter script. A typical test plan will consist of one or more Thread Groups, logic controllers, listeners, timers, assertions, and configuration elements:
+Apache JMeter is used to generate heavy loads on the servers or objects to test its strength or analyze overall performance under different load types. To briefly explain the solution how it works, as follows: An Regular Expression Extractor captures the dynamic values as mentioned above and stored in a temporary variable. The values which has been extracted and stored in temporary variables are subsequently utilized by immediate requests/re directions using HTTP samplers \cite{Kiran2015}. JMeter has components organized  in a hierarchical manner. The Test Plan is the main component in a JMeter script. A typical test plan will consist of one or more Thread Groups, logic controllers, listeners, timers, assertions, and configuration elements:
 
 \begin{itemize}
 \item Thread Group: Test management module responsible to simulate the users used in a test. All elements of a test plan must be under a thread group.
@@ -666,7 +691,7 @@ Apache JMeter is user friendly and a flexible open source solution for performan
 
 \FloatBarrier
 
-\section{Research Question 1:How is a proper stress designed?}
+\section{Research Question 1: How modeling a stress test?}
 
 
 The design of a stress test depends intrinsically on the load model applied to the software under test. Based on the objectives, there are two general schools of thought for designing a proper load to achieve such objectives \cite{Afzal2009a}:
@@ -755,7 +780,7 @@ to model continuous systems \cite{MarkUtting2012}.
 \end{itemize}
 
 
-Table \ref{modelsummary} presents the papers found by the survey about model-based tests. All results was classified by model and paradigm. The most used paradigms in search-based stress testing are:  Funcional-based models, Transition-based and State-based models. 
+Table \ref{modelsummary} presents the papers found by the survey about model-based tests. All results was classified by model and paradigm. The most used paradigms in model-based stress testing are:  Funcional-based notations, Stochastic notations, Transition-based and State-based notations. 
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
@@ -1182,26 +1207,16 @@ More is Less occurs when a system spends more time "thrashing” than accomplish
 Stress testing investigates the behavior of the system under conditions
 that overload its resources \cite{Sandler2004} \cite{Lewis2005}. The core activities in conducting an usual Load, Performance and Stress tests are  Identify the test environment, Identify acceptance criteria, Plan and design tests, Prepare the test environment, Record the test plan, Run the tests and Analyze results. This research focuses on the generation and execution of test cases. It is not scope of the research the automatic analysis of the results and the treatment of log of tests. The two main approaches to creating workloads are generative and descriptive workload approaches. The main goal of descriptive workloads is to ensure that the system can function correctly once. Generative workloads  aims to design loads, which are likely to cause functional or non-functional problem. 
 
-The main approaches to generate test cases to stress testing are: Model-based testing and Search-based testing. Model-based testing use a model to describle the states and transitions of a system under test. Although the use of models allows greater control of generated test cases, since all test cases are generated from the previously defined model, it is also the main limitation of this approach since the model may not include all possible scenarios of test because it depends intrinsically of the test designer responsible for creating the models.
+There are three approaches to stress test execution: Live-User Based Executions, Driver Based Executions and Emulation Based Executions. This thesis focuses on user Driver Based Executions where each workload perform serveral requests to application under test to measure the response time. Apache jmeter was the tool chosen for current research due to its open license, the use of plugins and the ease of integration with jmetal and jgap frameworks.
+
+The main approaches to generate test cases to stress testing are: Model-based testing and Search-based testing. Model-based testing use a model to describle the states and transitions of a system under test. Although the use of models allows greater control of generated test cases, since all test cases are generated from the previously defined model, it is also the main limitation of this approach since the model may not include all possible scenarios of test because it depends intrinsically of the test designer responsible for creating the models. The most used paradigms in model-based stress testing are:  Funcional-based notations, Stochastic notations, Transition-based and State-based notations. 
 
 \chapter{Search-Based Stress Testing}
 
 Search-based software engineering (SBSE) is the application of optimization techniques in solving software engineering problems. The applicability of optimization techniques in solving software engineering problems is suitable as these problems frequently encounter competing constraints and require near optimal solutions \cite{Afzal2009a} \cite{Harman2015}.
 
 
-Search Based Software Testing (SBST) is the sub-area of Search Based Software Engineering concerned with software testing. Search-based software testing is the application of metaheuristic search techniques to generate software tests. The test adequacy criterion is transformed into a fitness function and a set of solutions in the search space are evaluated with respect to the fitness function using a metaheuristic search technique \cite{Afzal2009a} \cite{Aleti2016} \cite{Harman2015}.
-
-There are many kinds of non-functional search based tests  \cite{Afzal2009a}:
-
-\begin{itemize}
-\item Execution time: The application of evolutionary algorithms to find the best and worst case execution times (BCET, WCET).
-\item Quality of service: uses metaheuristic search techniques to search violations of service level agreements (SLAs).
-\item Security: apply a variety of metaheuristic search techniques  to detect security vulnerabilities like detecting buffer overflows.
-\item Usability: concerned with construction of covering array which is a combinatorial object.
-\item Safety: Safety testing is an important component of the testing strategy of safety critical systems where the systems are required to meet safety constraints.
-\end{itemize}
-
-A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods.
+Search Based Software Testing (SBST) is the sub-area of Search Based Software Engineering concerned with software testing. Search-based software testing is the application of metaheuristic search techniques to generate software tests. The test adequacy criterion is transformed into a fitness function and a set of solutions in the search space are evaluated with respect to the fitness function using a metaheuristic search technique \cite{Afzal2009a} \cite{Aleti2016} \cite{Harman2015}. A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search and genetic algorithms.
 
 
 \section{Metaheuristics}
@@ -1427,22 +1442,6 @@ SPEA uses a regular population and an archive. Starting with an initial populati
 The main differences between SPEA2 and NSGA-II are the diversity assignment and replacement. NSGA-II uses a fast non-dominated sorting algorithm and uses Pareto optimality levels as the primary criterion to select solutions. SPEA2 derives the strength of each solution from the number of other solutions it dominates. NSGA-II uses the crowding-distance to maintain a well-spread set of solutions whereas SPEA2 applies the k-nearest neighbor approach (Figure \ref{fig:speansga}) \cite{Tervonen2017} \cite{Deb2005}.
 
 
-
-
-\subsubsection{Comparing multi-objective metaheuristics}
-
-Deb states that are two orthogonals goals for any multi-objective algorithm \cite{deb2001multi}:
-
-\begin{itemize}
-\item Identify solutions as close as possible  to the true Pareto frontier;
-\item identify a diverse of sets of solutions distributed across the entire Pareto-optimal surface.
-\end{itemize}
-
-There are several metrics either closeness or diversity. Example of metrics which measure the closeness of Pareto frontier is Error ratio and Set coverage. Example of metrics which measure the diversity are the Spacing and the Spread. The Hypervolume metric measure both closeness and diversity \cite{janssens2010multiple}.
-
-The Hypervolume metric calculates the volume in an objective space covered by the non-dominated individuals. The hypervolume was originally proposed by Zitzler and Thiele \cite{Zitzler1999}. It is especially useful when the true Pareto-optimal solution is unknown. For each solution, a hypercube is computed from a reference point and the solution as the diagonal corners of the hypercube ( Figure \ref{fig:hypervolume} ) \cite{janssens2010multiple}. 
-
-
 \begin{figure}[h]
 \begin{minipage}{.6\textwidth}
 \centering
@@ -1459,14 +1458,112 @@ The Hypervolume metric calculates the volume in an objective space covered by th
 \end{figure}
 
 
-The reference point is found by constructing a vector of worst objects fitness value. The equation of the hypervolume is:
+\subsubsection{Pareto Archived Evolution Strategy} 
+
+Pareto Archived Evolution Strategy(PAES) is an  evolutionary algorithm which employs
+local search for the generation of new candidate solutions but
+utilises population information in its selection procedure. The PAES algorithm was developed with two main objectives. The first of these was that the algorithm should be strictly confined to local search i.e. it should use a small change (mutation) operator only, and move from a current solution to a nearby neighbour. The second objective was that the algorithm should be a true Pareto optimiser, treating all nondominated solutions as having equal value \cite{Knowles1999}.
+
+In PAES one parent generates by mutation one
+offspring. The offspring is compared with the parent. If the offspring dominates the parent, the offspring is accepted as
+the next parent and the iteration continues. If the parent dominates the offspring, the offspring is discarded and the new mutated solution (a new offspring) is generated. If the offspring and the parent do not dominate each other, a comparison set of previously nondominated individuals is used \cite{Knowles1999}\cite{Oltean2005}. The algorithmic framework of PAES is described in Alg. \ref{paes}.
 
 
-\begin{equation}
-Hypervolume =  volume (U^{|Q|}_{i=1}  v_{i}  )
-\end{equation}
+\begin{algorithm}[h]
+  \caption{PAES Algorithm \cite{Knowles1999}\cite{Oltean2005}}\label{paes}
+  \begin{algorithmic}[1]
+    \State Repeat until a termination criterion has been reached
+    \State Generate initial random solution c and add it to archive
+    \State Mutate c to produce m and evaluate m
+    \If {c dominates m }
+    \State discard m
+    \Else
+    \If {m dominates c}
+     \State replace c with m and add m to the archive
+    \Else
+    \If {m is dominated by any member of the archive}
+    \State discard m
+    \Else
+    \State apply test (c, m, archive) to determine which becomes the new current solution and whether to add m to the archive
+    \EndIf
+    \EndIf
+    \EndIf
+  \end{algorithmic}
+\end{algorithm}
 
- 
+\subsubsection{A Multiobjective Evolutionary Algorithm Based on Decomposition}
+
+The Multiobjective Evolutionary Algorithm Based on Decomposition (MOEA/D) is a multiobjective evolutionary algorithm competitive to other well-known multiobjective optimization evolutionary algorithms (MOEAs) such as NSGA-II or SPEA-2 \cite{Michalak2014}. MOEA/D decomposes a multiobjective optimization problem into a number of scalar optimization subproblems and optimizes them simultaneously. Each subproblem is optimized by only using information from its several neighboring subproblems, which makes MOEA/D have lower computational complexity at each generation than MOGLS and nondominated sorting genetic
+algorithm II (NSGA-II) \cite{Zhang2007}. 
+
+NSGA-II, SPEA2 and PAES algorithms  do not associate each individual solution with
+any particular scalar optimization problem. In a scalar objective optimization problem, all the solutions can be compared based
+on their objective function values and the task of a scalar objective evolutionary algorithm (EA) is often to find one single
+optimal solution. MOEA/D explicitly decomposes the problem into scalar optimization subproblems.It solves these subproblems simultaneously by evolving
+a population of solutions. At each generation, the population is
+composed of the best solution found so far for each subproblem. The neighborhood relations among these subproblems are defined based on the distances between their aggregation coefficient vectors \cite{Zhang2007} \cite{McConaghy2011}. Fig. \ref{fig:moead} MOEA/D create a set of subproblems $W_{i}$. Each subproblem $W_{i}$ is improved to obtain the pareto frontier \cite{McConaghy2011}. 
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{./images/moead.png}
+\caption{MOEA/D algorithm subproblems \cite{McConaghy2011}}
+\label{fig:moead}
+\end{figure}
+
+The Alg. \ref{moead} presents the details of the algorithm. The algorithm  include the
+use of Tchebycheff approach as the decomposition method, with dynamical resource allocation, to improve the efficiency of the MOEA/D \cite{Yuen2009}. 
+
+\begin{algorithm}[h]
+  \caption{MOEA/D Algorithm}
+  \label{moead}
+  \begin{algorithmic}[1]
+    \State \textbf{Initialization}
+    \State Generate initial population by uniformly spreading and randomly sampling from search space
+    \State Calculate the reference point for the Tchebycheff approach.
+   \State Evaluate Objective Values 
+   \State Selection using tournament selection method 
+   \State Selection of mating and updating range
+   \State Reproduction
+   \State Repair
+   \State Update of solutions 
+   \State \textbf{Update}
+   \State While (not equal to termination condition)
+  \State Evaluate Objective Values
+  \State Selection using tournament selection method
+  \State Selection of mating and update range
+  \State Reproduction
+  \State Repair - if the searching element is out of boundary
+  \State Update the solutions 
+  \State \textbf{Stopping Criteria}
+  \If {generation is a multiplication of a pre-set value of x}
+  \State Update utility function;
+  \EndIf    
+  \end{algorithmic}
+\end{algorithm}
+
+
+\subsubsection{Comparing multi-objective metaheuristics}
+
+Deb states that are two orthogonals goals for any multi-objective algorithm \cite{deb2001multi}:
+
+\begin{itemize}
+\item Identify solutions as close as possible  to the true Pareto frontier;
+\item identify a diverse of sets of solutions distributed across the entire Pareto-optimal surface.
+\end{itemize}
+
+There are several metrics either closeness or diversity. Example of metrics which measure the closeness of Pareto frontier is Error ratio and Set coverage. Example of metrics which measure the diversity are the Spacing and the Spread. The Hypervolume metric measure both closeness and diversity \cite{janssens2010multiple}.
+
+The Hypervolume metric calculates the volume in an objective space covered by the non-dominated individuals. The hypervolume was originally proposed by Zitzler and Thiele \cite{Zitzler1999}. It is especially useful when the true Pareto-optimal solution is unknown. For each solution, a hypercube is computed from a reference point and the solution as the diagonal corners of the hypercube ( Figure \ref{fig:hypervolume} ) \cite{janssens2010multiple}. The reference point is found by constructing a vector of worst objects fitness value.
+
+
+%The equation of the hypervolume is:
+
+
+%\begin{equation}
+%Hypervolume =  volume (U^{|Q|}_{i=1}  v_{i}  )
+%\end{equation}
+
 
 \subsection{Metaheuristic Noise Reduction}
 
@@ -1508,14 +1605,13 @@ Table \ref{tab:comparison}  shows a comparison between the research studies on l
 \centering
 \caption{Distribution of the research studies over the range of applied metaheuristics}
 \label{tab:comparison}
-\begin{tabular}{p{2.4cm}|p{3.8cm}|p{3.8cm}|p{3.0cm}|}
+\begin{tabular}{p{2.4cm}|p{3.8cm}|p{3.8cm}|p{3.2cm}|}
 \cline{2-4}
                                                                 & \multicolumn{2}{c|}{\textbf{Prototypes}}            & \textbf{Functional Tool} \\ \cline{2-4}
                                                                 & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time  \end{minipage}          & \begin{minipage}{0.2\textwidth}\footnotesize Processor Cycles \end{minipage}        & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time \end{minipage}           \\ \cline{2-4}
 %\setlength{\extrarowheight}{20pt}
-\begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search\\ +Q-Learning \\ + Multi-objective heuristics \\ \\ \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.2\textwidth}  \cellcolor{blue!25} \small Our approach \cite{Gois2016} \end{minipage}  \\[2ex] \cline{2-4}
-\begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth} \small Gois et al. 2016 \cite{Gois2016}  \end{minipage}  \\[2ex] \cline{2-4}
-\begin{minipage}{0.1\textwidth}\small GA \end{minipage}                                                              & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small \textnormal{ \\  Alander et al.,1998 \cite{Alander} \\ Wegener et al., 1996 and 1997 \cite{Wegener1997}\cite{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996} \\  Sullivan et al., 1998 \cite{Sullivan} \\ Briand et al., 2005 \cite{Briand2005} \\ Canfora et al., 2005 \cite{Canfora}  \\ }\end{minipage} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth} \small \textrm{  \\ Wegener and Grochtmann, 1998 \cite{Wegener1998} \\  Mueller et al., 1998 \cite{Mueller1998} \\ Puschner et al. \cite{Puschner1998} \\ Wegener et al., 2000 \cite{Stations} \\ Gro et al., 2000 \cite{Gross2000}  \\ }\end{minipage}& \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.22\textwidth}   \small \textnormal{ \\  Di Penta et al., 2007 \cite{Penta2007} \\ Garoussi, 2006 \cite{Garousi2006} \\ Garousi, 2008 \cite{Garousi2008} \\ Garousi, 2010 \cite{Garousi2010} \\ } \end{minipage} \\[2ex] \cline{2-4}
+\begin{tabular}[c]{@{}l@{}}\begin{minipage}{0.3\textwidth}\small GA + SA + Tabu \\ Search\\ +Q-Learning \\ + Multi-objective \\ heuristics \\ NSGA-II, SPEA2\\ PAES,MOEA/D \\ \end{minipage}\end{tabular}  & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.2\textwidth}  \cellcolor{blue!25} \small Our approach \cite{Gois2016} \end{minipage}  \\[2ex] \cline{2-4}
+\begin{minipage}{0.1\textwidth}\small GA \end{minipage}                                                              & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small \textnormal{ \\  Alander et al.,1998 \cite{Alander} \\ Wegener et al., 1996 and 1997 \cite{Wegener1997}\cite{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996} \\  Sullivan et al., 1998 \cite{Sullivan} \\ Briand et al., 2005 \cite{Briand2005} \\ Canfora et al., 2005 \cite{Canfora}  \\ }\end{minipage} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth} \small \textrm{  \\ Wegener and Grochtmann,\\ 1998 \cite{Wegener1998} \\  Mueller et al., 1998 \cite{Mueller1998} \\ Puschner et al. \cite{Puschner1998} \\ Wegener et al., 2000 \cite{Stations} \\ Gro et al., 2000 \cite{Gross2000}  \\ }\end{minipage}& \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.22\textwidth}   \small \textnormal{ \\  Di Penta et al., 2007 \cite{Penta2007} \\ Garoussi, 2006 \cite{Garousi2006} \\ Garousi, 2008 \cite{Garousi2008} \\ Garousi, 2010 \cite{Garousi2010} \\ } \end{minipage} \\[2ex] \cline{2-4}
 \begin{minipage}{0.1\textwidth}\small Simulated \\ Annealing \\ (SA) \end{minipage}                                                             & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small  Tracey, 1998 \cite{Tracey1998} \end{minipage} \\[2ex] \cline{2-4}
 \begin{minipage}{0.1\textwidth}\small  Constraint \\ Programming \end{minipage}                                                             & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small  Di Alesio et al., 2014 \cite{DiAlesio2014} \\ Di Alesio et al., 2013 \cite{DiAlesio2013}  \end{minipage} \\[2ex] \cline{2-4}
 \begin{minipage}{0.1\textwidth}\small  GA +\\ Constraint \\ Programming \end{minipage}                                                             & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{FFFFFF} \begin{minipage}{0.3\textwidth}   \small  Di Alesio et al., 2015 \cite{Alesio2015} \end{minipage} \\[2ex] \cline{2-4}
@@ -2308,7 +2404,7 @@ This chapter present experiments to assert the benefits of multiobjective metahe
 
 \section{Experiment with multi-object NSGA-II algorithm}
 
-In this section,  we present the experimental results,  in which we carried out to verify the multi-objective NSGA-II   implementation. The experiment was conducted to validate the use of NSGA-II multiobjective algorithm with a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 500 miliseconds.  The whole process of stress  tests, which run for 3 days and 492 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 123 previously established  generations by the algorithm. The experiments use the follow application features:
+In this section,  we present the experimental results,  in which we carried out to verify the multi-objective NSGA-II   implementation. The experiment was conducted to validate the use of NSGA-II multiobjective algorithm with a real implemented application. The first attemps to discover application scenarios where there is a high response time for a small number of users. The relevance of finding scenarios with high response times is to enable corrective actions before the application under test is released in a production environment. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 500 miliseconds.  The whole process of stress  tests, which run for 3 days and 492 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 123 previously established  generations by the algorithm. The experiments use the follow application features:
 
 
 \begin{itemize}
@@ -2458,7 +2554,8 @@ The experiments uses a customized version of the SEDR algorithm for noise reduct
 \end{minipage}
 \end{figure}
 
-
+\chapter{Single with Multiobjective Optimization and Reinforcement Learning for
+Search-based Stress Testing}
 
 
 % conference papers do not normally have an appendix
@@ -2494,7 +2591,7 @@ The experiments uses a customized version of the SEDR algorithm for noise reduct
 % (used to reserve space for the reference number labels box)
 \chapter{Conclusion}
 
-In this thesis we dealt with the use of hybrid metaheuristics and Q-Learning in Stress Testing. This thesis presented an hybrid and an hybrid with Q-Learning metaheuristic approaches that combines genetic algorithms, simulated annealing, and tabu search algorithms in stress tests. A tool named IAdapter (github.com/naubergois/newiadapter), a JMeter plugin for performing search-based load tests, was developed. Six experiments were conducted to validate the proposed approach. The first experiment was performed on an emulated component. The second and third experiments are conducted in an testbed developed appplication. The fourth  experiment was performed using an installed Moodle application. The fifth and sixth experiments are performned using an installed JPetStore application.
+In this thesis we dealt with the use of hybrid metaheuristics and Q-Learning in Stress Testing. This thesis presented an hybrid and an hybrid with Q-Learning metaheuristic approaches that combines genetic algorithms, simulated annealing, and tabu search algorithms in stress tests. A tool named IAdapter (\url{github.com/naubergois/newiadapter}), a JMeter plugin for performing search-based load tests, was developed. Six experiments were conducted to validate the proposed approach. The first experiment was performed on an emulated component. The second and third experiments are conducted in an testbed developed appplication. The fourth  experiment was performed using an installed Moodle application. The fifth and sixth experiments are performned using an installed JPetStore application.
 
 IAdapter Testbed is an open-source facility that provides software tools for search based test research. The testbed tool emulates test scenarios in a controled environment using mock objects and implementing performance antipatterns.
 

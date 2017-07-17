@@ -359,47 +359,59 @@ Repeated entry---line 4203 of file ../mybib.bib
  :  @book{Lewis2005
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4648 of file ../mybib.bib
+Repeated entry---line 4338 of file ../mybib.bib
+ : @article{Knowles1999
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4380 of file ../mybib.bib
+ : @article{Zhang2007
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4430 of file ../mybib.bib
+ : @article{Michalak2014
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4782 of file ../mybib.bib
  : @article{Hierons2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4662 of file ../mybib.bib
+Repeated entry---line 4796 of file ../mybib.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4678 of file ../mybib.bib
+Repeated entry---line 4812 of file ../mybib.bib
  : @article{Wang2013
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4704 of file ../mybib.bib
+Repeated entry---line 4838 of file ../mybib.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4772 of file ../mybib.bib
+Repeated entry---line 4906 of file ../mybib.bib
  : @article{Cai2007
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4785 of file ../mybib.bib
+Repeated entry---line 4919 of file ../mybib.bib
  : @article{Barber1999
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4820 of file ../mybib.bib
+Repeated entry---line 4954 of file ../mybib.bib
  : @inproceedings{Barros2007
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4833 of file ../mybib.bib
+Repeated entry---line 4967 of file ../mybib.bib
  : @article{Silveira2011
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4843 of file ../mybib.bib
+Repeated entry---line 4977 of file ../mybib.bib
  : @article{Avritzer1994
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4857 of file ../mybib.bib
+Repeated entry---line 4991 of file ../mybib.bib
  : @article{Anand2013
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4871 of file ../mybib.bib
+Repeated entry---line 5005 of file ../mybib.bib
  : @inproceedings{Draheim2006b
  :                            ,
 I'm skipping whatever remains of this entry
@@ -469,6 +481,7 @@ Warning--there's a number but no series in Menasce2002a
 Warning--empty publisher in MohammadS.Obaidat
 Warning--empty year in MohammadS.Obaidat
 Warning--empty booktitle in Mueller1998
+Warning--empty journal in Oltean2005
 Warning--empty publisher in Perry2004
 Warning--empty booktitle in Pohlheim2005
 Warning--there's a number but no series in Pohlheim2005
@@ -505,45 +518,46 @@ Warning--there's a number but no volume in Williams2002
 Warning--empty journal in XinyingCai2007
 Warning--empty journal in Ye2007
 Warning--there's a number but no volume in Ye2007
-You've used 127 entries,
+Warning--empty journal in Yuen2009
+You've used 133 entries,
             2118 wiz_defined-function locations,
-            1249 strings with 28719 characters,
-and the built_in function-call counts, 46226 in all, are:
-= -- 4528
-> -- 2020
-< -- 91
-+ -- 796
-- -- 668
-* -- 2935
-:= -- 7195
-add.period$ -- 385
-call.type$ -- 127
-change.case$ -- 698
+            1280 strings with 29809 characters,
+and the built_in function-call counts, 48182 in all, are:
+= -- 4728
+> -- 2107
+< -- 92
++ -- 830
+- -- 696
+* -- 3076
+:= -- 7524
+add.period$ -- 403
+call.type$ -- 133
+change.case$ -- 730
 chr.to.int$ -- 0
-cite$ -- 226
-duplicate$ -- 2014
-empty$ -- 3655
-format.name$ -- 668
-if$ -- 9996
+cite$ -- 234
+duplicate$ -- 2084
+empty$ -- 3803
+format.name$ -- 696
+if$ -- 10395
 int.to.chr$ -- 0
-int.to.str$ -- 127
-missing$ -- 137
-newline$ -- 635
-num.names$ -- 252
-pop$ -- 962
+int.to.str$ -- 133
+missing$ -- 143
+newline$ -- 665
+num.names$ -- 264
+pop$ -- 988
 preamble$ -- 2
-purify$ -- 588
+purify$ -- 614
 quote$ -- 0
-skip$ -- 1598
+skip$ -- 1650
 stack$ -- 0
-substring$ -- 2669
-swap$ -- 666
-text.length$ -- 91
+substring$ -- 2809
+swap$ -- 675
+text.length$ -- 92
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 478
-warning$ -- 99
-while$ -- 466
-width$ -- 130
-write$ -- 1324
-(There were 100 error messages)
+type$ -- 502
+warning$ -- 101
+while$ -- 489
+width$ -- 136
+write$ -- 1388
+(There were 103 error messages)
