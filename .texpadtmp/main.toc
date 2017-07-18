@@ -91,18 +91,21 @@
 \contentsline {subsection}{\numberline {6.1.5}Threats to validity}{79}
 \contentsline {subsection}{\numberline {6.1.6}Experiment Conclusion}{80}
 \contentsline {section}{\numberline {6.2}Comparative experiment with multi-object algorithms and noise reduction}{81}
-\contentsline {subsection}{\numberline {6.2.1}Experiment Results}{81}
-\contentsline {chapter}{\numberline {7}Single with Multiobjective Optimization and Reinforcement Learning for Search-based Stress Testing}{84}
-\contentsline {chapter}{\numberline {8}Conclusion}{85}
-\contentsline {section}{\numberline {8.1}Achievements}{85}
-\contentsline {section}{\numberline {8.2}Open Issues and future works}{86}
-\contentsline {chapter}{Bibliography}{87}
-\contentsline {chapter}{\numberline {A}IAdapter }{97}
-\contentsline {section}{\numberline {A.1}IAdapter Visual Components}{98}
-\contentsline {section}{\numberline {A.2}The IAdapter architecture}{98}
-\contentsline {subsection}{\numberline {A.2.1}Test Module}{99}
-\contentsline {subsection}{\numberline {A.2.2}Emulator Module}{101}
-\contentsline {subsection}{\numberline {A.2.3}Test scenario library}{102}
-\contentsline {subsection}{\numberline {A.2.4}Operation services}{102}
-\contentsline {subsection}{\numberline {A.2.5}External dependencies}{102}
-\contentsline {chapter}{\numberline {B}Reinforcement Learning}{104}
+\contentsline {subsection}{\numberline {6.2.1}Experiment Research Questions}{81}
+\contentsline {subsection}{\numberline {6.2.2}Variables}{82}
+\contentsline {subsection}{\numberline {6.2.3}Hypotheses}{82}
+\contentsline {subsection}{\numberline {6.2.4}Experiment Results}{83}
+\contentsline {chapter}{\numberline {7}Single with Multiobjective Optimization and Reinforcement Learning for Search-based Stress Testing}{85}
+\contentsline {chapter}{\numberline {8}Conclusion}{86}
+\contentsline {section}{\numberline {8.1}Achievements}{86}
+\contentsline {section}{\numberline {8.2}Open Issues and future works}{87}
+\contentsline {chapter}{Bibliography}{88}
+\contentsline {chapter}{\numberline {A}IAdapter }{98}
+\contentsline {section}{\numberline {A.1}IAdapter Visual Components}{99}
+\contentsline {section}{\numberline {A.2}The IAdapter architecture}{99}
+\contentsline {subsection}{\numberline {A.2.1}Test Module}{100}
+\contentsline {subsection}{\numberline {A.2.2}Emulator Module}{102}
+\contentsline {subsection}{\numberline {A.2.3}Test scenario library}{103}
+\contentsline {subsection}{\numberline {A.2.4}Operation services}{103}
+\contentsline {subsection}{\numberline {A.2.5}External dependencies}{103}
+\contentsline {chapter}{\numberline {B}Reinforcement Learning}{105}

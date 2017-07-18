@@ -301,7 +301,7 @@ The secondary contributions of this thesis are follows:
 
 This thesis is organized as follows.
 
-Chapter 2 surveys the state of the art literature in stress testing research. This survey will be useful for stress testing practitioners and software engineering researchers. The chapter presents the most common techniques of designing stress tests models. The main anti-patterns found in stress tests.
+Chapter 2 surveys the state of the art literature in stress testing research. This survey will be useful for stress testing practitioners and software engineering researchers. The chapter presents the most common techniques of designing stress tests models, several anti-patterns, tasks and tools of stress tests.
 
 
 Chapter 3 reviews the main existing approaches in the research area referring to the search-based stress testing. In particular, two categories of approaches are out-lined: (i) Search-Based Stress Testing on Safety-critical systems; (ii) Search-Based Stress Testing on non Safety-critical systems. In the context of the search-based process two metrics can be applied: processor cycles or response time. The chapter also presents initial concepts about the use of metaheuristics, hybrid metaheuristics, and multi-objective metaheuristics.
@@ -1212,8 +1212,7 @@ There are three approaches to stress test execution: Live-User Based Executions,
 The main approaches to generate test cases to stress testing are: Model-based testing and Search-based testing. Model-based testing use a model to describle the states and transitions of a system under test. Although the use of models allows greater control of generated test cases, since all test cases are generated from the previously defined model, it is also the main limitation of this approach since the model may not include all possible scenarios of test because it depends intrinsically of the test designer responsible for creating the models. The most used paradigms in model-based stress testing are:  Funcional-based notations, Stochastic notations, Transition-based and State-based notations. 
 
 There are several antipatterns that detailed features about common performance problems. Antipatterns
-are conceptually similar to patterns in that they document recurring solutions to common design problems.
-They are known as antipatterns because their use produces negative consequences. This survey found 10 antipatterns of which 4 weere  implemented to an experiment presented in the chapter 4.
+are conceptually similar to patterns in that they document recurring solutions to common design problems. This survey found 10 antipatterns of which 4 were  implemented to an experiment presented in the chapter 4.
 
 \chapter{Search-Based Stress Testing}
 
@@ -2469,6 +2468,7 @@ The independent variable is the NSGA-II algorithm used in the test. The dependen
 \end{itemize}
 \end{itemize}
 
+
 \subsection{Results}
 
 Fig. \ref{fig:paretofrontier1} and Table \ref{tab:results} present the results obtained in the experiment. The experiment found 9 optimal workloads (Pareto Frontier) that present a lower number of users with high response times. Workload number 1 with a single user accessing the dog scenario provided a response time of 245 miliseconds.  Workload number 2 with a single user accessing the dog scenario, 7 users accessing the Enter Catalog feature and 3 users in register functionality, provided a response time of 400 seconds.
@@ -2527,11 +2527,16 @@ In this section,  we present the experimental results,  in which we carried out 
 \item MOEAD
 \end{itemize}
 
-The experiment was conducted with the JPetStore application in two cycles with or without a noise reduction strategy. The maximum tolerated response time in the test was 10000 seconds.  The whole process of stress  tests, which run for 4 days and 492 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 50 previously established  generations by the algorithm. 
+The experiment was conducted with the JPetStore application in two cycles with or without a noise reduction strategy. The maximum tolerated response time in the test was 10000 seconds.  The whole process of stress  tests, which run for 4 days and 492 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 50 previously established  generations by the algorithm. Fig. presents the results of first cycle of executions. Several tests obtained response times higher than similar scenarios in other executions. After analyse the obtained results, We found that one of the reasons of higher response time is the occurrence of disk pagination. In order to more accurately verify the response times of the outliers, We adopted the use of a noise reduction strategy in a new test cycle.
 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\textwidth]{./images/outliers.png}
+\caption{Results obtained in the first test cycle}
+\label{fig:outliers}
+\end{figure}
 
-
-The experiments uses a customized version of the SEDR algorithm for noise reduction. The algorithm runs as long as each workload has at least 3 samples or the SEDR condition is satisfied for all workloads ( Figure \ref{fig:sedrcustomized} - \ding{202}). The algorithm add all workloads in OUTLIERS list to the list of execution ( Figure \ref{fig:sedrcustomized} - \ding{203}). All workloads are performed and the SEDR condition is verified  ( Figure \ref{fig:sedrcustomized} - \ding{204} and \ding{205} ). If the SEDR condition is satisfied the workload is removed from OUTLIERS list ( Figure \ref{fig:sedrcustomized} - \ding{206}) otherwise the workload is included in the list if it is no longer present ( Figure \ref{fig:sedrcustomized} - \ding{207}).
+The experiments uses a customized version of the SEDR algorithm for noise reduction. The algorithm runs as long as each workload has at least 3 samples or the SEDR condition is satisfied for all workloads ( Figure \ref{fig:sedrcustomized} - \ding{202}). The algorithm add all workloads in OUTLIERS list to the list of execution ( Figure \ref{fig:sedrcustomized} - \ding{203}). All workloads are performed and the SEDR condition is verified  ( Figure \ref{fig:sedrcustomized} - \ding{204} and \ding{205} ). If the SEDR condition is satisfied the workload is removed from OUTLIERS list ( Figure \ref{fig:sedrcustomized} - \ding{206}) otherwise the workload is included in the list if it is no longer present ( Figure \ref{fig:sedrcustomized} - \ding{207}). The hypervolume metric was used to compare the algorithms. We used the emoa package of the R language to calculate the hypervolume.
 
 \begin{figure}[!h]
 \centering
@@ -2540,19 +2545,81 @@ The experiments uses a customized version of the SEDR algorithm for noise reduct
 \label{fig:sedrcustomized}
 \end{figure}
 
+\subsection{Experiment Research Questions}
+
+The following research question is addressed:
+\begin{itemize}
+\item Which, among the four algorithms chosen, is the most suitable multi objective algorithm for the search-based test problem?
+\end{itemize}
+
+\subsection{Variables}
+
+The independent variable is the algorithms: NSGA-II, SPEA2, PAES and MOEA/D. The dependent variables are the hypervolume of each algorithm.
+
+\subsection{Hypotheses}
+
+\begin{itemize}
+\item With regard to multi-objective algorithms applied in the experiment and the test results:
+\begin{itemize}
+\item $H_{0}$ (A null hypothesis) : The multi-objective with  higher value of hypervolume don't find the scenarios with higher response time and lower number of users.
+\item $H_{1}$  : The multi-objective with  higher value of hypervolume find the scenarios with higher response time and lower number of users.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item With regard to multi-objective algorithms applied in the experiment:
+\begin{itemize}
+\item $H_{1}$  : MOEA/D is the algorithm with higher value of hypervolume in the experiments.
+\item $H_{2}$  : NSGA-II is the algorithm with higher value of hypervolume in the experiments.
+\item $H_{3}$  : SPEA2 is the algorithm with higher value of hypervolume in the experiments.
+\item $H_{4}$  : PAES is the algorithm with higher value of hypervolume in the experiments.
+\end{itemize}
+\end{itemize}
+
 
 \subsection{Experiment Results}
+
+Table \ref{tab:hypervolume} shows the hypervolume value of each algorithm. For the hypervolume calculus, the values of number of users and response time were transformed to a same scale. The highest hypervolume algorithm was the MOEA/D. The test scenarios present in the Pareto frontier were:
+
+\begin{itemize}
+\item 1 user on Enter the Catalog scenario and response time of 18 miliseconds;
+\item 5 users and response time of 35 miliseconds (1 user on Dog scenario, 1 user on Register scenario, 1 user on Fish scenario and 1 user on Cart scenario);
+\item 22 users and response time of 788 miliseconds (3 users on AddRemoveCart scenario, 7 users on Fish scenario, 5 users on Cart scenario and 7 users on Register scenario);
+\item 72 users and response time of 1074 miliseconds (14 users on Fish scenario, 11 users on Register scenario, 11 users on Cart scenario, 19 users on Enter the Catalog scenario and 17 users on Dogs scenario)
+\item 89 users and response time of 1396 ( 8 users on Dogs scenario, 35 users on Cart scenario, 29 users on AddRemoveCart scenario, 7 users on Enter the Catalog scenario and 10 users on Fish scenario)
+
+\end{itemize}
+
+MOEA/D found two scenarios that approached the established service level for the experiment of 1000 miliseconds. NSGA-II  found a scenario with 49 users and response time of 685 and a scenario with 59 users and response time of 1138 miliseconds. Although the MOEA/D algorithm found the scenario with the lowest number of users with time close to the service level, the NSGA-II found a scenario with more users with a response time closer to the service level.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{Hybervolume by algorithm to the second cycle of the experiment}
+\label{tab:hypervolume}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{ALGORITHM} & \textbf{HYPERVOLUME} & \textbf{DIMENSIONALITY} & \textbf{POINT DENSITY} \\ \hline
+MOEA/D             & 10.185576            & 2                       & 7817.328935            \\ \hline
+NSGA-II            & 7.541011             & 2                       & 7726.815663            \\ \hline
+PAES               & 7.240581             & 2                       & 7758.493105            \\ \hline
+SPEA2              & 5.539566             & 2                       & 7772.269274            \\ \hline
+\end{tabular}
+\end{table} 
 
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{./images/spea2paretofrontier2.png}
-\caption{SPEA2 Pareto Frontier}
-\label{fig:paretofrontier2}
+\includegraphics[width=1\textwidth]{./images/moeadnoise.png}
+\caption{MOEA/D Pareto Frontier}
+\label{fig:moeadnoise}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{./images/paesfrontier2.jpeg}
+\includegraphics[width=1\textwidth]{./images/nsgaiinoise.png}
 \caption{Maximum fitness value by number of requests}
 \label{fig:paretofrontier2}
 \end{minipage}

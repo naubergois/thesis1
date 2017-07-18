@@ -52,23 +52,24 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Multiobjective implemented solution life cycle\relax }}{78}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Experiment Pareto Frontier\relax }}{80}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces SEDR customized algorithm\relax }}{82}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces SPEA2 Pareto Frontier\relax }}{83}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Maximum fitness value by number of requests\relax }}{83}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Results obtained in the first test cycle\relax }}{82}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces SEDR customized algorithm\relax }}{83}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces MOEA/D Pareto Frontier\relax }}{84}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Maximum fitness value by number of requests\relax }}{84}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces IAdapter life cycle\relax }}{97}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces WorkLoadThreadGroup component\relax }}{98}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces IAdapter main architecture.\relax }}{99}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Test Module class diagram.\relax }}{99}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Test module life cycle.\relax }}{100}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Emulator module\relax }}{100}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces WorkLoadThreadGroup class life cycle.\relax }}{100}
-\contentsline {figure}{\numberline {A.8}{\ignorespaces WorkLoadThreadGroup start method.\relax }}{101}
-\contentsline {figure}{\numberline {A.9}{\ignorespaces WorkLoadThreadGroup threadFinished method.\relax }}{101}
-\contentsline {figure}{\numberline {A.10}{\ignorespaces WorkLoad class\relax }}{102}
-\contentsline {figure}{\numberline {A.11}{\ignorespaces WorkLoad class\relax }}{103}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces IAdapter life cycle\relax }}{98}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces WorkLoadThreadGroup component\relax }}{99}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces IAdapter main architecture.\relax }}{100}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Test Module class diagram.\relax }}{100}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Test module life cycle.\relax }}{101}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Emulator module\relax }}{101}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces WorkLoadThreadGroup class life cycle.\relax }}{101}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces WorkLoadThreadGroup start method.\relax }}{102}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces WorkLoadThreadGroup threadFinished method.\relax }}{102}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces WorkLoad class\relax }}{103}
+\contentsline {figure}{\numberline {A.11}{\ignorespaces WorkLoad class\relax }}{104}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Example of interation between some agent and the environment\relax }}{104}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Q Learning algorithm\relax }}{105}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Example of interation between some agent and the environment\relax }}{105}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Q Learning algorithm\relax }}{106}
